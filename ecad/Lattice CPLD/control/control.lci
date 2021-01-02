@@ -1,0 +1,106 @@
+
+[Device]
+Family = plsi2k;
+PartNumber = ispLSI2064A-80LJ84;
+Package = 84PLCC;
+PartType = ispLSI2064A;
+Speed = 80;
+Operating_condition = COM;
+Status = Production;
+Default_Device_IO_Types = LVCMOS50, -;
+
+[Revision]
+Parent = lc2k.lci;
+DATE = 08/07/2006;
+TIME = 20:28:16;
+Source_Format = Schematic_VHDL;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+Balanced_Partitioning = Yes;
+Max_GLB_Input_Percent = 100;
+Max_PTerm_limit = 35;
+Max_Fanin_Limit = 68;
+Speed = Yes;
+Logic_Optimization_Effort = 2;
+
+[Location Assignments]
+layer = OFF;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+Default = None;
+
+[Input Registers]
+Input_Register = INREG;
+
+[Netlist/Delay Format]
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+Default = Up;
+
+[Slewrate]
+Default = Fast;
+
+[Region]
+
+[Timing Constraints]
+
+[HSI Attributes]
+
+[Input Delay]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[symbol/module attribute]
+layer = OFF;
+
+[symbol/module attribute list]
+
+[Node attribute list]
+
+[RESOURCE RESERVATIONS LIST]
+
+[Pin attributes list]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[Explorer Results]
+
+[Explorer User Settings]
+
+[Constraint Version]
+version = 1.0;
+
+[Node attribute]
+layer = OFF;
+
+[INDIVIDUAL CONSTRAINTS]
+layer = OFF;

@@ -1,0 +1,10 @@
+$ Start of Compile
+#Sun Jul 09 15:12:51 2006
+
+Synplicity VHDL Compiler, version 7.1, Build 158R, built Apr 18 2002
+Copyright (C) 1994-2002, Synplicity Inc.  All Rights Reserved
+
+@E:"C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\Electrical\Lattice\control\control.vhd":3:8:3:15|Can't find library vanmacro
+@E:"C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\Electrical\Lattice\control\control.vhd":4:27:4:27|Identifier vanmacro is not declared
+@END
+Process took 0.188 seconds realtime, 0.203 seconds cputime

@@ -1,0 +1,68 @@
+#$ TOOL ispLEVER 6.0.00.33.17.06
+#$ DATE Sat Jul 15 19:26:14 2006
+#$ TITLE fbbc.bls 
+#$ MODULE fbbc
+#$ PINS 7 OUTPUT_QA'o'  OUTPUT_QB'o'  OUTPUT_QC'o'  OUTPUT_QD'o'  INPUT_A CLEAR CLK
+#$ NODES 6 N_1'o'  N_2'o'  N_3'o'  N_4'o'  N_5'o'  N_6'o' 
+.model fbbc
+.inputs CLEAR.BLIF INPUT_A.BLIF CLK.BLIF OUTPUT_QA.BLIF OUTPUT_QB.BLIF \
+OUTPUT_QC.BLIF N_6.BLIF N_4.BLIF N_5.BLIF N_1.BLIF N_2.BLIF N_3.BLIF
+.outputs N_6 N_5 N_4 N_1 N_2 N_3 OUTPUT_QA.RE OUTPUT_QA.T OUTPUT_QA.C \
+OUTPUT_QB.RE OUTPUT_QB.T OUTPUT_QB.C OUTPUT_QC.RE OUTPUT_QC.T OUTPUT_QC.C \
+OUTPUT_QD.RE OUTPUT_QD.T OUTPUT_QD.C
+
+.subckt g_buf A.BLIF=CLEAR.BLIF Y=N_6
+
+.subckt g_inv A.BLIF=INPUT_A.BLIF YN=N_5
+
+.subckt g_inv A.BLIF=CLK.BLIF YN=N_4
+
+.subckt g_inv A.BLIF=OUTPUT_QA.BLIF YN=N_1
+
+.subckt g_inv A.BLIF=OUTPUT_QB.BLIF YN=N_2
+
+.subckt g_inv A.BLIF=OUTPUT_QC.BLIF YN=N_3
+\
+
+.subckt g_tc C.BLIF=N_6.BLIF CLK.BLIF=N_4.BLIF T.BLIF=N_5.BLIF Q.RE=OUTPUT_QA.RE \
+ Q.T=OUTPUT_QA.T Q.C=OUTPUT_QA.C
+\
+
+.subckt g_tc C.BLIF=N_6.BLIF CLK.BLIF=N_4.BLIF T.BLIF=N_1.BLIF Q.RE=OUTPUT_QB.RE \
+ Q.T=OUTPUT_QB.T Q.C=OUTPUT_QB.C
+\
+
+.subckt g_tc C.BLIF=N_6.BLIF CLK.BLIF=N_4.BLIF T.BLIF=N_2.BLIF Q.RE=OUTPUT_QC.RE \
+ Q.T=OUTPUT_QC.T Q.C=OUTPUT_QC.C
+\
+
+.subckt g_tc C.BLIF=N_6.BLIF CLK.BLIF=N_4.BLIF T.BLIF=N_3.BLIF Q.RE=OUTPUT_QD.RE \
+ Q.T=OUTPUT_QD.T Q.C=OUTPUT_QD.C
+.end
+.model g_buf
+.inputs A.BLIF
+.outputs Y
+.names A.BLIF Y
+1 1
+0 0
+.end
+.model g_inv
+.inputs A.BLIF
+.outputs YN
+.names A.BLIF YN
+0 1
+1 0
+.end
+.model g_tc
+.inputs T.BLIF CLK.BLIF C.BLIF
+.outputs Q.T Q.C Q.RE
+.names T.BLIF Q.T
+1 1
+0 0
+.names CLK.BLIF Q.C
+1 1
+0 0
+.names C.BLIF Q.RE
+1 1
+0 0
+.end

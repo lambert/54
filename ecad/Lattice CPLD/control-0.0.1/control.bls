@@ -1,0 +1,36 @@
+#$ TOOL SCH2BLF 2.01.28.41.02 
+#$ TITLE control.bls 
+#$ MODULE control 
+#$ PINS 17  O_Q O_P O_N O_M O_L O_K O_J O_H O_G O_F O_E O_D O_C O_B \
+#   O_A CLK CLR
+#$ NODES 17 N_1 N_2 N_3 N_4 N_5 N_6 N_7 N_8 N_9 N_10 N_11 N_12 N_13  \
+#  N_14 N_15 N_16 N_17 
+#$ INTERFACE g_clkbuf 2 I'i' O'o'
+#$ INTERFACE g_input 2 I'i' O'o'
+#$ INTERFACE g_output 2 I'i' O'o'
+#$ INTERFACE timebase 17 TB_CLEAR'i' TB_CLK'i' TB_100us'o' TB_10ms'o' \
+#   TB_10us'o' TB_1ms'o' TB_1us'o' TB_200us'o' TB_20ms'o' TB_20us'o' \
+#   TB_2ms'o' TB_2us'o' TB_500us'o' TB_50ms'o' TB_50us'o' TB_5ms'o' \
+#   TB_5us'o'
+#$ PRIMITIVE I_00 g_clkbuf 2 CLK N_2
+#$ PRIMITIVE I_01 g_input 2 CLR N_3
+#$ PRIMITIVE I26 g_output 2 N_5 O_A
+#$ PRIMITIVE I27 g_output 2 N_7 O_B
+#$ PRIMITIVE I28 g_output 2 N_9 O_C
+#$ PRIMITIVE I29 g_output 2 N_11 O_D
+#$ PRIMITIVE I30 g_output 2 N_13 O_E
+#$ PRIMITIVE I31 g_output 2 N_14 O_F
+#$ PRIMITIVE I32 g_output 2 N_16 O_G
+#$ PRIMITIVE I33 g_output 2 N_1 O_H
+#$ PRIMITIVE I34 g_output 2 N_17 O_J
+#$ PRIMITIVE I35 g_output 2 N_15 O_K
+#$ PRIMITIVE I36 g_output 2 N_12 O_L
+#$ PRIMITIVE I37 g_output 2 N_10 O_M
+#$ PRIMITIVE I38 g_output 2 N_8 O_N
+#$ PRIMITIVE I39 g_output 2 N_6 O_P
+#$ PRIMITIVE I40 g_output 2 N_4 O_Q
+#$ INSTANCE I25 timebase 17 N_3 N_2 N_16 N_8 N_11 N_15 N_5 N_1 N_6 \
+#   N_13 N_12 N_7 N_17 N_4 N_14 N_10 N_9
+.model control
+
+.end

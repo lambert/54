@@ -1,0 +1,19 @@
+1 2.01.28.02
+-i c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\control.laf -if laf -p ispLSI2064A-80LJ84 -of vhdl -of verilog -s d -e 2 -z -m 16 -n 4 -ta on -y c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\control.xpn -r c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\ispxpert.par 
+c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\ispxpert.par 1152651994 Tue Jul 11 23:06:34 2006
+control.ppn 1152651995 Tue Jul 11 23:06:35 2006
+control.fxp 1152651995 Tue Jul 11 23:06:35 2006
+c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\control.laf 1152651994 Tue Jul 11 23:06:34 2006
+>  c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\control.xpn
+// PART: 	ispLSI2064A-80LJ84
+// FORMAT: 	PINNAME		PINTYPE	LOCK	PULLUP	SLOWSLEW	OPENDRAIN	OUTDELAY	VOLTAGE	CRIT
+
+// FORMAT: 	NETNAME		CLK		PRESERVE	ECP	GROUP		XOR	ELP	ETP
+
+// FORMAT: 	SYMNAME		PROTECT	REGTYPE
+		CLOCK			-		-1
+		CLEAR			-		-1
+		R2			-		-1
+		R3			-		-1
+		START			-		-1
+		TIME			-		-1

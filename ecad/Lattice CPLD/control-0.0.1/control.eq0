@@ -1,0 +1,107 @@
+ispLEVER 2.01.28.41.02 Linked Equations File
+Copyright(C), 1992-2002, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design control created Sun Jul 09 16:08:04 2006
+
+Title: control.bls 
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   O_Q 
+   1/1        1        1    Pin   O_P 
+   1/1        1        1    Pin   O_N 
+   1/1        1        1    Pin   O_M 
+   1/1        1        1    Pin   O_L 
+   1/1        1        1    Pin   O_K 
+   1/1        1        1    Pin   O_J 
+   1/1        1        1    Pin   O_H 
+   1/1        1        1    Pin   O_G 
+   1/1        1        1    Pin   O_F 
+   1/1        1        1    Pin   O_E 
+   1/1        1        1    Pin   O_D 
+   1/1        1        1    Pin   O_C 
+   1/1        1        1    Pin   O_B 
+   1/1        1        1    Pin   O_A 
+   1/1        1        1    Node  N_2 
+   1/1        1        1    Node  N_3 
+=========
+  17/17         Best P-Term Total: 17
+                       Total Pins: 17
+                      Total Nodes: 17
+            Average P-Term/Output: 1
+
+
+Equations:
+
+O_Q = (N_4);
+
+O_P = (N_6);
+
+O_N = (N_8);
+
+O_M = (N_10);
+
+O_L = (N_12);
+
+O_K = (N_15);
+
+O_J = (N_17);
+
+O_H = (N_1);
+
+O_G = (N_16);
+
+O_F = (N_14);
+
+O_E = (N_13);
+
+O_D = (N_11);
+
+O_C = (N_9);
+
+O_B = (N_7);
+
+O_A = (N_5);
+
+N_2 = (CLK);
+
+N_3 = (CLR);
+
+
+Reverse-Polarity Equations:
+
+!O_Q = (!N_4);
+
+!O_P = (!N_6);
+
+!O_N = (!N_8);
+
+!O_M = (!N_10);
+
+!O_L = (!N_12);
+
+!O_K = (!N_15);
+
+!O_J = (!N_17);
+
+!O_H = (!N_1);
+
+!O_G = (!N_16);
+
+!O_F = (!N_14);
+
+!O_E = (!N_13);
+
+!O_D = (!N_11);
+
+!O_C = (!N_9);
+
+!O_B = (!N_7);
+
+!O_A = (!N_5);
+
+!N_2 = (!CLK);
+
+!N_3 = (!CLR);
+

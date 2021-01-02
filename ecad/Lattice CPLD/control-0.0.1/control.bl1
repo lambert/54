@@ -1,0 +1,67 @@
+#$ TOOL ispLEVER 2.01.28.41.02
+#$ DATE Sun Jul 09 16:08:04 2006
+#$ TITLE control.bls 
+#$ MODULE control
+#$ PINS 17 O_Q'o'  O_P'o'  O_N'o'  O_M'o'  O_L'o'  O_K'o'  O_J'o'  O_H'o'  O_G'o'  O_F'o'  O_E'o'  O_D'o'  O_C'o'  O_B'o'  O_A'o'  CLK CLR
+#$ NODES 17 N_1 N_2'o'  N_3'o'  N_4 N_5 N_6 N_7 N_8 N_9 N_10 N_11 N_12 N_13 N_14 N_15 N_16 N_17
+#$ INTERFACE timebase  17 TB_CLEAR'i'  TB_CLK'i'  TB_100us'o'  TB_10ms'o'  TB_10us'o'  TB_1ms'o'  TB_1us'o'  \
+#  TB_200us'o'  TB_20ms'o'  TB_20us'o'  TB_2ms'o'  TB_2us'o'  TB_500us'o'  TB_50ms'o'  TB_50us'o'  TB_5ms'o'  TB_5us'o' 
+#$ INSTANCE I25 timebase 17 N_3 N_2 N_16 N_8 N_11 N_15 N_5 N_1 N_6 N_13 N_12 N_7 N_17 N_4 N_14 \
+#  N_10 N_9
+.model CONTROL
+.inputs CLK.BLIF CLR.BLIF N_5.BLIF N_7.BLIF N_9.BLIF N_11.BLIF N_13.BLIF \
+N_14.BLIF N_16.BLIF N_1.BLIF N_17.BLIF N_15.BLIF N_12.BLIF N_10.BLIF N_8.BLIF \
+N_6.BLIF N_4.BLIF
+.outputs N_2 N_3 O_A O_B O_C O_D O_E O_F O_G O_H O_J O_K O_L O_M O_N O_P O_Q
+.names CLK.BLIF N_2
+1 1
+0 0
+.names CLR.BLIF N_3
+1 1
+0 0
+.names N_5.BLIF O_A
+1 1
+0 0
+.names N_7.BLIF O_B
+1 1
+0 0
+.names N_9.BLIF O_C
+1 1
+0 0
+.names N_11.BLIF O_D
+1 1
+0 0
+.names N_13.BLIF O_E
+1 1
+0 0
+.names N_14.BLIF O_F
+1 1
+0 0
+.names N_16.BLIF O_G
+1 1
+0 0
+.names N_1.BLIF O_H
+1 1
+0 0
+.names N_17.BLIF O_J
+1 1
+0 0
+.names N_15.BLIF O_K
+1 1
+0 0
+.names N_12.BLIF O_L
+1 1
+0 0
+.names N_10.BLIF O_M
+1 1
+0 0
+.names N_8.BLIF O_N
+1 1
+0 0
+.names N_6.BLIF O_P
+1 1
+0 0
+.names N_4.BLIF O_Q
+1 1
+0 0
+.end

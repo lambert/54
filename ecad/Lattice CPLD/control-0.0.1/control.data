@@ -1,0 +1,203 @@
+MODELDATA
+MODELDATA_VERSION "1.0";
+DESIGN "control";
+DATE "Sun Jul 09 16:17:30 2006";
+VENDOR "Lattice Semiconductor Corporation";
+PROGRAM "STAMP Model Generator";
+
+/* port drive, max transition and max capacitance */
+PORTDATA
+CLK: MAXTRANS(0.0);
+CLR: MAXTRANS(0.0);
+O_A: MAXTRANS(0.0);
+O_B: MAXTRANS(0.0);
+O_C: MAXTRANS(0.0);
+O_D: MAXTRANS(0.0);
+O_E: MAXTRANS(0.0);
+O_F: MAXTRANS(0.0);
+O_G: MAXTRANS(0.0);
+O_H: MAXTRANS(0.0);
+O_J: MAXTRANS(0.0);
+O_K: MAXTRANS(0.0);
+O_L: MAXTRANS(0.0);
+O_M: MAXTRANS(0.0);
+O_N: MAXTRANS(0.0);
+O_P: MAXTRANS(0.0);
+O_Q: MAXTRANS(0.0);
+ENDPORTDATA
+
+/* timing arc data */
+TIMINGDATA
+
+ARCDATA
+CLK_O_A_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_B_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_C_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_D_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_E_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_F_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_G_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_H_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_J_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_K_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_L_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_M_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_N_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_P_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_O_Q_delay:
+CELL_RISE(scalar) {
+VALUES(6.0);
+}
+CELL_FALL(scalar) {
+VALUES(6.0);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_CLK_setup:
+RISE_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(5.5);
+}
+ENDARCDATA
+
+ARCDATA
+CLK_CLK_hold:
+RISE_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+FALL_CONSTRAINT(scalar) {
+VALUES(0.0);
+}
+ENDARCDATA
+
+ENDTIMINGDATA
+ENDMODELDATA

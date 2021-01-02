@@ -1,0 +1,16 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Generate Board-level Stamp Model
+
+Starting: 'C:\ispLEVER-2.0\ispcpld\bin\stamppar.exe -i control  -gui -log automake.err -target ispLSI'
+
+Lattice Stamp Model Generator
+Copyright (C), 2000-2001, Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+
+stamppar completed successfully.
+
+
+Done: completed successfully.

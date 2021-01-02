@@ -1,0 +1,5 @@
+[fbbc]
+submodule=g_buf;
+submodule=g_inv;
+submodule=g_tc;
+

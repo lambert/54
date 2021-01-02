@@ -1,0 +1,47 @@
+#-- Synplicity, Inc.
+#-- Version 7.1        
+#-- Project file C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\proj.prj
+#-- Written on Mon Aug 07 21:08:31 2006
+
+
+#add_file options
+add_file -vhdl -lib work "addresscounter.vhd"
+add_file -vhdl -lib work "control.vhd"
+add_file -vhdl -lib work "fbbc.vhd"
+add_file -vhdl -lib work "fbdc.vhd"
+add_file -vhdl -lib work "timebase.vhd"
+
+#reporting options
+
+
+#implementation: "rev_2"
+impl -add rev_2
+
+#device options
+set_option -technology PLSI2K
+set_option -part ISPLSI2064A
+set_option -package LJ84
+set_option -speed_grade -80
+
+#compilation/mapping options
+set_option -default_enum_encoding sequential
+set_option -symbolic_fsm_compiler 1
+set_option -resource_sharing 1
+
+#map options
+set_option -frequency 0.000
+
+#simulation options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "rev_2/timebase.edf"
+
+#implementation attributes
+set_option -vlog_std v2001
+set_option -compiler_compatible 0
+impl -active "rev_2"

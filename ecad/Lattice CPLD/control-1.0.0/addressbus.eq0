@@ -1,0 +1,20 @@
+ispLEVER 2.01.28.41.02 Linked Equations File
+Copyright(C), 1992-2002, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design addressbus created Sun Jul 09 19:48:28 2006
+
+Title: addressbus.bls 
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+=========
+   0                 P-Term Total: 0
+                       Total Pins: 14
+                      Total Nodes: 0
+
+Equations:
+
+
+Reverse-Polarity Equations:
+

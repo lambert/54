@@ -1,0 +1,209 @@
+
+Timing Report for STAMP
+
+//  Project = control
+//  Family  = mach4a
+//  Device  = mach432a
+//  Speed   = -10
+//  Voltage = 5.0
+//  Operating Condition = COM
+//  Data sheet version  = RevD-8/2000
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+
+Section IO
+  //DESTINATION NODES;
+  O_A [out]
+  O_B [out]
+  O_C [out]
+  O_D [out]
+  O_E [out]
+  O_F [out]
+  O_G [out]
+  O_H [out]
+  O_J [out]
+  O_K [out]
+  O_L [out]
+  O_M [out]
+  O_N [out]
+  O_P [out]
+  O_Q [out]
+  E0_OUTPUT_QC.C [reg]
+  F0_OUTPUT_QC.C [reg]
+  G0_OUTPUT_QC.C [reg]
+  H0_OUTPUT_QC.C [reg]
+  K0_OUTPUT_QC.C [reg]
+  O_A.C [reg]
+  O_B.C [reg]
+  O_C.C [reg]
+  O_D.C [reg]
+  O_E.C [reg]
+  O_F.C [reg]
+  O_G.C [reg]
+  O_H.C [reg]
+  O_J.C [reg]
+  O_K.C [reg]
+  O_L.C [reg]
+  O_M.C [reg]
+  O_N.C [reg]
+  O_P.C [reg]
+  O_Q.C [reg]
+  E0_OUTPUT_QC.D [reg]
+  F0_OUTPUT_QC.D [reg]
+  G0_OUTPUT_QC.D [reg]
+  H0_OUTPUT_QC.D [reg]
+  K0_OUTPUT_QC.D [reg]
+  O_A.D [reg]
+  O_B.D [reg]
+  O_C.D [reg]
+  O_D.D [reg]
+  O_E.D [reg]
+  O_F.D [reg]
+  O_G.D [reg]
+  O_H.D [reg]
+  O_J.D [reg]
+  O_K.D [reg]
+  O_L.D [reg]
+  O_M.D [reg]
+  O_N.D [reg]
+  O_P.D [reg]
+  O_Q.D [reg]
+
+  //SOURCE NODES;
+  CLK [in]
+  CLR [in]
+  E0_OUTPUT_QC.Q [reg]
+  F0_OUTPUT_QC.Q [reg]
+  G0_OUTPUT_QC.Q [reg]
+  H0_OUTPUT_QC.Q [reg]
+  K0_OUTPUT_QC.Q [reg]
+  O_A.Q [reg]
+  O_B.Q [reg]
+  O_C.Q [reg]
+  O_D.Q [reg]
+  O_E.Q [reg]
+  O_F.Q [reg]
+  O_G.Q [reg]
+  O_H.Q [reg]
+  O_J.Q [reg]
+  O_K.Q [reg]
+  O_L.Q [reg]
+  O_M.Q [reg]
+  O_N.Q [reg]
+  O_P.Q [reg]
+  O_Q.Q [reg]
+
+
+Section fMAX
+
+  Maximum Operating Frequency: 117.65 MHz
+  Clock Source From:           CLK
+  Logic Levels:                1
+  Path Delay:                  8.5 ns
+  Path Expansion                                Source                        Destination
+  ==============                                ======                        ===========
+    3.0  tCOSi                                  E0_OUTPUT_QC.C                E0_OUTPUT_QC.Q
+    0.0                                         E0_OUTPUT_QC.Q                E0_OUTPUT_QC.D
+    5.5  tSS                                    E0_OUTPUT_QC.D                E0_OUTPUT_QC.C
+
+  Clock Source From: CLK
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+    8.5           1      A13      =>  A13       E0_OUTPUT_QC.C                E0_OUTPUT_QC.D                CLK
+    8.5           1      A13      =>  A12       E0_OUTPUT_QC.C                O_C.D                         CLK
+    8.5           1      B2       =>  B2        F0_OUTPUT_QC.C                F0_OUTPUT_QC.D                CLK
+    8.5           1      B2       =>  B1        F0_OUTPUT_QC.C                O_F.D                         CLK
+    8.5           1      A2       =>  A2        G0_OUTPUT_QC.C                G0_OUTPUT_QC.D                CLK
+    8.5           1      A2       =>  A1        G0_OUTPUT_QC.C                O_J.D                         CLK
+    8.5           1      B6       =>  B6        H0_OUTPUT_QC.C                H0_OUTPUT_QC.D                CLK
+    8.5           1      B6       =>  B13       H0_OUTPUT_QC.C                O_M.D                         CLK
+    8.5           1      A6       =>  A6        K0_OUTPUT_QC.C                K0_OUTPUT_QC.D                CLK
+    8.5           1      A6       =>  A9        K0_OUTPUT_QC.C                O_Q.D                         CLK
+    8.5           1      B8       =>  B8        O_A.C                         O_A.D                         CLK
+    8.5           1      B8       =>  A0        O_A.C                         O_B.D                         CLK
+    8.5           1      B8       =>  A12       O_A.C                         O_C.D                         CLK
+    8.5           1      A0       =>  A13       O_B.C                         E0_OUTPUT_QC.D                CLK
+    8.5           1      A0       =>  A0        O_B.C                         O_B.D                         CLK
+    8.5           1      A0       =>  A12       O_B.C                         O_C.D                         CLK
+    8.5           1      A12      =>  A0        O_C.C                         O_B.D                         CLK
+    8.5           1      A12      =>  A12       O_C.C                         O_C.D                         CLK
+    8.5           1      A12      =>  B12       O_C.C                         O_D.D                         CLK
+    8.5           1      B12      =>  B12       O_D.C                         O_D.D                         CLK
+    8.5           1      B12      =>  B0        O_D.C                         O_E.D                         CLK
+    8.5           1      B12      =>  B1        O_D.C                         O_F.D                         CLK
+    8.5           1      B0       =>  B2        O_E.C                         F0_OUTPUT_QC.D                CLK
+    8.5           1      B0       =>  B0        O_E.C                         O_E.D                         CLK
+    8.5           1      B0       =>  B1        O_E.C                         O_F.D                         CLK
+    8.5           1      B1       =>  B0        O_F.C                         O_E.D                         CLK
+    8.5           1      B1       =>  B1        O_F.C                         O_F.D                         CLK
+    8.5           1      B1       =>  B5        O_F.C                         O_G.D                         CLK
+    8.5           1      B5       =>  B5        O_G.C                         O_G.D                         CLK
+    8.5           1      B5       =>  A4        O_G.C                         O_H.D                         CLK
+    8.5           1      B5       =>  A1        O_G.C                         O_J.D                         CLK
+    8.5           1      A4       =>  A2        O_H.C                         G0_OUTPUT_QC.D                CLK
+    8.5           1      A4       =>  A4        O_H.C                         O_H.D                         CLK
+    8.5           1      A4       =>  A1        O_H.C                         O_J.D                         CLK
+    8.5           1      A1       =>  A4        O_J.C                         O_H.D                         CLK
+    8.5           1      A1       =>  A1        O_J.C                         O_J.D                         CLK
+    8.5           1      A1       =>  B9        O_J.C                         O_K.D                         CLK
+    8.5           1      B9       =>  B9        O_K.C                         O_K.D                         CLK
+    8.5           1      B9       =>  B4        O_K.C                         O_L.D                         CLK
+    8.5           1      B9       =>  B13       O_K.C                         O_M.D                         CLK
+    8.5           1      B4       =>  B6        O_L.C                         H0_OUTPUT_QC.D                CLK
+    8.5           1      B4       =>  B4        O_L.C                         O_L.D                         CLK
+    8.5           1      B4       =>  B13       O_L.C                         O_M.D                         CLK
+    8.5           1      B13      =>  B4        O_M.C                         O_L.D                         CLK
+    8.5           1      B13      =>  B13       O_M.C                         O_M.D                         CLK
+    8.5           1      B13      =>  A5        O_M.C                         O_N.D                         CLK
+    8.5           1      A5       =>  A5        O_N.C                         O_N.D                         CLK
+    8.5           1      A5       =>  A8        O_N.C                         O_P.D                         CLK
+    8.5           1      A5       =>  A9        O_N.C                         O_Q.D                         CLK
+    8.5           1      A8       =>  A6        O_P.C                         K0_OUTPUT_QC.D                CLK
+    8.5           1      A8       =>  A8        O_P.C                         O_P.D                         CLK
+    8.5           1      A8       =>  A9        O_P.C                         O_Q.D                         CLK
+    8.5           1      A9       =>  A8        O_Q.C                         O_P.D                         CLK
+    8.5           1      A9       =>  A9        O_Q.C                         O_Q.D                         CLK
+
+
+Section tSU
+
+  tSU,    tHD   Level   Location(From => To)    Source                        Destination                   Reference_Clock
+  ===========   =====   ====================    ======                        ===========                   ===============
+   5.5,   0.0     1     p11       =>  B8        CLK                           O_A.D                         CLK
+
+
+Section tCO
+
+    tCO         Level   Location(From => To)    Source                        Destination                   Register_Clock
+    ===         =====   ====================    ======                        ===========                   ==============
+    6.0           1     p11       => p31        CLK                           O_A                           O_A.C
+    6.0           1     p11       => p9         CLK                           O_B                           O_B.C
+    6.0           1     p11       => p16        CLK                           O_C                           O_C.C
+    6.0           1     p11       => p29        CLK                           O_D                           O_D.C
+    6.0           1     p11       => p36        CLK                           O_E                           O_E.C
+    6.0           1     p11       => p37        CLK                           O_F                           O_F.C
+    6.0           1     p11       => p39        CLK                           O_G                           O_G.C
+    6.0           1     p11       => p7         CLK                           O_H                           O_H.C
+    6.0           1     p11       => p8         CLK                           O_J                           O_J.C
+    6.0           1     p11       => p30        CLK                           O_K                           O_K.C
+    6.0           1     p11       => p38        CLK                           O_L                           O_L.C
+    6.0           1     p11       => p28        CLK                           O_M                           O_M.C
+    6.0           1     p11       => p6         CLK                           O_N                           O_N.C
+    6.0           1     p11       => p14        CLK                           O_P                           O_P.C
+    6.0           1     p11       => p15        CLK                           O_Q                           O_Q.C

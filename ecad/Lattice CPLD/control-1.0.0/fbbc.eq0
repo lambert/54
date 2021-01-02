@@ -1,0 +1,112 @@
+ispLEVER 2.01.28.41.02 Linked Equations File
+Copyright(C), 1992-2002, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design fbbc created Sun Jul 09 19:37:00 2006
+
+Title: fbbc.bls 
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   OUTPUT_QA.RE 
+   1/1        1        1    Pin   OUTPUT_QA.T 
+   1/1        1        1    Pin   OUTPUT_QA.C 
+   1/1        1        1    Pin   OUTPUT_QB.RE 
+   1/1        1        1    Pin   OUTPUT_QB.T 
+   1/1        1        1    Pin   OUTPUT_QB.C 
+   1/1        1        1    Pin   OUTPUT_QC.RE 
+   1/1        1        1    Pin   OUTPUT_QC.T 
+   1/1        1        1    Pin   OUTPUT_QC.C 
+   1/1        1        1    Pin   OUTPUT_QD.RE 
+   1/1        1        1    Pin   OUTPUT_QD.T 
+   1/1        1        1    Pin   OUTPUT_QD.C 
+   1/1        1        1    Node  N_1 
+   1/1        1        1    Node  N_2 
+   1/1        1        1    Node  N_3 
+   1/1        1        1    Node  N_4 
+   1/1        1        1    Node  N_5 
+   1/1        1        1    Node  N_6 
+=========
+  18/18         Best P-Term Total: 18
+                       Total Pins: 7
+                      Total Nodes: 6
+            Average P-Term/Output: 1
+
+
+Equations:
+
+OUTPUT_QA.RE = (N_6);
+
+OUTPUT_QA.T = (N_5);
+
+OUTPUT_QA.C = (N_4);
+
+OUTPUT_QB.RE = (N_6);
+
+OUTPUT_QB.T = (N_1);
+
+OUTPUT_QB.C = (N_4);
+
+OUTPUT_QC.RE = (N_6);
+
+OUTPUT_QC.T = (N_2);
+
+OUTPUT_QC.C = (N_4);
+
+OUTPUT_QD.RE = (N_6);
+
+OUTPUT_QD.T = (N_3);
+
+OUTPUT_QD.C = (N_4);
+
+N_1 = (!OUTPUT_QA);
+
+N_2 = (!OUTPUT_QB);
+
+N_3 = (!OUTPUT_QC);
+
+N_4 = (!CLK);
+
+N_5 = (!INPUT_A);
+
+N_6 = (CLEAR);
+
+
+Reverse-Polarity Equations:
+
+!OUTPUT_QA.RE = (!N_6);
+
+!OUTPUT_QA.T = (!N_5);
+
+!OUTPUT_QA.C = (!N_4);
+
+!OUTPUT_QB.RE = (!N_6);
+
+!OUTPUT_QB.T = (!N_1);
+
+!OUTPUT_QB.C = (!N_4);
+
+!OUTPUT_QC.RE = (!N_6);
+
+!OUTPUT_QC.T = (!N_2);
+
+!OUTPUT_QC.C = (!N_4);
+
+!OUTPUT_QD.RE = (!N_6);
+
+!OUTPUT_QD.T = (!N_3);
+
+!OUTPUT_QD.C = (!N_4);
+
+!N_1 = (OUTPUT_QA);
+
+!N_2 = (OUTPUT_QB);
+
+!N_3 = (OUTPUT_QC);
+
+!N_4 = (CLK);
+
+!N_5 = (INPUT_A);
+
+!N_6 = (!CLEAR);
+

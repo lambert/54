@@ -1,0 +1,1331 @@
+ispEXPERT Compiler Release 2.01.28.02, May 20 2002 13:06:40
+
+
+Design Parameters
+-----------------
+
+EFFORT:                         MEDIUM (2)
+IGNORE_FIXED_PIN:               OFF
+MAX_GLB_IN:                     16
+MAX_GLB_OUT:                    4
+OUTPUT_FORM:                    VERILOG, VHDL
+OS_VERSION:                     Windows NT 5.1
+PARAM_FILE:                     'c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\ispxpert'
+PIN_FILE:                       'c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\control.xpn'
+STRATEGY:                       DELAY
+TIMING_ANALYZER:                ON 
+USE_GLOBAL_RESET:               ON
+
+
+Design Specification
+--------------------
+
+Design:                         control
+Part:                           ispLSI2064A-80LJ84
+
+
+ISP:                            ON
+ISP_EXCEPT_Y2:                  OFF
+PULL:                           UP
+SECURITY:                       OFF
+SLOWSLEW:                       OFF
+
+
+Number of Critical Pins:        0
+Number of Free Pins:            38
+Number of Locked Pins:          0
+Number of Reserved Pins:        0
+
+
+Input Pins
+
+    Pin Name                Pin Attribute
+
+        CLK                     PULLUP
+        CLR                     PULLUP
+        R2                      PULLUP
+        R3                      PULLUP
+        S1                      PULLUP
+        S2                      PULLUP
+
+
+Output Pins
+
+    Pin Name                Pin Attribute
+
+        A00                     PULLUP
+        A01                     PULLUP
+        A02                     PULLUP
+        A03                     PULLUP
+        A04                     PULLUP
+        A05                     PULLUP
+        A06                     PULLUP
+        A07                     PULLUP
+        A08                     PULLUP
+        A09                     PULLUP
+        A10                     PULLUP
+        A11                     PULLUP
+        C8                      PULLUP
+        CE_RAM                  PULLUP
+        READ                    PULLUP
+        READY                   PULLUP
+        TB_100US                PULLUP
+        TB_10MS                 PULLUP
+        TB_10US                 PULLUP
+        TB_1MS                  PULLUP
+        TB_1US                  PULLUP
+        TB_200US                PULLUP
+        TB_20MS                 PULLUP
+        TB_20US                 PULLUP
+        TB_2MS                  PULLUP
+        TB_2US                  PULLUP
+        TB_500US                PULLUP
+        TB_50MS                 PULLUP
+        TB_50US                 PULLUP
+        TB_5MS                  PULLUP
+        TB_5US                  PULLUP
+        WRAD                    PULLUP
+
+
+Pre-Route Design Statistics
+---------------------------
+
+Number of Macrocells:           37
+Number of GLBs:                 11
+Number of I/Os:                 36
+Number of Nets:                 41
+
+Number of Free Inputs:          4
+Number of Free Outputs:         32
+Number of Free Three-States:    0
+Number of Free Bidi's:          0
+
+Number of Locked Input IOCs:    0
+Number of Locked DIs:           0
+Number of Locked Outputs:       0
+Number of Locked Three-States:  0
+Number of Locked Bidi's:        0
+
+Number of CRIT Outputs:         0
+Number of Global OEs:           0
+Number of External Clocks:      2
+
+
+GLB Utilization (Out of 16):	68%
+I/O Utilization (Out of 64):	56%
+Net Utilization (Out of 128):	32%
+
+
+Nets with Fanout of  1:         9
+Nets with Fanout of  2:         15
+Nets with Fanout of  3:         12
+Nets with Fanout of  4:         2
+Nets with Fanout of  5:         2
+Nets with Fanout of  6:         1
+
+Average Fanout per Net:         2.41
+
+
+GLBs with  1 Input(s):          1
+GLBs with  2 Input(s):          2
+GLBs with  7 Input(s):          5
+GLBs with  8 Input(s):          1
+GLBs with  9 Input(s):          1
+GLBs with 10 Input(s):          1
+
+Average Inputs per GLB:         6.09
+
+
+GLBs with  1 Output(s):         2
+GLBs with  3 Output(s):         1
+GLBs with  4 Output(s):         8
+
+Average Outputs per GLB:        3.36
+
+
+Number of GLB Registers:        35
+Number of IOC Registers:        0
+
+
+Post-Route Design Implementation
+--------------------------------
+
+Number of Macrocells:		37
+Number of GLBs:			11
+Number of IOCs:			36
+Number of DIs:			0
+Number of GLB Levels:		1
+
+
+GLB glb00, B1
+
+    1 Input(s)
+        (S1.O, S1X, I14)
+    1 Output(s)
+        (FF103_U1_$1N77, O0)
+    1 Product Term(s)
+
+    Output FF103_U1_$1N77
+
+        1 Input(s)
+            S1X
+        4 Fanout(s)
+            glb08.I4, glb10.I4, glb09.I11, C8.IR
+        0 Product Term(s)
+        1 GLB Level(s)
+
+        FF103_U1_$1N77.D = VCC
+        FF103_U1_$1N77.C = R3X
+        FF103_U1_$1N77.R = S1X
+
+
+GLB glb01, A7
+
+    2 Input(s)
+        (glb10.O3, FB101_I24_FF103_U1_$1N5, I0), (R2.O, R2X, I3)
+    1 Output(s)
+        (FF102_U1_$1N77, O0)
+    2 Product Term(s)
+
+    Output FF102_U1_$1N77
+
+        2 Input(s)
+            R2X, FB101_I24_FF103_U1_$1N5
+        6 Fanout(s)
+            glb08.I8, glb10.I8, glb02.I7, glb09.I7, READY.IR, READ.IR
+        0 Product Term(s)
+        1 GLB Level(s)
+
+        FF102_U1_$1N77.D = VCC
+        FF102_U1_$1N77.C = FB101_I24_FF103_U1_$1N5
+        FF102_U1_$1N77.R = R2X
+
+
+GLB glb02, B4
+
+    2 Input(s)
+        (glb02.O2, FF101_U1_$1N77, I16), (glb01.O0, 
+        FF102_U1_$1N77, I7)
+    3 Output(s)
+        (GND_986, O0), (G101_Y, O1), (FF101_U1_$1N77, O2)
+    2 Product Term(s)
+
+    Output GND_986
+
+        0 Input(s)
+        1 Fanout(s)
+            WRAD.IR
+        0 Product Term(s)
+        0 GLB Level(s)
+
+        GND_986 = GND
+
+    Output G101_Y
+
+        2 Input(s)
+            FF102_U1_$1N77, FF101_U1_$1N77
+        1 Fanout(s)
+            CE_RAM.IR
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        G101_Y = !FF102_U1_$1N77 & !FF101_U1_$1N77
+
+    Output FF101_U1_$1N77
+
+        1 Input(s)
+            FF101_U1_$1N77
+        4 Fanout(s)
+            glb08.I2, glb10.I6, glb02.I16, glb09.I9
+        1 Product Term(s)
+        1 GLB Level(s)
+
+        FF101_U1_$1N77.D = FF101_U1_$1N77
+        FF101_U1_$1N77.C = S2X
+        FF101_U1_$1N77.R = GND
+
+
+GLB glb03, B2
+
+    7 Input(s)
+        (CLK.O, CLKX, I13), (CLR.O, CLRX, I7), (glb04.O0, 
+        FB100_CNT103_FF100_U1_$1N5, I11), (glb03.O3, 
+        FB100_CNT103_FF101_U1_$1N5, I15), (glb03.O2, 
+        FB100_CNT103_FF102_U1_$1N5, I14), (glb03.O1, 
+        FB100_CNT103_FF103_U1_$1N5, I17), (glb03.O0, 
+        FB100_CNT104_FF100_U1_$1N5, I16)
+    4 Output(s)
+        (FB100_CNT104_FF100_U1_$1N5, O0), 
+        (FB100_CNT103_FF103_U1_$1N5, O1), 
+        (FB100_CNT103_FF102_U1_$1N5, O2), 
+        (FB100_CNT103_FF101_U1_$1N5, O3)
+    11 Product Term(s)
+
+    Output FB100_CNT104_FF100_U1_$1N5
+
+        4 Input(s)
+            CLKX, FB100_CNT104_FF100_U1_$1N5, CLRX,
+            FB100_CNT103_FF103_U1_$1N5
+        3 Fanout(s)
+            glb03.I16, glb07.I12, TB_10MS.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT104_FF100_U1_$1N5.D = FB100_CNT104_FF100_U1_$1N5
+            & !FB100_CNT103_FF103_U1_$1N5
+            # FB100_CNT103_FF103_U1_$1N5 & !FB100_CNT104_FF100_U1_$1N5
+        !FB100_CNT104_FF100_U1_$1N5.C = CLKX
+        FB100_CNT104_FF100_U1_$1N5.R = CLRX
+
+    Output FB100_CNT103_FF103_U1_$1N5
+
+        6 Input(s)
+            CLKX, FB100_CNT103_FF101_U1_$1N5, CLRX,
+            FB100_CNT103_FF102_U1_$1N5, FB100_CNT103_FF100_U1_$1N5,
+            FB100_CNT103_FF103_U1_$1N5
+        2 Fanout(s)
+            glb03.I17, TB_5MS.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT103_FF103_U1_$1N5.D = FB100_CNT103_FF103_U1_$1N5
+            & !FB100_CNT103_FF100_U1_$1N5
+            # FB100_CNT103_FF100_U1_$1N5 & FB100_CNT103_FF101_U1_$1N5
+            & FB100_CNT103_FF102_U1_$1N5 & !FB100_CNT103_FF103_U1_$1N5
+        !FB100_CNT103_FF103_U1_$1N5.C = CLKX
+        FB100_CNT103_FF103_U1_$1N5.R = CLRX
+
+    Output FB100_CNT103_FF102_U1_$1N5
+
+        4 Input(s)
+            CLKX, FB100_CNT103_FF101_U1_$1N5, CLRX,
+            FB100_CNT103_FF102_U1_$1N5
+        1 Fanout(s)
+            glb03.I14
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT103_FF102_U1_$1N5.D = FB100_CNT103_FF102_U1_$1N5
+            & !FB100_CNT103_FF101_U1_$1N5
+            # FB100_CNT103_FF101_U1_$1N5 & !FB100_CNT103_FF102_U1_$1N5
+        !FB100_CNT103_FF102_U1_$1N5.C = CLKX
+        FB100_CNT103_FF102_U1_$1N5.R = CLRX
+
+    Output FB100_CNT103_FF101_U1_$1N5
+
+        5 Input(s)
+            CLKX, FB100_CNT103_FF101_U1_$1N5, CLRX,
+            FB100_CNT103_FF100_U1_$1N5, FB100_CNT103_FF103_U1_$1N5
+        2 Fanout(s)
+            glb03.I15, TB_2MS.IR
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT103_FF101_U1_$1N5.D = FB100_CNT103_FF101_U1_$1N5
+            & !FB100_CNT103_FF100_U1_$1N5
+            # FB100_CNT103_FF101_U1_$1N5 & FB100_CNT103_FF103_U1_$1N5
+            # FB100_CNT103_FF100_U1_$1N5 & !FB100_CNT103_FF101_U1_$1N5
+            & !FB100_CNT103_FF103_U1_$1N5
+        !FB100_CNT103_FF101_U1_$1N5.C = CLKX
+        FB100_CNT103_FF101_U1_$1N5.R = CLRX
+
+
+GLB glb04, B5
+
+    7 Input(s)
+        (CLK.O, CLKX, I13), (CLR.O, CLRX, I7), (glb05.O0, 
+        FB100_CNT102_FF100_U1_$1N5, I15), (glb04.O3, 
+        FB100_CNT102_FF101_U1_$1N5, I17), (glb04.O2, 
+        FB100_CNT102_FF102_U1_$1N5, I9), (glb04.O1, 
+        FB100_CNT102_FF103_U1_$1N5, I10), (glb04.O0, 
+        FB100_CNT103_FF100_U1_$1N5, I16)
+    4 Output(s)
+        (FB100_CNT103_FF100_U1_$1N5, O0), 
+        (FB100_CNT102_FF103_U1_$1N5, O1), 
+        (FB100_CNT102_FF102_U1_$1N5, O2), 
+        (FB100_CNT102_FF101_U1_$1N5, O3)
+    11 Product Term(s)
+
+    Output FB100_CNT103_FF100_U1_$1N5
+
+        4 Input(s)
+            CLKX, CLRX, FB100_CNT102_FF103_U1_$1N5,
+            FB100_CNT103_FF100_U1_$1N5
+        3 Fanout(s)
+            glb03.I11, glb04.I16, TB_1MS.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT103_FF100_U1_$1N5.D = FB100_CNT103_FF100_U1_$1N5
+            & !FB100_CNT102_FF103_U1_$1N5
+            # FB100_CNT102_FF103_U1_$1N5 & !FB100_CNT103_FF100_U1_$1N5
+        !FB100_CNT103_FF100_U1_$1N5.C = CLKX
+        FB100_CNT103_FF100_U1_$1N5.R = CLRX
+
+    Output FB100_CNT102_FF103_U1_$1N5
+
+        6 Input(s)
+            CLKX, CLRX, FB100_CNT102_FF103_U1_$1N5,
+            FB100_CNT102_FF101_U1_$1N5, FB100_CNT102_FF102_U1_$1N5,
+            FB100_CNT102_FF100_U1_$1N5
+        2 Fanout(s)
+            glb04.I10, TB_500US.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT102_FF103_U1_$1N5.D = FB100_CNT102_FF103_U1_$1N5
+            & !FB100_CNT102_FF100_U1_$1N5
+            # FB100_CNT102_FF100_U1_$1N5 & FB100_CNT102_FF101_U1_$1N5
+            & FB100_CNT102_FF102_U1_$1N5 & !FB100_CNT102_FF103_U1_$1N5
+        !FB100_CNT102_FF103_U1_$1N5.C = CLKX
+        FB100_CNT102_FF103_U1_$1N5.R = CLRX
+
+    Output FB100_CNT102_FF102_U1_$1N5
+
+        4 Input(s)
+            CLKX, CLRX, FB100_CNT102_FF101_U1_$1N5,
+            FB100_CNT102_FF102_U1_$1N5
+        1 Fanout(s)
+            glb04.I9
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT102_FF102_U1_$1N5.D = FB100_CNT102_FF102_U1_$1N5
+            & !FB100_CNT102_FF101_U1_$1N5
+            # FB100_CNT102_FF101_U1_$1N5 & !FB100_CNT102_FF102_U1_$1N5
+        !FB100_CNT102_FF102_U1_$1N5.C = CLKX
+        FB100_CNT102_FF102_U1_$1N5.R = CLRX
+
+    Output FB100_CNT102_FF101_U1_$1N5
+
+        5 Input(s)
+            CLKX, CLRX, FB100_CNT102_FF103_U1_$1N5,
+            FB100_CNT102_FF101_U1_$1N5, FB100_CNT102_FF100_U1_$1N5
+        2 Fanout(s)
+            glb04.I17, TB_200US.IR
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT102_FF101_U1_$1N5.D = FB100_CNT102_FF101_U1_$1N5
+            & !FB100_CNT102_FF100_U1_$1N5
+            # FB100_CNT102_FF101_U1_$1N5 & FB100_CNT102_FF103_U1_$1N5
+            # FB100_CNT102_FF100_U1_$1N5 & !FB100_CNT102_FF101_U1_$1N5
+            & !FB100_CNT102_FF103_U1_$1N5
+        !FB100_CNT102_FF101_U1_$1N5.C = CLKX
+        FB100_CNT102_FF101_U1_$1N5.R = CLRX
+
+
+GLB glb05, A4
+
+    7 Input(s)
+        (CLK.O, CLKX, I2), (CLR.O, CLRX, I8), (glb06.O0, 
+        FB100_CNT101_FF100_U1_$1N5, I3), (glb05.O3, 
+        FB100_CNT101_FF101_U1_$1N5, I17), (glb05.O2, 
+        FB100_CNT101_FF102_U1_$1N5, I16), (glb05.O1, 
+        FB100_CNT101_FF103_U1_$1N5, I1), (glb05.O0, 
+        FB100_CNT102_FF100_U1_$1N5, I0)
+    4 Output(s)
+        (FB100_CNT102_FF100_U1_$1N5, O0), 
+        (FB100_CNT101_FF103_U1_$1N5, O1), 
+        (FB100_CNT101_FF102_U1_$1N5, O2), 
+        (FB100_CNT101_FF101_U1_$1N5, O3)
+    11 Product Term(s)
+
+    Output FB100_CNT102_FF100_U1_$1N5
+
+        4 Input(s)
+            CLKX, FB100_CNT101_FF103_U1_$1N5, CLRX,
+            FB100_CNT102_FF100_U1_$1N5
+        3 Fanout(s)
+            glb05.I0, glb04.I15, TB_100US.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT102_FF100_U1_$1N5.D = FB100_CNT102_FF100_U1_$1N5
+            & !FB100_CNT101_FF103_U1_$1N5
+            # FB100_CNT101_FF103_U1_$1N5 & !FB100_CNT102_FF100_U1_$1N5
+        !FB100_CNT102_FF100_U1_$1N5.C = CLKX
+        FB100_CNT102_FF100_U1_$1N5.R = CLRX
+
+    Output FB100_CNT101_FF103_U1_$1N5
+
+        6 Input(s)
+            FB100_CNT101_FF102_U1_$1N5, FB100_CNT101_FF100_U1_$1N5, CLKX,
+            FB100_CNT101_FF103_U1_$1N5, FB100_CNT101_FF101_U1_$1N5, CLRX
+        2 Fanout(s)
+            glb05.I1, TB_50US.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT101_FF103_U1_$1N5.D = FB100_CNT101_FF103_U1_$1N5
+            & !FB100_CNT101_FF100_U1_$1N5
+            # FB100_CNT101_FF100_U1_$1N5 & FB100_CNT101_FF101_U1_$1N5
+            & FB100_CNT101_FF102_U1_$1N5 & !FB100_CNT101_FF103_U1_$1N5
+        !FB100_CNT101_FF103_U1_$1N5.C = CLKX
+        FB100_CNT101_FF103_U1_$1N5.R = CLRX
+
+    Output FB100_CNT101_FF102_U1_$1N5
+
+        4 Input(s)
+            FB100_CNT101_FF102_U1_$1N5, CLKX, FB100_CNT101_FF101_U1_$1N5,
+            CLRX
+        1 Fanout(s)
+            glb05.I16
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT101_FF102_U1_$1N5.D = FB100_CNT101_FF102_U1_$1N5
+            & !FB100_CNT101_FF101_U1_$1N5
+            # FB100_CNT101_FF101_U1_$1N5 & !FB100_CNT101_FF102_U1_$1N5
+        !FB100_CNT101_FF102_U1_$1N5.C = CLKX
+        FB100_CNT101_FF102_U1_$1N5.R = CLRX
+
+    Output FB100_CNT101_FF101_U1_$1N5
+
+        5 Input(s)
+            FB100_CNT101_FF100_U1_$1N5, CLKX, FB100_CNT101_FF103_U1_$1N5,
+            FB100_CNT101_FF101_U1_$1N5, CLRX
+        2 Fanout(s)
+            glb05.I17, TB_20US.IR
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT101_FF101_U1_$1N5.D = FB100_CNT101_FF101_U1_$1N5
+            & !FB100_CNT101_FF100_U1_$1N5
+            # FB100_CNT101_FF101_U1_$1N5 & FB100_CNT101_FF103_U1_$1N5
+            # FB100_CNT101_FF100_U1_$1N5 & !FB100_CNT101_FF101_U1_$1N5
+            & !FB100_CNT101_FF103_U1_$1N5
+        !FB100_CNT101_FF101_U1_$1N5.C = CLKX
+        FB100_CNT101_FF101_U1_$1N5.R = CLRX
+
+
+GLB glb06, A2
+
+    7 Input(s)
+        (CLK.O, CLKX, I2), (CLR.O, CLRX, I8), (glb07.O3, 
+        FB100_CNT100_FF100_U1_$1N5, I11), (glb06.O3, 
+        FB100_CNT100_FF101_U1_$1N5, I0), (glb06.O2, 
+        FB100_CNT100_FF102_U1_$1N5, I1), (glb06.O1, 
+        FB100_CNT100_FF103_U1_$1N5, I17), (glb06.O0, 
+        FB100_CNT101_FF100_U1_$1N5, I16)
+    4 Output(s)
+        (FB100_CNT101_FF100_U1_$1N5, O0), 
+        (FB100_CNT100_FF103_U1_$1N5, O1), 
+        (FB100_CNT100_FF102_U1_$1N5, O2), 
+        (FB100_CNT100_FF101_U1_$1N5, O3)
+    11 Product Term(s)
+
+    Output FB100_CNT101_FF100_U1_$1N5
+
+        4 Input(s)
+            FB100_CNT101_FF100_U1_$1N5, CLKX, FB100_CNT100_FF103_U1_$1N5,
+            CLRX
+        3 Fanout(s)
+            glb06.I16, glb05.I3, TB_10US.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT101_FF100_U1_$1N5.D = FB100_CNT101_FF100_U1_$1N5
+            & !FB100_CNT100_FF103_U1_$1N5
+            # FB100_CNT100_FF103_U1_$1N5 & !FB100_CNT101_FF100_U1_$1N5
+        !FB100_CNT101_FF100_U1_$1N5.C = CLKX
+        FB100_CNT101_FF100_U1_$1N5.R = CLRX
+
+    Output FB100_CNT100_FF103_U1_$1N5
+
+        6 Input(s)
+            FB100_CNT100_FF102_U1_$1N5, FB100_CNT100_FF100_U1_$1N5, CLKX,
+            FB100_CNT100_FF103_U1_$1N5, FB100_CNT100_FF101_U1_$1N5, CLRX
+        2 Fanout(s)
+            glb06.I17, TB_5US.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT100_FF103_U1_$1N5.D = FB100_CNT100_FF103_U1_$1N5
+            & !FB100_CNT100_FF100_U1_$1N5
+            # FB100_CNT100_FF100_U1_$1N5 & FB100_CNT100_FF101_U1_$1N5
+            & FB100_CNT100_FF102_U1_$1N5 & !FB100_CNT100_FF103_U1_$1N5
+        !FB100_CNT100_FF103_U1_$1N5.C = CLKX
+        FB100_CNT100_FF103_U1_$1N5.R = CLRX
+
+    Output FB100_CNT100_FF102_U1_$1N5
+
+        4 Input(s)
+            FB100_CNT100_FF102_U1_$1N5, CLKX, FB100_CNT100_FF101_U1_$1N5,
+            CLRX
+        1 Fanout(s)
+            glb06.I1
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT100_FF102_U1_$1N5.D = FB100_CNT100_FF102_U1_$1N5
+            & !FB100_CNT100_FF101_U1_$1N5
+            # FB100_CNT100_FF101_U1_$1N5 & !FB100_CNT100_FF102_U1_$1N5
+        !FB100_CNT100_FF102_U1_$1N5.C = CLKX
+        FB100_CNT100_FF102_U1_$1N5.R = CLRX
+
+    Output FB100_CNT100_FF101_U1_$1N5
+
+        5 Input(s)
+            FB100_CNT100_FF100_U1_$1N5, CLKX, FB100_CNT100_FF103_U1_$1N5,
+            FB100_CNT100_FF101_U1_$1N5, CLRX
+        2 Fanout(s)
+            glb06.I0, TB_2US.IR
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT100_FF101_U1_$1N5.D = FB100_CNT100_FF101_U1_$1N5
+            & !FB100_CNT100_FF100_U1_$1N5
+            # FB100_CNT100_FF101_U1_$1N5 & FB100_CNT100_FF103_U1_$1N5
+            # FB100_CNT100_FF100_U1_$1N5 & !FB100_CNT100_FF101_U1_$1N5
+            & !FB100_CNT100_FF103_U1_$1N5
+        !FB100_CNT100_FF101_U1_$1N5.C = CLKX
+        FB100_CNT100_FF101_U1_$1N5.R = CLRX
+
+
+GLB glb07, B3
+
+    7 Input(s)
+        (CLK.O, CLKX, I13), (CLR.O, CLRX, I7), (glb07.O3, 
+        FB100_CNT100_FF100_U1_$1N5, I4), (glb03.O0, 
+        FB100_CNT104_FF100_U1_$1N5, I12), (glb07.O2, 
+        FB100_CNT104_FF101_U1_$1N5, I5), (glb07.O1, 
+        FB100_CNT104_FF102_U1_$1N5, I17), (glb07.O0, 
+        FB100_CNT104_FF103_U1_$1N5, I16)
+    4 Output(s)
+        (FB100_CNT104_FF103_U1_$1N5, O0), 
+        (FB100_CNT104_FF102_U1_$1N5, O1), 
+        (FB100_CNT104_FF101_U1_$1N5, O2), 
+        (FB100_CNT100_FF100_U1_$1N5, O3)
+    11 Product Term(s)
+
+    Output FB100_CNT104_FF103_U1_$1N5
+
+        6 Input(s)
+            CLKX, FB100_CNT104_FF103_U1_$1N5, FB100_CNT104_FF102_U1_$1N5,
+            FB100_CNT104_FF101_U1_$1N5, FB100_CNT104_FF100_U1_$1N5, CLRX
+        2 Fanout(s)
+            glb07.I16, TB_50MS.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT104_FF103_U1_$1N5.D = FB100_CNT104_FF103_U1_$1N5
+            & !FB100_CNT104_FF100_U1_$1N5
+            # FB100_CNT104_FF100_U1_$1N5 & FB100_CNT104_FF101_U1_$1N5
+            & FB100_CNT104_FF102_U1_$1N5 & !FB100_CNT104_FF103_U1_$1N5
+        !FB100_CNT104_FF103_U1_$1N5.C = CLKX
+        FB100_CNT104_FF103_U1_$1N5.R = CLRX
+
+    Output FB100_CNT104_FF102_U1_$1N5
+
+        4 Input(s)
+            CLKX, FB100_CNT104_FF102_U1_$1N5, FB100_CNT104_FF101_U1_$1N5,
+            CLRX
+        1 Fanout(s)
+            glb07.I17
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT104_FF102_U1_$1N5.D = FB100_CNT104_FF102_U1_$1N5
+            & !FB100_CNT104_FF101_U1_$1N5
+            # FB100_CNT104_FF101_U1_$1N5 & !FB100_CNT104_FF102_U1_$1N5
+        !FB100_CNT104_FF102_U1_$1N5.C = CLKX
+        FB100_CNT104_FF102_U1_$1N5.R = CLRX
+
+    Output FB100_CNT104_FF101_U1_$1N5
+
+        5 Input(s)
+            CLKX, FB100_CNT104_FF103_U1_$1N5, FB100_CNT104_FF101_U1_$1N5,
+            FB100_CNT104_FF100_U1_$1N5, CLRX
+        2 Fanout(s)
+            glb07.I5, TB_20MS.IR
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT104_FF101_U1_$1N5.D = FB100_CNT104_FF101_U1_$1N5
+            & !FB100_CNT104_FF100_U1_$1N5
+            # FB100_CNT104_FF101_U1_$1N5 & FB100_CNT104_FF103_U1_$1N5
+            # FB100_CNT104_FF100_U1_$1N5 & !FB100_CNT104_FF101_U1_$1N5
+            & !FB100_CNT104_FF103_U1_$1N5
+        !FB100_CNT104_FF101_U1_$1N5.C = CLKX
+        FB100_CNT104_FF101_U1_$1N5.R = CLRX
+
+    Output FB100_CNT100_FF100_U1_$1N5
+
+        3 Input(s)
+            FB100_CNT100_FF100_U1_$1N5, CLKX, CLRX
+        3 Fanout(s)
+            glb06.I11, glb07.I4, TB_1US.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB100_CNT100_FF100_U1_$1N5.D = FB100_CNT100_FF100_U1_$1N5 & !CLKX
+            # CLKX & !FB100_CNT100_FF100_U1_$1N5
+        !FB100_CNT100_FF100_U1_$1N5.C = CLKX
+        FB100_CNT100_FF100_U1_$1N5.R = CLRX
+
+
+GLB glb08, A1
+
+    8 Input(s)
+        (glb08.O3, FB101_I25_FF100_U1_$1N5, I7), (glb08.O2, 
+        FB101_I25_FF101_U1_$1N5, I17), (glb08.O1, 
+        FB101_I26_FF100_U1_$1N5, I5), (glb10.O0, 
+        FB101_I26_FF102_U1_$1N5, I3), (glb08.O0, 
+        FB101_I26_FF103_U1_$1N5, I16), (glb02.O2, FF101_U1_$1N77, I2), 
+        (glb01.O0, FF102_U1_$1N77, I8), (glb00.O0, 
+        FF103_U1_$1N77, I4)
+    4 Output(s)
+        (FB101_I26_FF103_U1_$1N5, O0), (FB101_I26_FF100_U1_$1N5, O1), 
+        (FB101_I25_FF101_U1_$1N5, O2), (FB101_I25_FF100_U1_$1N5, O3)
+    11 Product Term(s)
+
+    Output FB101_I26_FF103_U1_$1N5
+
+        5 Input(s)
+            FB101_I26_FF102_U1_$1N5, FB101_I26_FF103_U1_$1N5,
+            FF102_U1_$1N77, FF103_U1_$1N77, FF101_U1_$1N77
+        2 Fanout(s)
+            glb08.I16, A03.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I26_FF103_U1_$1N5.D = FB101_I26_FF102_U1_$1N5
+            & FB101_I26_FF103_U1_$1N5
+            # !FB101_I26_FF103_U1_$1N5 & !FB101_I26_FF102_U1_$1N5
+        !FB101_I26_FF103_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I26_FF103_U1_$1N5.R = !FF103_U1_$1N77
+
+    Output FB101_I26_FF100_U1_$1N5
+
+        4 Input(s)
+            FB101_I26_FF100_U1_$1N5, FF102_U1_$1N77, FF103_U1_$1N77,
+            FF101_U1_$1N77
+        3 Fanout(s)
+            glb08.I5, glb09.I10, A00.IR
+        3 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I26_FF100_U1_$1N5.D = FF101_U1_$1N77
+            & !FB101_I26_FF100_U1_$1N5
+            # FF102_U1_$1N77 & !FB101_I26_FF100_U1_$1N5
+            # FB101_I26_FF100_U1_$1N5 & !FF102_U1_$1N77 & !FF101_U1_$1N77
+        !FB101_I26_FF100_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I26_FF100_U1_$1N5.R = !FF103_U1_$1N77
+
+    Output FB101_I25_FF101_U1_$1N5
+
+        5 Input(s)
+            FF102_U1_$1N77, FB101_I25_FF101_U1_$1N5,
+            FB101_I25_FF100_U1_$1N5, FF103_U1_$1N77, FF101_U1_$1N77
+        3 Fanout(s)
+            glb08.I17, glb10.I13, A05.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I25_FF101_U1_$1N5.D = FB101_I25_FF100_U1_$1N5
+            & FB101_I25_FF101_U1_$1N5
+            # !FB101_I25_FF100_U1_$1N5 & !FB101_I25_FF101_U1_$1N5
+        !FB101_I25_FF101_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I25_FF101_U1_$1N5.R = !FF103_U1_$1N77
+
+    Output FB101_I25_FF100_U1_$1N5
+
+        5 Input(s)
+            FB101_I26_FF103_U1_$1N5, FF102_U1_$1N77,
+            FB101_I25_FF100_U1_$1N5, FF103_U1_$1N77, FF101_U1_$1N77
+        2 Fanout(s)
+            glb08.I7, A04.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I25_FF100_U1_$1N5.D = FB101_I25_FF100_U1_$1N5
+            & FB101_I26_FF103_U1_$1N5
+            # !FB101_I25_FF100_U1_$1N5 & !FB101_I26_FF103_U1_$1N5
+        !FB101_I25_FF100_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I25_FF100_U1_$1N5.R = !FF103_U1_$1N77
+
+
+GLB glb09, B6
+
+    9 Input(s)
+        (glb09.O3, FB101_I24_FF100_U1_$1N5, I15), (glb09.O2, 
+        FB101_I24_FF101_U1_$1N5, I14), (glb09.O1, 
+        FB101_I24_FF102_U1_$1N5, I17), (glb10.O1, 
+        FB101_I25_FF103_U1_$1N5, I13), (glb08.O1, 
+        FB101_I26_FF100_U1_$1N5, I10), (glb09.O0, 
+        FB101_I26_FF101_U1_$1N5, I16), (glb02.O2, FF101_U1_$1N77, I9), 
+        (glb01.O0, FF102_U1_$1N77, I7), (glb00.O0, 
+        FF103_U1_$1N77, I11)
+    4 Output(s)
+        (FB101_I26_FF101_U1_$1N5, O0), (FB101_I24_FF102_U1_$1N5, O1), 
+        (FB101_I24_FF101_U1_$1N5, O2), (FB101_I24_FF100_U1_$1N5, O3)
+    11 Product Term(s)
+
+    Output FB101_I26_FF101_U1_$1N5
+
+        5 Input(s)
+            FB101_I26_FF100_U1_$1N5, FB101_I26_FF101_U1_$1N5,
+            FF102_U1_$1N77, FF103_U1_$1N77, FF101_U1_$1N77
+        3 Fanout(s)
+            glb10.I3, glb09.I16, A01.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I26_FF101_U1_$1N5.D = FB101_I26_FF100_U1_$1N5
+            & FB101_I26_FF101_U1_$1N5
+            # !FB101_I26_FF100_U1_$1N5 & !FB101_I26_FF101_U1_$1N5
+        !FB101_I26_FF101_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I26_FF101_U1_$1N5.R = !FF103_U1_$1N77
+
+    Output FB101_I24_FF102_U1_$1N5
+
+        5 Input(s)
+            FF102_U1_$1N77, FB101_I24_FF101_U1_$1N5, FF103_U1_$1N77,
+            FF101_U1_$1N77, FB101_I24_FF102_U1_$1N5
+        3 Fanout(s)
+            glb10.I2, glb09.I17, A10.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I24_FF102_U1_$1N5.D = FB101_I24_FF101_U1_$1N5
+            & FB101_I24_FF102_U1_$1N5
+            # !FB101_I24_FF101_U1_$1N5 & !FB101_I24_FF102_U1_$1N5
+        !FB101_I24_FF102_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I24_FF102_U1_$1N5.R = !FF103_U1_$1N77
+
+    Output FB101_I24_FF101_U1_$1N5
+
+        5 Input(s)
+            FF102_U1_$1N77, FB101_I24_FF101_U1_$1N5, FF103_U1_$1N77,
+            FF101_U1_$1N77, FB101_I24_FF100_U1_$1N5
+        2 Fanout(s)
+            glb09.I14, A09.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I24_FF101_U1_$1N5.D = FB101_I24_FF100_U1_$1N5
+            & FB101_I24_FF101_U1_$1N5
+            # !FB101_I24_FF100_U1_$1N5 & !FB101_I24_FF101_U1_$1N5
+        !FB101_I24_FF101_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I24_FF101_U1_$1N5.R = !FF103_U1_$1N77
+
+    Output FB101_I24_FF100_U1_$1N5
+
+        5 Input(s)
+            FF102_U1_$1N77, FB101_I25_FF103_U1_$1N5, FF103_U1_$1N77,
+            FF101_U1_$1N77, FB101_I24_FF100_U1_$1N5
+        2 Fanout(s)
+            glb09.I15, A08.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I24_FF100_U1_$1N5.D = FB101_I24_FF100_U1_$1N5
+            & FB101_I25_FF103_U1_$1N5
+            # !FB101_I24_FF100_U1_$1N5 & !FB101_I25_FF103_U1_$1N5
+        !FB101_I24_FF100_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I24_FF100_U1_$1N5.R = !FF103_U1_$1N77
+
+
+GLB glb10, A6
+
+    10 Input(s)
+        (glb09.O1, FB101_I24_FF102_U1_$1N5, I2), (glb10.O3, 
+        FB101_I24_FF103_U1_$1N5, I0), (glb08.O2, 
+        FB101_I25_FF101_U1_$1N5, I13), (glb10.O2, 
+        FB101_I25_FF102_U1_$1N5, I1), (glb10.O1, 
+        FB101_I25_FF103_U1_$1N5, I17), (glb09.O0, 
+        FB101_I26_FF101_U1_$1N5, I3), (glb10.O0, 
+        FB101_I26_FF102_U1_$1N5, I16), (glb02.O2, FF101_U1_$1N77, I6), 
+        (glb01.O0, FF102_U1_$1N77, I8), (glb00.O0, 
+        FF103_U1_$1N77, I4)
+    4 Output(s)
+        (FB101_I26_FF102_U1_$1N5, O0), (FB101_I25_FF103_U1_$1N5, O1), 
+        (FB101_I25_FF102_U1_$1N5, O2), (FB101_I24_FF103_U1_$1N5, O3)
+    10 Product Term(s)
+
+    Output FB101_I26_FF102_U1_$1N5
+
+        5 Input(s)
+            FB101_I26_FF102_U1_$1N5, FB101_I26_FF101_U1_$1N5,
+            FF102_U1_$1N77, FF103_U1_$1N77, FF101_U1_$1N77
+        3 Fanout(s)
+            glb08.I3, glb10.I16, A02.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I26_FF102_U1_$1N5.D = FB101_I26_FF101_U1_$1N5
+            & FB101_I26_FF102_U1_$1N5
+            # !FB101_I26_FF101_U1_$1N5 & !FB101_I26_FF102_U1_$1N5
+        !FB101_I26_FF102_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I26_FF102_U1_$1N5.R = !FF103_U1_$1N77
+
+    Output FB101_I25_FF103_U1_$1N5
+
+        5 Input(s)
+            FF102_U1_$1N77, FB101_I25_FF103_U1_$1N5,
+            FB101_I25_FF102_U1_$1N5, FF103_U1_$1N77, FF101_U1_$1N77
+        3 Fanout(s)
+            glb10.I17, glb09.I13, A07.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I25_FF103_U1_$1N5.D = FB101_I25_FF102_U1_$1N5
+            & FB101_I25_FF103_U1_$1N5
+            # !FB101_I25_FF103_U1_$1N5 & !FB101_I25_FF102_U1_$1N5
+        !FB101_I25_FF103_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I25_FF103_U1_$1N5.R = !FF103_U1_$1N77
+
+    Output FB101_I25_FF102_U1_$1N5
+
+        5 Input(s)
+            FF102_U1_$1N77, FB101_I25_FF101_U1_$1N5,
+            FB101_I25_FF102_U1_$1N5, FF103_U1_$1N77, FF101_U1_$1N77
+        2 Fanout(s)
+            glb10.I1, A06.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I25_FF102_U1_$1N5.D = FB101_I25_FF101_U1_$1N5
+            & FB101_I25_FF102_U1_$1N5
+            # !FB101_I25_FF101_U1_$1N5 & !FB101_I25_FF102_U1_$1N5
+        !FB101_I25_FF102_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I25_FF102_U1_$1N5.R = !FF103_U1_$1N77
+
+    Output FB101_I24_FF103_U1_$1N5
+
+        5 Input(s)
+            FF102_U1_$1N77, FB101_I24_FF103_U1_$1N5, FF103_U1_$1N77,
+            FF101_U1_$1N77, FB101_I24_FF102_U1_$1N5
+        3 Fanout(s)
+            glb10.I0, glb01.I0, A11.IR
+        2 Product Term(s)
+        1 GLB Level(s)
+
+        FB101_I24_FF103_U1_$1N5.D = FB101_I24_FF102_U1_$1N5
+            & FB101_I24_FF103_U1_$1N5
+            # !FB101_I24_FF102_U1_$1N5 & !FB101_I24_FF103_U1_$1N5
+        !FB101_I24_FF103_U1_$1N5.C = !FF102_U1_$1N77 & !FF101_U1_$1N77
+        FB101_I24_FF103_U1_$1N5.R = !FF103_U1_$1N77
+
+
+Output A00, IO1
+
+    Input (glb08.O1, FB101_I26_FF100_U1_$1N5)
+
+    A00 = FB101_I26_FF100_U1_$1N5
+
+
+Output A01, IO56
+
+    Input (glb09.O0, FB101_I26_FF101_U1_$1N5)
+
+    A01 = FB101_I26_FF101_U1_$1N5
+
+
+Output A02, IO20
+
+    Input (glb10.O0, FB101_I26_FF102_U1_$1N5)
+
+    A02 = FB101_I26_FF102_U1_$1N5
+
+
+Output A03, IO0
+
+    Input (glb08.O0, FB101_I26_FF103_U1_$1N5)
+
+    A03 = FB101_I26_FF103_U1_$1N5
+
+
+Output A04, IO3
+
+    Input (glb08.O3, FB101_I25_FF100_U1_$1N5)
+
+    A04 = FB101_I25_FF100_U1_$1N5
+
+
+Output A05, IO2
+
+    Input (glb08.O2, FB101_I25_FF101_U1_$1N5)
+
+    A05 = FB101_I25_FF101_U1_$1N5
+
+
+Output A06, IO18
+
+    Input (glb10.O2, FB101_I25_FF102_U1_$1N5)
+
+    A06 = FB101_I25_FF102_U1_$1N5
+
+
+Output A07, IO21
+
+    Input (glb10.O1, FB101_I25_FF103_U1_$1N5)
+
+    A07 = FB101_I25_FF103_U1_$1N5
+
+
+Output A08, IO55
+
+    Input (glb09.O3, FB101_I24_FF100_U1_$1N5)
+
+    A08 = FB101_I24_FF100_U1_$1N5
+
+
+Output A09, IO50
+
+    Input (glb09.O2, FB101_I24_FF101_U1_$1N5)
+
+    A09 = FB101_I24_FF101_U1_$1N5
+
+
+Output A10, IO57
+
+    Input (glb09.O1, FB101_I24_FF102_U1_$1N5)
+
+    A10 = FB101_I24_FF102_U1_$1N5
+
+
+Output A11, IO23
+
+    Input (glb10.O3, FB101_I24_FF103_U1_$1N5)
+
+    A11 = FB101_I24_FF103_U1_$1N5
+
+
+Output C8, IO32
+
+    Input (glb00.O0, FF103_U1_$1N77)
+
+    C8 = FF103_U1_$1N77
+
+
+Output CE_RAM, IO49
+
+    Input (glb02.O1, G101_Y)
+
+    CE_RAM = G101_Y
+
+
+Input CLK, IO25
+
+    Output CLKX
+        5 Fanout(s)
+            glb06.I2, glb05.I2, glb03.I13, glb07.I13, glb04.I13
+
+
+Input CLR, IO60
+
+    Output CLRX
+        5 Fanout(s)
+            glb06.I8, glb05.I8, glb03.I7, glb07.I7, glb04.I7
+
+
+Input R2, IO8
+
+    Output R2X
+        1 Fanout(s)
+            glb01.I3
+
+
+Clock Input R3, Y1
+
+    Output R3X
+        1 Fanout(s)
+            glb00.CLK1
+
+
+Output READ, IO28
+
+    Input (glb01.O0, FF102_U1_$1N77)
+
+    READ = FF102_U1_$1N77
+
+
+Output READY, IO24
+
+    Input (glb01.O0, FF102_U1_$1N77)
+
+    READY = !FF102_U1_$1N77
+
+
+Input S1, IO42
+
+    Output S1X
+        1 Fanout(s)
+            glb00.I14
+
+
+Clock Input S2, Y0
+
+    Output S2X
+        1 Fanout(s)
+            glb02.CLK0
+
+
+Output TB_100US, IO16
+
+    Input (glb05.O0, FB100_CNT102_FF100_U1_$1N5)
+
+    TB_100US = FB100_CNT102_FF100_U1_$1N5
+
+
+Output TB_10MS, IO36
+
+    Input (glb03.O0, FB100_CNT104_FF100_U1_$1N5)
+
+    TB_10MS = FB100_CNT104_FF100_U1_$1N5
+
+
+Output TB_10US, IO4
+
+    Input (glb06.O0, FB100_CNT101_FF100_U1_$1N5)
+
+    TB_10US = FB100_CNT101_FF100_U1_$1N5
+
+
+Output TB_1MS, IO52
+
+    Input (glb04.O0, FB100_CNT103_FF100_U1_$1N5)
+
+    TB_1MS = FB100_CNT103_FF100_U1_$1N5
+
+
+Output TB_1US, IO39
+
+    Input (glb07.O3, FB100_CNT100_FF100_U1_$1N5)
+
+    TB_1US = FB100_CNT100_FF100_U1_$1N5
+
+
+Output TB_200US, IO51
+
+    Input (glb04.O3, FB100_CNT102_FF101_U1_$1N5)
+
+    TB_200US = FB100_CNT102_FF101_U1_$1N5
+
+
+Output TB_20MS, IO34
+
+    Input (glb07.O2, FB100_CNT104_FF101_U1_$1N5)
+
+    TB_20MS = FB100_CNT104_FF101_U1_$1N5
+
+
+Output TB_20US, IO19
+
+    Input (glb05.O3, FB100_CNT101_FF101_U1_$1N5)
+
+    TB_20US = FB100_CNT101_FF101_U1_$1N5
+
+
+Output TB_2MS, IO35
+
+    Input (glb03.O3, FB100_CNT103_FF101_U1_$1N5)
+
+    TB_2MS = FB100_CNT103_FF101_U1_$1N5
+
+
+Output TB_2US, IO7
+
+    Input (glb06.O3, FB100_CNT100_FF101_U1_$1N5)
+
+    TB_2US = FB100_CNT100_FF101_U1_$1N5
+
+
+Output TB_500US, IO53
+
+    Input (glb04.O1, FB100_CNT102_FF103_U1_$1N5)
+
+    TB_500US = FB100_CNT102_FF103_U1_$1N5
+
+
+Output TB_50MS, IO40
+
+    Input (glb07.O0, FB100_CNT104_FF103_U1_$1N5)
+
+    TB_50MS = FB100_CNT104_FF103_U1_$1N5
+
+
+Output TB_50US, IO17
+
+    Input (glb05.O1, FB100_CNT101_FF103_U1_$1N5)
+
+    TB_50US = FB100_CNT101_FF103_U1_$1N5
+
+
+Output TB_5MS, IO33
+
+    Input (glb03.O1, FB100_CNT103_FF103_U1_$1N5)
+
+    TB_5MS = FB100_CNT103_FF103_U1_$1N5
+
+
+Output TB_5US, IO5
+
+    Input (glb06.O1, FB100_CNT100_FF103_U1_$1N5)
+
+    TB_5US = FB100_CNT100_FF103_U1_$1N5
+
+
+Output WRAD, IO48
+
+    Input (glb02.O0, GND_986)
+
+    WRAD = GND_986
+
+
+Clock Assignments
+
+    Net Name		    Clock Assignment
+
+        R3X                     External CLK1
+        S2X                     External CLK0
+
+
+GLB and GLB Output Statistics
+
+    GLB Name, Location      GLB Statistics          GLB Output Statistics
+    GLB Output Name         Ins, Outs, PTs          Ins, FOs, PTs, Levels, PTSABP
+
+        glb00, B1                1,  1,  1          
+            FF103_U1_$1N77                               1,  4,  0,  1, -   
+
+        glb01, A7                2,  1,  2          
+            FF102_U1_$1N77                               2,  6,  0,  1, -   
+
+        glb02, B4                2,  3,  2          
+            FF101_U1_$1N77                               1,  4,  1,  1, 1PT 
+            G101_Y                                       2,  1,  1,  1, 1PT 
+            GND_986                                      0,  1,  0,  0, -   
+
+        glb03, B2                7,  4, 11          
+            FB100..._$1N5 *1                             5,  2,  3,  1, 4PT 
+            FB100..._$1N5 *2                             4,  1,  2,  1, 4PT 
+            FB100..._$1N5 *3                             6,  2,  2,  1, 4PT 
+            FB100..._$1N5 *4                             4,  3,  2,  1, 4PT 
+
+        glb04, B5                7,  4, 11          
+            FB100..._$1N5 *5                             5,  2,  3,  1, 4PT 
+            FB100..._$1N5 *6                             4,  1,  2,  1, 4PT 
+            FB100..._$1N5 *7                             6,  2,  2,  1, 4PT 
+            FB100..._$1N5 *8                             4,  3,  2,  1, 4PT 
+
+        glb05, A4                7,  4, 11          
+            FB100..._$1N5 *9                             5,  2,  3,  1, 4PT 
+            FB100..._$1N5 *10                            4,  1,  2,  1, 4PT 
+            FB100..._$1N5 *11                            6,  2,  2,  1, 4PT 
+            FB100..._$1N5 *12                            4,  3,  2,  1, 4PT 
+
+        glb06, A2                7,  4, 11          
+            FB100..._$1N5 *13                            5,  2,  3,  1, 4PT 
+            FB100..._$1N5 *14                            4,  1,  2,  1, 4PT 
+            FB100..._$1N5 *15                            6,  2,  2,  1, 4PT 
+            FB100..._$1N5 *16                            4,  3,  2,  1, 4PT 
+
+        glb07, B3                7,  4, 11          
+            FB100..._$1N5 *17                            3,  3,  2,  1, 4PT 
+            FB100..._$1N5 *18                            5,  2,  3,  1, 4PT 
+            FB100..._$1N5 *19                            4,  1,  2,  1, 4PT 
+            FB100..._$1N5 *20                            6,  2,  2,  1, 4PT 
+
+        glb08, A1                8,  4, 11          
+            FB101..._$1N5 *21                            5,  2,  2,  1, 4PT 
+            FB101..._$1N5 *22                            5,  3,  2,  1, 4PT 
+            FB101..._$1N5 *23                            4,  3,  3,  1, 4PT 
+            FB101..._$1N5 *24                            5,  2,  2,  1, 4PT 
+
+        glb09, B6                9,  4, 11          
+            FB101..._$1N5 *25                            5,  2,  2,  1, 4PT 
+            FB101..._$1N5 *26                            5,  2,  2,  1, 4PT 
+            FB101..._$1N5 *27                            5,  3,  2,  1, 4PT 
+            FB101..._$1N5 *28                            5,  3,  2,  1, 4PT 
+
+        glb10, A6               10,  4, 10          
+            FB101..._$1N5 *29                            5,  3,  2,  1, 4PT 
+            FB101..._$1N5 *30                            5,  2,  2,  1, 4PT 
+            FB101..._$1N5 *31                            5,  3,  2,  1, 4PT 
+            FB101..._$1N5 *32                            5,  3,  2,  1, 4PT 
+
+
+Pin Assignments
+
+    Pin Name                Pin Assignment          Pin Type, Pin Attribute
+
+        WRAD                    3                       Output, PULLUP
+        CE_RAM                  4                       Output, PULLUP
+        A09                     5                       Output, PULLUP
+        TB_200US                6                       Output, PULLUP
+        TB_1MS                  7                       Output, PULLUP
+        TB_500US                8                       Output, PULLUP
+        A08                     10                      Output, PULLUP
+        A01                     11                      Output, PULLUP
+        A10                     12                      Output, PULLUP
+        CLR                     15                      Input, PULLUP
+        S2                      20                      Clock Input, PULLUP
+        A03                     26                      Output, PULLUP
+        A00                     27                      Output, PULLUP
+        A05                     28                      Output, PULLUP
+        A04                     29                      Output, PULLUP
+        TB_10US                 30                      Output, PULLUP
+        TB_5US                  31                      Output, PULLUP
+        TB_2US                  33                      Output, PULLUP
+        R2                      34                      Input, PULLUP
+        TB_100US                45                      Output, PULLUP
+        TB_50US                 46                      Output, PULLUP
+        A06                     47                      Output, PULLUP
+        TB_20US                 48                      Output, PULLUP
+        A02                     49                      Output, PULLUP
+        A07                     50                      Output, PULLUP
+        A11                     52                      Output, PULLUP
+        READY                   53                      Output, PULLUP
+        CLK                     54                      Input, PULLUP
+        READ                    57                      Output, PULLUP
+        R3                      66                      Clock Input, PULLUP
+        C8                      68                      Output, PULLUP
+        TB_5MS                  69                      Output, PULLUP
+        TB_20MS                 70                      Output, PULLUP
+        TB_2MS                  71                      Output, PULLUP
+        TB_10MS                 72                      Output, PULLUP
+        TB_1US                  75                      Output, PULLUP
+        TB_50MS                 76                      Output, PULLUP
+        S1                      78                      Input, PULLUP
+
+
+Index Name Table
+
+    *1  FB100_CNT103_FF101_U1_$1N5
+    *2  FB100_CNT103_FF102_U1_$1N5
+    *3  FB100_CNT103_FF103_U1_$1N5
+    *4  FB100_CNT104_FF100_U1_$1N5
+    *5  FB100_CNT102_FF101_U1_$1N5
+    *6  FB100_CNT102_FF102_U1_$1N5
+    *7  FB100_CNT102_FF103_U1_$1N5
+    *8  FB100_CNT103_FF100_U1_$1N5
+    *9  FB100_CNT101_FF101_U1_$1N5
+    *10 FB100_CNT101_FF102_U1_$1N5
+    *11 FB100_CNT101_FF103_U1_$1N5
+    *12 FB100_CNT102_FF100_U1_$1N5
+    *13 FB100_CNT100_FF101_U1_$1N5
+    *14 FB100_CNT100_FF102_U1_$1N5
+    *15 FB100_CNT100_FF103_U1_$1N5
+    *16 FB100_CNT101_FF100_U1_$1N5
+    *17 FB100_CNT100_FF100_U1_$1N5
+    *18 FB100_CNT104_FF101_U1_$1N5
+    *19 FB100_CNT104_FF102_U1_$1N5
+    *20 FB100_CNT104_FF103_U1_$1N5
+    *21 FB101_I25_FF100_U1_$1N5
+    *22 FB101_I25_FF101_U1_$1N5
+    *23 FB101_I26_FF100_U1_$1N5
+    *24 FB101_I26_FF103_U1_$1N5
+    *25 FB101_I24_FF100_U1_$1N5
+    *26 FB101_I24_FF101_U1_$1N5
+    *27 FB101_I24_FF102_U1_$1N5
+    *28 FB101_I26_FF101_U1_$1N5
+    *29 FB101_I24_FF103_U1_$1N5
+    *30 FB101_I25_FF102_U1_$1N5
+    *31 FB101_I25_FF103_U1_$1N5
+    *32 FB101_I26_FF102_U1_$1N5
+
+
+Design process management completed successfully

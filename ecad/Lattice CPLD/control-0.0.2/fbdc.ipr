@@ -1,0 +1,7 @@
+[fbdc]
+submodule=g_2and;
+submodule=g_2nor;
+submodule=g_buf;
+submodule=g_inv;
+submodule=g_tc;
+

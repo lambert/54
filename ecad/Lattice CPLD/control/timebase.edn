@@ -1,0 +1,193 @@
+(edif ECS
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2007 2 11 21 51 28)
+      (program "edifnets" (Version "2.1"))
+      (dataOrigin "ispLEVER"
+        (Version "2.01.28.41.02"))))
+  (library MAIN (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell FBDC (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port B
+            (direction INPUT))
+          (port CLEAR
+            (direction INPUT))
+          (port CLK
+            (direction INPUT))
+          (port QA
+            (direction OUTPUT))
+          (port QB
+            (direction OUTPUT))
+          (port QC
+            (direction OUTPUT))
+          (port QD
+            (direction OUTPUT)))))
+    (cell TIMEBASE (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port GND (direction INPUT))
+          (port VCC (direction INPUT))
+          (port TB_CLEAR
+            (direction INPUT))
+          (port TB_CLK
+            (direction INPUT))
+          (port TB_100us
+            (direction OUTPUT))
+          (port TB_10us
+            (direction OUTPUT))
+          (port TB_1ms
+            (direction OUTPUT))
+          (port TB_1us
+            (direction OUTPUT))
+          (port TB_200us
+            (direction OUTPUT))
+          (port TB_20us
+            (direction OUTPUT))
+          (port TB_2ms
+            (direction OUTPUT))
+          (port TB_2us
+            (direction OUTPUT))
+          (port TB_500us
+            (direction OUTPUT))
+          (port TB_50us
+            (direction OUTPUT))
+          (port TB_5ms
+            (direction OUTPUT))
+          (port TB_5us
+            (direction OUTPUT)))
+        (contents
+          (instance FB104
+            (viewRef V1
+              (cellRef FBDC))
+            (portInstance QC
+              (unused)))
+          (instance FB103
+            (viewRef V1
+              (cellRef FBDC))
+            (portInstance QC
+              (unused)))
+          (instance FB102
+            (viewRef V1
+              (cellRef FBDC))
+            (portInstance QC
+              (unused)))
+          (instance FB101
+            (viewRef V1
+              (cellRef FBDC))
+            (portInstance QC
+              (unused)))
+          (net GND
+            (joined
+              (globalPortRef GND)))
+          (net VCC
+            (joined
+              (globalPortRef VCC)))
+          (net TB_5ms
+            (joined
+              (portRef TB_5ms)
+              (portRef QD
+                (instanceRef FB104))))
+          (net TB_100us
+            (joined
+              (portRef TB_100us)
+              (portRef QA
+                (instanceRef FB103))
+              (portRef B
+                (instanceRef FB103))))
+          (net TB_200us
+            (joined
+              (portRef TB_200us)
+              (portRef QB
+                (instanceRef FB103))))
+          (net TB_500us
+            (joined
+              (portRef TB_500us)
+              (portRef A
+                (instanceRef FB104))
+              (portRef QD
+                (instanceRef FB103))))
+          (net TB_1ms
+            (joined
+              (portRef TB_1ms)
+              (portRef QA
+                (instanceRef FB104))
+              (portRef B
+                (instanceRef FB104))))
+          (net TB_2ms
+            (joined
+              (portRef TB_2ms)
+              (portRef QB
+                (instanceRef FB104))))
+          (net TB_1us
+            (joined
+              (portRef TB_1us)
+              (portRef QA
+                (instanceRef FB101))
+              (portRef B
+                (instanceRef FB101))))
+          (net TB_2us
+            (joined
+              (portRef TB_2us)
+              (portRef QB
+                (instanceRef FB101))))
+          (net TB_5us
+            (joined
+              (portRef TB_5us)
+              (portRef A
+                (instanceRef FB102))
+              (portRef QD
+                (instanceRef FB101))))
+          (net TB_10us
+            (joined
+              (portRef TB_10us)
+              (portRef QA
+                (instanceRef FB102))
+              (portRef B
+                (instanceRef FB102))))
+          (net TB_20us
+            (joined
+              (portRef TB_20us)
+              (portRef QB
+                (instanceRef FB102))))
+          (net TB_50us
+            (joined
+              (portRef TB_50us)
+              (portRef A
+                (instanceRef FB103))
+              (portRef QD
+                (instanceRef FB102))))
+          (net TB_CLK
+            (joined
+              (portRef TB_CLK)
+              (portRef A
+                (instanceRef FB101))
+              (portRef CLK
+                (instanceRef FB101))
+              (portRef CLK
+                (instanceRef FB102))
+              (portRef CLK
+                (instanceRef FB103))
+              (portRef CLK
+                (instanceRef FB104))))
+          (net TB_CLEAR
+            (joined
+              (portRef TB_CLEAR)
+              (portRef CLEAR
+                (instanceRef FB101))
+              (portRef CLEAR
+                (instanceRef FB102))
+              (portRef CLEAR
+                (instanceRef FB103))
+              (portRef CLEAR
+                (instanceRef FB104))))))))
+  (design timebase
+    (cellRef timebase
+      (libraryRef MAIN))))

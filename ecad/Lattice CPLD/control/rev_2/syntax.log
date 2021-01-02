@@ -1,0 +1,11 @@
+$ Start of Compile
+#Mon Aug 07 21:05:39 2006
+
+Synplicity VHDL Compiler, version 7.1, Build 158R, built Apr 18 2002
+Copyright (C) 1994-2002, Synplicity Inc.  All Rights Reserved
+
+@E:"C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\addresscounter.vhd":4:8:4:15|Can't find library generics
+@E:"C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\addresscounter.vhd":5:8:5:14|Can't find library lat_vhd
+@E:"C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\addresscounter.vhd":6:27:6:27|Identifier ieee is not declared
+@END
+Process took 0.0309999 seconds realtime, 0.031 seconds cputime

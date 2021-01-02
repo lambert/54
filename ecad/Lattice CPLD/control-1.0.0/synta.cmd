@@ -1,0 +1,1 @@
+C:\ispLEVER-2.0\ispcomp/bin/ta.exe -f -su -tpd -tco control 

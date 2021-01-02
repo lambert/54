@@ -1,0 +1,498 @@
+#$ TOOL ispLEVER 6.0.00.33.17.06
+#$ DATE Sat Jul 15 19:26:13 2006
+#$ TITLE control.bls 
+#$ MODULE control
+#$ PINS 38 S2 WRAD'o'  CE_RAM'o'  READY'o'  READ'o'  C8'o'  CLR CLK R2 R3 S1 TB_1us'o'  TB_2us'o'  TB_5us'o'  \
+#  TB_10us'o'  TB_20us'o'  TB_50us'o'  TB_100us'o'  TB_200us'o'  TB_500us'o'  TB_1ms'o'  TB_2ms'o'  TB_5ms'o'  \
+#  TB_10ms'o'  TB_20ms'o'  TB_50ms'o'  A00'o'  A01'o'  A02'o'  A03'o'  A04'o'  A05'o'  A06'o'  A07'o'  A08'o'  A09'o'  A10'o'  A11'o' 
+#$ NODES 36 N_57'o'  N_55'o'  N_49'o'  N_42'o'  N_40'o'  N_3'o'  N_4'o'  N_5'o'  N_6'o'  N_7'o'  N_8'o'  N_9'o'  N_10'o'  N_11'o'  \
+#  N_12'o'  N_13'o'  N_14'o'  N_15'o'  N_16'o'  N_17'o'  N_19'o'  N_20'o'  N_21'o'  N_22'o'  N_23'o'  N_24'o'  N_25'o'  N_26'o'  N_27'o'  \
+#  N_28'o'  N_29'o'  FB100/CNT104>OUTPUT_QC'o'  FB100/CNT103>OUTPUT_QC'o'  \
+#  FB100/CNT102>OUTPUT_QC'o'  FB100/CNT101>OUTPUT_QC'o'  FB100/CNT100>OUTPUT_QC'o' 
+.model control
+.inputs CLK.BLIF CLR.BLIF R2.BLIF R3.BLIF S1.BLIF S2.BLIF N_57.BLIF N_49.BLIF \
+N_40.BLIF N_55.BLIF N_14.BLIF N_10.BLIF N_13.BLIF N_17.BLIF N_20.BLIF \
+N_24.BLIF N_28.BLIF N_4.BLIF N_29.BLIF N_25.BLIF N_21.BLIF N_42.BLIF N_6.BLIF \
+N_8.BLIF N_11.BLIF N_15.BLIF N_19.BLIF N_22.BLIF N_26.BLIF N_3.BLIF N_27.BLIF \
+N_23.BLIF N_16.BLIF N_12.BLIF N_9.BLIF N_7.BLIF N_5.BLIF \
+FB100/CNT104>OUTPUT_QC.BLIF FB100/CNT103>OUTPUT_QC.BLIF \
+FB100/CNT102>OUTPUT_QC.BLIF FB100/CNT101>OUTPUT_QC.BLIF \
+FB100/CNT100>OUTPUT_QC.BLIF
+.outputs N_55.RE N_55.J N_55.K N_55.C N_57.RE N_57.J N_57.K N_57.C N_49.RE \
+N_49.J N_49.K N_49.C N_40.RE N_40.J N_40.K N_40.C A00 A01 A02 A03 A04 A05 A06 \
+A07 A08 A09 A10 A11 C8 CE_RAM READ READY TB_1us TB_2us TB_5us TB_10us TB_20us \
+TB_50us TB_100us TB_200us TB_500us TB_1ms TB_2ms TB_5ms TB_10ms TB_20ms \
+TB_50ms WRAD N_10.RE N_10.T N_10.C N_13.RE N_13.T N_13.C N_17.RE N_17.T N_17.C \
+N_20.RE N_20.T N_20.C N_24.RE N_24.T N_24.C N_28.RE N_28.T N_28.C N_4.RE N_4.T \
+N_4.C N_29.RE N_29.T N_29.C N_25.RE N_25.T N_25.C N_21.RE N_21.T N_21.C \
+N_42.RE N_42.T N_42.C N_14.RE N_14.T N_14.C N_26.RE N_26.T N_26.C N_9.RE N_9.T \
+N_9.C N_15.RE N_15.T N_15.C N_23.RE N_23.T N_23.C N_6.RE N_6.T N_6.C N_3.RE \
+N_3.T N_3.C N_7.RE N_7.T N_7.C N_19.RE N_19.T N_19.C N_16.RE N_16.T N_16.C \
+N_8.RE N_8.T N_8.C N_27.RE N_27.T N_27.C N_5.RE N_5.T N_5.C N_22.RE N_22.T \
+N_22.C N_12.RE N_12.T N_12.C N_11.RE N_11.T N_11.C FB100/CNT104>OUTPUT_QC.RE \
+FB100/CNT104>OUTPUT_QC.T FB100/CNT104>OUTPUT_QC.C FB100/CNT103>OUTPUT_QC.RE \
+FB100/CNT103>OUTPUT_QC.T FB100/CNT103>OUTPUT_QC.C FB100/CNT102>OUTPUT_QC.RE \
+FB100/CNT102>OUTPUT_QC.T FB100/CNT102>OUTPUT_QC.C FB100/CNT101>OUTPUT_QC.RE \
+FB100/CNT101>OUTPUT_QC.T FB100/CNT101>OUTPUT_QC.C FB100/CNT100>OUTPUT_QC.RE \
+FB100/CNT100>OUTPUT_QC.T FB100/CNT100>OUTPUT_QC.C
+.names N_55.RE
+ 1
+.names N_57.BLIF N_55.J
+0 1
+1 0
+.names N_57.BLIF N_55.K
+1 1
+0 0
+.names CLK.BLIF N_55.C
+1 1
+0 0
+.names N_55.BLIF N_57.RE
+1 1
+0 0
+.names N_55.BLIF N_57.J
+1 1
+0 0
+.names N_57.K
+ 0
+.names S2.BLIF N_57.C
+1 1
+0 0
+.names R2.BLIF N_49.RE
+1 1
+0 0
+.names N_49.J
+ 1
+.names N_49.K
+ 0
+.names N_14.BLIF N_49.C
+1 1
+0 0
+.names S1.BLIF N_40.RE
+1 1
+0 0
+.names N_40.J
+ 1
+.names N_40.K
+ 0
+.names R3.BLIF N_40.C
+1 1
+0 0
+.names N_10.BLIF A00
+1 1
+0 0
+.names N_13.BLIF A01
+1 1
+0 0
+.names N_17.BLIF A02
+1 1
+0 0
+.names N_20.BLIF A03
+1 1
+0 0
+.names N_24.BLIF A04
+1 1
+0 0
+.names N_28.BLIF A05
+1 1
+0 0
+.names N_4.BLIF A06
+1 1
+0 0
+.names N_29.BLIF A07
+1 1
+0 0
+.names N_25.BLIF A08
+1 1
+0 0
+.names N_21.BLIF A09
+1 1
+0 0
+.names N_42.BLIF A10
+1 1
+0 0
+.names N_14.BLIF A11
+1 1
+0 0
+.names N_40.BLIF C8
+1 1
+0 0
+.names N_57.BLIF N_49.BLIF CE_RAM
+00 1
+1- 0
+-1 0
+.names N_49.BLIF READ
+1 1
+0 0
+.names N_49.BLIF READY
+0 1
+1 0
+.names N_6.BLIF TB_1us
+1 1
+0 0
+.names N_8.BLIF TB_2us
+1 1
+0 0
+.names N_11.BLIF TB_5us
+1 1
+0 0
+.names N_15.BLIF TB_10us
+1 1
+0 0
+.names N_19.BLIF TB_20us
+1 1
+0 0
+.names N_22.BLIF TB_50us
+1 1
+0 0
+.names N_26.BLIF TB_100us
+1 1
+0 0
+.names N_3.BLIF TB_200us
+1 1
+0 0
+.names N_27.BLIF TB_500us
+1 1
+0 0
+.names N_23.BLIF TB_1ms
+1 1
+0 0
+.names N_16.BLIF TB_2ms
+1 1
+0 0
+.names N_12.BLIF TB_5ms
+1 1
+0 0
+.names N_9.BLIF TB_10ms
+1 1
+0 0
+.names N_7.BLIF TB_20ms
+1 1
+0 0
+.names N_5.BLIF TB_50ms
+1 1
+0 0
+.names N_55.BLIF WRAD
+1 1
+0 0
+.names N_40.BLIF N_10.RE
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_10.T
+1- 1
+-1 1
+00 0
+.names N_57.BLIF N_49.BLIF N_10.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_13.RE
+0 1
+1 0
+.names N_10.BLIF N_13.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_13.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_17.RE
+0 1
+1 0
+.names N_13.BLIF N_17.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_17.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_20.RE
+0 1
+1 0
+.names N_17.BLIF N_20.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_20.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_24.RE
+0 1
+1 0
+.names N_20.BLIF N_24.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_24.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_28.RE
+0 1
+1 0
+.names N_24.BLIF N_28.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_28.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_4.RE
+0 1
+1 0
+.names N_28.BLIF N_4.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_4.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_29.RE
+0 1
+1 0
+.names N_4.BLIF N_29.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_29.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_25.RE
+0 1
+1 0
+.names N_29.BLIF N_25.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_25.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_21.RE
+0 1
+1 0
+.names N_25.BLIF N_21.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_21.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_42.RE
+0 1
+1 0
+.names N_21.BLIF N_42.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_42.C
+1- 1
+-1 1
+00 0
+.names N_40.BLIF N_14.RE
+0 1
+1 0
+.names N_42.BLIF N_14.T
+0 1
+1 0
+.names N_57.BLIF N_49.BLIF N_14.C
+1- 1
+-1 1
+00 0
+.names CLR.BLIF N_26.RE
+1 1
+0 0
+.names N_22.BLIF N_26.T
+1 1
+0 0
+.names CLK.BLIF N_26.C
+0 1
+1 0
+.names CLR.BLIF N_9.RE
+1 1
+0 0
+.names N_12.BLIF N_9.T
+1 1
+0 0
+.names CLK.BLIF N_9.C
+0 1
+1 0
+.names CLR.BLIF N_15.RE
+1 1
+0 0
+.names N_11.BLIF N_15.T
+1 1
+0 0
+.names CLK.BLIF N_15.C
+0 1
+1 0
+.names CLR.BLIF N_23.RE
+1 1
+0 0
+.names N_27.BLIF N_23.T
+1 1
+0 0
+.names CLK.BLIF N_23.C
+0 1
+1 0
+.names CLR.BLIF N_6.RE
+1 1
+0 0
+.names CLK.BLIF N_6.T
+1 1
+0 0
+.names CLK.BLIF N_6.C
+0 1
+1 0
+.names CLR.BLIF N_3.RE
+1 1
+0 0
+.names N_26.BLIF N_27.BLIF N_3.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_3.C
+0 1
+1 0
+.names CLR.BLIF N_7.RE
+1 1
+0 0
+.names N_9.BLIF N_5.BLIF N_7.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_7.C
+0 1
+1 0
+.names CLR.BLIF N_19.RE
+1 1
+0 0
+.names N_15.BLIF N_22.BLIF N_19.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_19.C
+0 1
+1 0
+.names CLR.BLIF N_16.RE
+1 1
+0 0
+.names N_23.BLIF N_12.BLIF N_16.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_16.C
+0 1
+1 0
+.names CLR.BLIF N_8.RE
+1 1
+0 0
+.names N_6.BLIF N_11.BLIF N_8.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_8.C
+0 1
+1 0
+.names CLR.BLIF N_27.RE
+1 1
+0 0
+.names N_26.BLIF N_3.BLIF N_27.BLIF FB100/CNT102>OUTPUT_QC.BLIF N_27.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_27.C
+0 1
+1 0
+.names CLR.BLIF N_5.RE
+1 1
+0 0
+.names N_9.BLIF N_7.BLIF N_5.BLIF FB100/CNT104>OUTPUT_QC.BLIF N_5.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_5.C
+0 1
+1 0
+.names CLR.BLIF N_22.RE
+1 1
+0 0
+.names N_15.BLIF N_19.BLIF N_22.BLIF FB100/CNT101>OUTPUT_QC.BLIF N_22.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_22.C
+0 1
+1 0
+.names CLR.BLIF N_12.RE
+1 1
+0 0
+.names N_23.BLIF N_16.BLIF N_12.BLIF FB100/CNT103>OUTPUT_QC.BLIF N_12.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_12.C
+0 1
+1 0
+.names CLR.BLIF N_11.RE
+1 1
+0 0
+.names N_6.BLIF N_8.BLIF N_11.BLIF FB100/CNT100>OUTPUT_QC.BLIF N_11.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_11.C
+0 1
+1 0
+.names CLR.BLIF FB100/CNT104>OUTPUT_QC.RE
+1 1
+0 0
+.names N_7.BLIF FB100/CNT104>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF FB100/CNT104>OUTPUT_QC.C
+0 1
+1 0
+.names CLR.BLIF FB100/CNT103>OUTPUT_QC.RE
+1 1
+0 0
+.names N_16.BLIF FB100/CNT103>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF FB100/CNT103>OUTPUT_QC.C
+0 1
+1 0
+.names CLR.BLIF FB100/CNT102>OUTPUT_QC.RE
+1 1
+0 0
+.names N_3.BLIF FB100/CNT102>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF FB100/CNT102>OUTPUT_QC.C
+0 1
+1 0
+.names CLR.BLIF FB100/CNT101>OUTPUT_QC.RE
+1 1
+0 0
+.names N_19.BLIF FB100/CNT101>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF FB100/CNT101>OUTPUT_QC.C
+0 1
+1 0
+.names CLR.BLIF FB100/CNT100>OUTPUT_QC.RE
+1 1
+0 0
+.names N_8.BLIF FB100/CNT100>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF FB100/CNT100>OUTPUT_QC.C
+0 1
+1 0
+.end

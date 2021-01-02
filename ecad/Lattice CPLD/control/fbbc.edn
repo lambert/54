@@ -1,0 +1,202 @@
+(edif ECS
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2007 2 11 21 51 26)
+      (program "edifnets" (Version "2.1"))
+      (dataOrigin "ispLEVER"
+        (Version "2.01.28.41.02"))))
+  (external regs (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell G_TC (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port C
+            (direction INPUT))
+          (port CLK
+            (direction INPUT))
+          (port T
+            (direction INPUT))
+          (port Q
+            (direction OUTPUT))))))
+  (external gates (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell G_INV (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port YN
+            (direction OUTPUT)))))
+    (cell G_BUF (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port Y
+            (direction OUTPUT))))))
+  (library MAIN (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell FBBC (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port GND (direction INPUT))
+          (port VCC (direction INPUT))
+          (port A
+            (direction INPUT))
+          (port CLEAR
+            (direction INPUT))
+          (port CLK
+            (direction INPUT))
+          (port QA
+            (direction OUTPUT))
+          (port QB
+            (direction OUTPUT))
+          (port QC
+            (direction OUTPUT))
+          (port QD
+            (direction OUTPUT)))
+        (contents
+          (instance G201
+            (viewRef V1
+              (cellRef G_BUF
+                (libraryRef gates))))
+          (instance FF202
+            (viewRef V1
+              (cellRef G_TC
+                (libraryRef regs))))
+          (instance FF201
+            (viewRef V1
+              (cellRef G_TC
+                (libraryRef regs))))
+          (instance FF200
+            (viewRef V1
+              (cellRef G_TC
+                (libraryRef regs))))
+          (instance FF203
+            (viewRef V1
+              (cellRef G_TC
+                (libraryRef regs))))
+          (instance G203
+            (viewRef V1
+              (cellRef G_INV
+                (libraryRef gates))))
+          (instance G205
+            (viewRef V1
+              (cellRef G_INV
+                (libraryRef gates))))
+          (instance G204
+            (viewRef V1
+              (cellRef G_INV
+                (libraryRef gates))))
+          (instance G202
+            (viewRef V1
+              (cellRef G_INV
+                (libraryRef gates))))
+          (instance G200
+            (viewRef V1
+              (cellRef G_INV
+                (libraryRef gates))))
+          (net GND
+            (joined
+              (globalPortRef GND)))
+          (net VCC
+            (joined
+              (globalPortRef VCC)))
+          (net QD
+            (joined
+              (portRef QD)
+              (portRef Q
+                (instanceRef FF203))))
+          (net QC
+            (joined
+              (portRef QC)
+              (portRef A
+                (instanceRef G205))
+              (portRef Q
+                (instanceRef FF202))))
+          (net QB
+            (joined
+              (portRef QB)
+              (portRef A
+                (instanceRef G204))
+              (portRef Q
+                (instanceRef FF201))))
+          (net QA
+            (joined
+              (portRef QA)
+              (portRef Q
+                (instanceRef FF200))
+              (portRef A
+                (instanceRef G203))))
+          (net A
+            (joined
+              (portRef A)
+              (portRef A
+                (instanceRef G200))))
+          (net N_1
+            (joined
+              (portRef T
+                (instanceRef FF201))
+              (portRef YN
+                (instanceRef G203))))
+          (net N_2
+            (joined
+              (portRef T
+                (instanceRef FF202))
+              (portRef YN
+                (instanceRef G204))))
+          (net N_3
+            (joined
+              (portRef T
+                (instanceRef FF203))
+              (portRef YN
+                (instanceRef G205))))
+          (net N_4
+            (joined
+              (portRef YN
+                (instanceRef G202))
+              (portRef CLK
+                (instanceRef FF200))
+              (portRef CLK
+                (instanceRef FF201))
+              (portRef CLK
+                (instanceRef FF202))
+              (portRef CLK
+                (instanceRef FF203))))
+          (net N_5
+            (joined
+              (portRef YN
+                (instanceRef G200))
+              (portRef T
+                (instanceRef FF200))))
+          (net N_6
+            (joined
+              (portRef Y
+                (instanceRef G201))
+              (portRef C
+                (instanceRef FF200))
+              (portRef C
+                (instanceRef FF201))
+              (portRef C
+                (instanceRef FF202))
+              (portRef C
+                (instanceRef FF203))))
+          (net CLEAR
+            (joined
+              (portRef CLEAR)
+              (portRef A
+                (instanceRef G201))))
+          (net CLK
+            (joined
+              (portRef CLK)
+              (portRef A
+                (instanceRef G202))))))))
+  (design fbbc
+    (cellRef fbbc
+      (libraryRef MAIN))))

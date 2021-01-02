@@ -1,0 +1,6 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Starting: 'C:\ispLEVER-6.0\ispcpld\bin\checkini.exe -err=automake.err "C:\ispLEVER-6.0\ispcpld\config\lc.ini"'
+
+Done: completed successfully.

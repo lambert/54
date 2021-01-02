@@ -1,0 +1,7 @@
+INPUT_A  i
+CLEAR  i
+CLK  i
+OUTPUT_QA  o
+OUTPUT_QB  o
+OUTPUT_QC  o
+OUTPUT_QD  o

@@ -1,0 +1,4 @@
+Part Number: M4A5-256/128-10YI
+C:\ispLEVER-6.0\ispvmsystem/ispufw -dev M4A5-256/128-XXY -if control.jed -oft -isc -lever
+Invoke process : C:\ispLEVER-6.0\ispvmsystem/ispufw -dev M4A5-256/128-XXY -if control.jed -oft -isc -lever
+ISC file is generated successfully

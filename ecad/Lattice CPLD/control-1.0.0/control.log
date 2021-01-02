@@ -1,0 +1,196 @@
+ispEXPERT Compiler Release 2.01.28.02, May 20 2002 13:06:40
+
+Copyright (C) 1994-2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+
+Design Process Management 
+
+Renaming existing log file to control.lo-
+Renaming existing rpt file to control.rp-
+
+Preprocessing design 'control'...
+
+Processing design 'control'...
+
+
+Logical LAF Reading and Translation 
+  
+Reading file 'c:\documents and settings\bert\mijn documenten\mijn proje-
+      cten\rabulab\54_control_unit\electrical\lattice\control\control.l-
+      af'... 
+  
+Checking design rules... 
+Selected part is 'ispLSI2064A-80LJ84'; 'ispLSI2064E-100LT100' is 
+      recommended for new designs 
+32504 WARNING: Attribute 'Y1_AS_RESET ON' is not valid for part 
+      'ispLSI2064A-80LJ84'; attribute 'Y1_AS_RESET ON' is ignored 
+32561 WARNING: Option 'OPENDRAIN OFF' is not valid for part 
+      'ispLSI2064A-80LJ84'; option 'OPENDRAIN OFF' is ignored 
+  
+Writing output files... 
+  
+Logical LAF reading and translation completed successfully 
+
+
+Synthesis and Partitioning 
+  
+Reading design 'control'... 
+  
+Optimizing logic... 
+33582 WARNING: Reset input of register 'FF100_U1_$1I56' is connected to 
+      VCC; register is removed 
+33540 WARNING: Clock 'CLK' does not drive any registers; clock is 
+      removed 
+  
+Trying to move PT reset signal to global reset pin... 
+      PT reset signal cannot be moved to global reset pin 
+      In order to move PT reset signal to global reset pin, the 
+      following conditions need to be satisfied: 
+      1. There exists at least one pin which drives all register's reset
+      signals 
+      2. This pin is unlocked 
+      3. This pin does not drive any data signals 
+      4. This pin can be disjointly decomposed with other pins, if any, 
+      which drive reset signals 
+33519 WARNING: Part 'ispLSI2064A-80LJ84' does not support clock GLB; 
+       clock 'FB100_CNT104_G101_YN' is changed to PT clock 
+33519 WARNING: Part 'ispLSI2064A-80LJ84' does not support clock GLB; 
+       clock 'FB101_I24_G102_YN' is changed to PT clock 
+33519 WARNING: Part 'ispLSI2064A-80LJ84' does not support clock GLB; 
+       clock 'FB101_I24_FF103_U1_$1N5' is changed to PT clock 
+  
+Partitioning logic into 16-input, 16-input with DIs, functions to 
+      minimize delay... 
+  
+Extracting LXOR2 gates to minimize delay... 
+  
+Packing functions into GLBs using 16 inputs and 4 outputs per GLB to 
+      minimize delay... 
+Constant VCC drives register 'FF102_U1_$1I56' data input 
+Constant VCC drives register 'FF103_U1_$1I56' data input 
+Constant GND drives pin 'WRAD' 
+  
+Synthesis and partitioning statistics: 
+  
+Number of Macrocells is 37 
+Number of GLBs is 11 
+Number of product terms is 72 
+Maximum number of GLB levels is 1 
+Average number of inputs per GLB is 6.1 
+Average number of outputs per GLB is 3.4 
+Average number of product terms per GLB is 6.5 
+  
+Synthesis and partitioning completed successfully 
+
+
+Physical LAF Reading and Translation
+
+Reading design 'control'...
+
+Writing output files...
+
+Physical LAF reading and translation completed successfully
+
+
+Placement and Routing
+
+Reading design 'control'...
+
+Routing
+
+
+Writing output files...
+
+Placement and routing completed successfully
+
+
+Technology Remapping 
+  
+Reading design 'control'... 
+  
+Remapping... 
+  
+Writing output files... 
+  
+Writing output lco files... 
+  
+Technology remapping completed successfully 
+
+
+Physical LAF Reading and Translation
+
+Reading design 'control'...
+
+Writing output files...
+
+Physical LAF reading and translation completed successfully
+
+
+Fusemap Generation
+
+Reading design 'control'...
+
+Writing output files...
+
+Fusemap generation completed successfully
+
+
+Simulation LAF Netlist Generation
+
+Reading design 'control'...
+
+Writing output files...
+
+
+Information: Global reset (XRESET) is generated to reset all registers
+
+
+
+Simulation LAF netlist generation completed successfully
+
+
+Timing Analyzer 
+Reading design control .... 
+
+Evaluating maximum operating frequency...
+Evaluating setup and hold times...
+              
+Calculating  Tpd Path delays ...
+
+................................
+
+              
+     
+Timing analyzer completed successfully 
+
+
+
+Lattice Verilog netlist writer
+Copyright (c) 1993 - 2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+writing verilog netlist ...
+
+Verilog netlist writer completed successfully.
+
+
+
+Lattice VHDL netlist writer
+Copyright (c) 1993 - 2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+writing vhdl file ...
+
+MSG: Cross reference file [CONTROL.vxf] is created
+       Invalid VHDL identifiers are mapped to new unique names.
+       You can use -ext_id option to use extended identifiers if your
+       target system supports extended VHDL identifiers.
+
+
+Please use file [CONTROL.vxf] for cross referencing original and new VHDL names
+
+VHDL netlist writer completed successfully.
+
+
+Design process management completed successfully

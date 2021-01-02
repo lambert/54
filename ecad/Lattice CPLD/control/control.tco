@@ -1,0 +1,55 @@
+
+Tco Path Report:
+-----------------
+
+Design Name: CONTROL
+Part Name: ispLSI2064A-80LJ84
+   This report lists all the path delays from a primary input
+   that drives the Clock input of a register, whose Q output
+   drives a primary output
+
+ Tco Path Definition:
+ Tco =  Maximum delay from primary input to register clock_pin 
+      + Maximum delay of register  clock-to-Q
+      + Maximum delay from register Q_output to primary output
+
+
+Tco Paths:
+
+  Register            Source              Destination              Path Delay
+  Name                Reference Clock     Primary Output             [ns]
+==----------------------------------------------------------------------------------
+  GLB_...$1N5 *1      CLK                 TB_5US                   19.80 
+  GLB_...$1N5 *2      CLK                 TB_1MS                   19.80 
+  GLB_...$1N5 *3      CLK                 TB_100US                 19.80 
+  GLB_...1N77 *4      S2                  CE_RAM                   20.50 
+  GLB_...$1N5 *5      CLK                 TB_200US                 19.80 
+  GLB_...$1N5 *6      CLK                 TB_10US                  19.80 
+  GLB_...$1N5 *7      CLK                 TB_5MS                   19.80 
+  GLB_...$1N5 *8      CLK                 TB_20US                  19.80 
+  GLB_...$1N5 *9      CLK                 TB_1US                   19.80 
+  GLB_...$1N5 *10     CLK                 TB_500US                 19.80 
+  GLB_...$1N5 *11     CLK                 TB_2US                   19.80 
+  GLB_...$1N5 *12     CLK                 TB_2MS                   19.80 
+  GLB_...1N77 *13     R3                  C8                       8.00  
+  GLB_...$1N5 *14     CLK                 TB_50US                  19.80 
+==--------------------------------------------------------------------------------
+
+Index Name Table
+==----------------------------------------
+    *1  GLB_FB100_FB101_FF103_U1_$1N5
+    *2  GLB_FB100_FB104_FF100_U1_$1N5
+    *3  GLB_FB100_FB103_FF100_U1_$1N5
+    *4  GLB_FF001_U1_$1N77
+    *5  GLB_FB100_FB103_FF101_U1_$1N5
+    *6  GLB_FB100_FB102_FF100_U1_$1N5
+    *7  GLB_FB100_FB104_FF103_U1_$1N5
+    *8  GLB_FB100_FB102_FF101_U1_$1N5
+    *9  GLB_FB100_FB101_FF100_U1_$1N5
+    *10  GLB_FB100_FB103_FF103_U1_$1N5
+    *11  GLB_FB100_FB101_FF101_U1_$1N5
+    *12  GLB_FB100_FB104_FF101_U1_$1N5
+    *13  GLB_FF003_U1_$1N77
+    *14  GLB_FB100_FB102_FF103_U1_$1N5
+==----------------------------------------
+

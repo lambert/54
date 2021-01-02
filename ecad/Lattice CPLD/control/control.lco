@@ -1,0 +1,98 @@
+[DEVICE]
+Family = plsi2k;
+PartNumber = ispLSI2064A-80LJ84;
+PartType = ispLSI2064A;
+Package = 84PLCC;
+Speed = 80;
+Operating_condition = COM;
+Default_Device_Io_Types = LVCMOS50,-;
+
+[REVISION]
+RCS = ;
+Parent = lc2k.lci;
+Design = control;
+DATE = 03/11/2007;
+TIME = 21:51:50;
+Source_Format = ;
+Type = ;
+Pre_Fit_Time = ;
+
+[IGNORE ASSIGNMENTS]
+
+[CLEAR ASSIGNMENTS]
+
+[BACKANNOTATE ASSIGNMENTS]
+
+[GLOBAL CONSTRAINTS]
+Security = Off;
+PULLUP = Up;
+ISP = On;
+ISP_EXCEPT_Y2 = Off;
+SLEWRATE = Off;
+
+[FITTER REPORT FORMAT]
+
+[LOCATION ASSIGNMENTS]
+S2 = pin, 20, -, -, -;
+S1 = pin, 27, -, -, -;
+R3 = pin, 66, -, -, -;
+R2 = pin, 18, -, -, -;
+CLK = pin, 59, -, -, -;
+WRAD = pin, 15, -, -, -;
+TB_5US = pin, 35, -, -, -;
+TB_5MS = pin, 72, -, -, -;
+TB_50US = pin, 46, -, -, -;
+TB_500US = pin, 8, -, -, -;
+TB_2US = pin, 33, -, -, -;
+TB_2MS = pin, 74, -, -, -;
+TB_20US = pin, 48, -, -, -;
+TB_200US = pin, 6, -, -, -;
+TB_1US = pin, 75, -, -, -;
+TB_1MS = pin, 11, -, -, -;
+TB_10US = pin, 30, -, -, -;
+TB_100US = pin, 45, -, -, -;
+READY = pin, 3, -, -, -;
+READ = pin, 7, -, -, -;
+CE_RAM = pin, 12, -, -, -;
+C8 = pin, 53, -, -, -;
+A11 = pin, 26, -, -, -;
+A10 = pin, 68, -, -, -;
+A09 = pin, 49, -, -, -;
+A08 = pin, 50, -, -, -;
+A07 = pin, 47, -, -, -;
+A06 = pin, 52, -, -, -;
+A05 = pin, 69, -, -, -;
+A04 = pin, 70, -, -, -;
+A03 = pin, 71, -, -, -;
+A02 = pin, 31, -, -, -;
+A01 = pin, 28, -, -, -;
+A00 = pin, 29, -, -, -;
+
+[PULLUP]
+Up = S2, S1, R3, R2, CLK, WRAD, TB_5US, TB_5MS, TB_50US, TB_500US, TB_2US, TB_2MS, TB_20US, TB_200US, TB_1US, TB_1MS, TB_10US, TB_100US, READY, READ, CE_RAM, C8, A11, A10, A09, A08, A07, A06, A05, A04, A03, A02, A01, A00; 
+
+[SLEWRATE]
+FAST = WRAD, TB_5US, TB_5MS, TB_50US, TB_500US, TB_2US, TB_2MS, TB_20US, TB_200US, TB_1US, TB_1MS, TB_10US, TB_100US, READY, READ, CE_RAM, C8, A11, A10, A09, A08, A07, A06, A05, A04, A03, A02, A01, A00; 
+
+[IO TYPES]
+
+[OSM Bypass]
+
+[CLK]
+CLK0 = S2X; 
+CLK1 = R3X, 
+
+[PTSABYPASS]
+Bypass = FB100_FB103_FF101_U1_$1N5, FB100_FB103_FF102_U1_$1N5, FB100_FB103_FF103_U1_$1N5, FB100_FB104_FF100_U1_$1N5, FB100_FB102_FF101_U1_$1N5, FB100_FB102_FF102_U1_$1N5, FB100_FB102_FF103_U1_$1N5, FB100_FB103_FF100_U1_$1N5, FB100_FB101_FF101_U1_$1N5, FB100_FB101_FF102_U1_$1N5, FB100_FB101_FF103_U1_$1N5, FB100_FB102_FF100_U1_$1N5, FB100_FB101_FF100_U1_$1N5, FB100_FB104_FF101_U1_$1N5, FB100_FB104_FF102_U1_$1N5, FB100_FB104_FF103_U1_$1N5, FB200_FB201_FF200_U1_$1N5, FB200_FB201_FF201_U1_$1N5, FB200_FB201_FF202_U1_$1N5, FB200_FB203_FF203_U1_$1N5, FB200_FB201_FF203_U1_$1N5, FB200_FB202_FF200_U1_$1N5, FB200_FB202_FF201_U1_$1N5, FB200_FB203_FF202_U1_$1N5, FB200_FB202_FF202_U1_$1N5, FB200_FB202_FF203_U1_$1N5, FB200_FB203_FF200_U1_$1N5, FB200_FB203_FF201_U1_$1N5; 
+
+[Fitter Results]
+I/O_Pin_Util = 50;
+I/O_Pin = 32;
+Logic_PT_Util = 25;
+Logic_PT = 80;
+Logic_MC_Util = 51;
+Logic_MC = 33;
+Occupied_PT_Util = 35;
+Occupied_PT = 114;
+GLB_input_Util = 20;
+GLB_input = 58;

@@ -1,0 +1,5 @@
+-devfile "C:\ispLEVER-2.0\ispcpld/data/lc2k/la2064_84j.dev"
+-lci control.lct
+-touch control.ir0
+-src control.emf
+-type EDIF

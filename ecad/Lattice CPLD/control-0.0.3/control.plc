@@ -1,0 +1,89 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 6.0.00.33.17.06                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+; Source file control.tt4
+; FITTER-generated Placements.
+; DEVICE   mach466a
+; DATE     Sat Jul 15 19:26:32 2006
+
+
+Pin   74  S2
+Pin   174  CE_RAM Comb ; S6=1  S9=1  Pair 581
+Pin   117  READY Reg  ; S6=0  S9=0  Pair 479
+Pin   153  READ Reg  ; S6=1  S9=0  Pair 527
+Pin   22  CLR
+Pin   21  CLK
+Pin   31  R2
+Pin   187  R3
+Pin   72  S1
+Pin   5  WRAD Reg  ; S6=1  S9=0  Pair 257
+Pin   64  C8 Reg  ; S6=1  S9=1  Pair 383
+Pin   43  TB_1us Reg  ; S6=1  S9=0  Pair 341
+Pin   205  TB_2us Reg  ; S6=1  S9=0  Pair 233
+Pin   201  TB_5us Reg  ; S6=1  S9=0  Pair 245
+Pin   207  TB_10us Reg  ; S6=1  S9=0  Pair 239
+Pin   160  TB_20us Reg  ; S6=1  S9=0  Pair 545
+Pin   158  TB_50us Reg  ; S6=1  S9=0  Pair 551
+Pin   19  TB_100us Reg  ; S6=1  S9=0  Pair 293
+Pin   15  TB_200us Reg  ; S6=1  S9=0  Pair 281
+Pin   13  TB_500us Reg  ; S6=1  S9=0  Pair 287
+Pin   49  TB_1ms Reg  ; S6=1  S9=0  Pair 335
+Pin   37  TB_2ms Reg  ; S6=1  S9=0  Pair 305
+Pin   39  TB_5ms Reg  ; S6=1  S9=0  Pair 311
+Pin   47  TB_10ms Reg  ; S6=1  S9=0  Pair 329
+Pin   195  TB_20ms Reg  ; S6=1  S9=0  Pair 209
+Pin   197  TB_50ms Reg  ; S6=1  S9=0  Pair 215
+Pin   141  A00 Reg  ; S6=1  S9=0  Pair 497
+Pin   143  A01 Reg  ; S6=1  S9=0  Pair 503
+Pin   151  A02 Reg  ; S6=1  S9=0  Pair 521
+Pin   54  A03 Reg  ; S6=1  S9=0  Pair 359
+Pin   168  A04 Reg  ; S6=1  S9=0  Pair 575
+Pin   56  A05 Reg  ; S6=1  S9=0  Pair 353
+Pin   170  A06 Reg  ; S6=1  S9=0  Pair 569
+Pin   101  A07 Reg  ; S6=1  S9=0  Pair 425
+Pin   66  A08 Reg  ; S6=1  S9=0  Pair 377
+Pin   93  A09 Reg  ; S6=1  S9=0  Pair 407
+Pin   119  A10 Reg  ; S6=1  S9=0  Pair 473
+Pin   91  A11 Reg  ; S6=1  S9=0  Pair 401
+Node  257  RN_WRAD Reg  ; S6=1  S9=0 
+Node  383  RN_C8 Reg  ; S6=1  S9=1 
+Node  341  RN_TB_1us Reg  ; S6=1  S9=0 
+Node  233  RN_TB_2us Reg  ; S6=1  S9=0 
+Node  245  RN_TB_5us Reg  ; S6=1  S9=0 
+Node  239  RN_TB_10us Reg  ; S6=1  S9=0 
+Node  545  RN_TB_20us Reg  ; S6=1  S9=0 
+Node  551  RN_TB_50us Reg  ; S6=1  S9=0 
+Node  293  RN_TB_100us Reg  ; S6=1  S9=0 
+Node  281  RN_TB_200us Reg  ; S6=1  S9=0 
+Node  287  RN_TB_500us Reg  ; S6=1  S9=0 
+Node  335  RN_TB_1ms Reg  ; S6=1  S9=0 
+Node  305  RN_TB_2ms Reg  ; S6=1  S9=0 
+Node  311  RN_TB_5ms Reg  ; S6=1  S9=0 
+Node  329  RN_TB_10ms Reg  ; S6=1  S9=0 
+Node  209  RN_TB_20ms Reg  ; S6=1  S9=0 
+Node  215  RN_TB_50ms Reg  ; S6=1  S9=0 
+Node  497  RN_A00 Reg  ; S6=1  S9=0 
+Node  503  RN_A01 Reg  ; S6=1  S9=0 
+Node  521  RN_A02 Reg  ; S6=1  S9=0 
+Node  359  RN_A03 Reg  ; S6=1  S9=0 
+Node  575  RN_A04 Reg  ; S6=1  S9=0 
+Node  353  RN_A05 Reg  ; S6=1  S9=0 
+Node  569  RN_A06 Reg  ; S6=1  S9=0 
+Node  425  RN_A07 Reg  ; S6=1  S9=0 
+Node  377  RN_A08 Reg  ; S6=1  S9=0 
+Node  407  RN_A09 Reg  ; S6=1  S9=0 
+Node  473  RN_A10 Reg  ; S6=1  S9=0 
+Node  401  RN_A11 Reg  ; S6=1  S9=0 
+Node  431  N_57 Reg  ; S6=1  S9=1 
+Node  509  N_49 Reg  ; S6=1  S9=0 
+Node  269  D0_OUTPUT_QC Reg  ; S6=1  S9=0 
+Node  317  E0_OUTPUT_QC Reg  ; S6=1  S9=0 
+Node  455  F0_OUTPUT_QC Reg  ; S6=1  S9=0 
+Node  263  G0_OUTPUT_QC Reg  ; S6=1  S9=0 
+Node  449  H0_OUTPUT_QC Reg  ; S6=1  S9=0 
+; Unused Pins & Nodes
+; -> None Found.

@@ -1,0 +1,319 @@
+
+Timing Report for STAMP
+
+//  Project = control
+//  Family  = mach4a
+//  Device  = mach496a
+//  Speed   = -10
+//  Voltage = 5.0
+//  Operating Condition = COM
+//  Data sheet version  = RevD-8/2000
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+
+Section IO
+  //DESTINATION NODES;
+  A00 [out]
+  A01 [out]
+  A02 [out]
+  A03 [out]
+  A04 [out]
+  A05 [out]
+  A06 [out]
+  A07 [out]
+  A08 [out]
+  A09 [out]
+  A10 [out]
+  A11 [out]
+  C8 [out]
+  CE_RAM [out]
+  READ [out]
+  READY [out]
+  TB_1ms [out]
+  TB_1us [out]
+  TB_2ms [out]
+  TB_2us [out]
+  TB_5ms [out]
+  TB_5us [out]
+  TB_10ms [out]
+  TB_10us [out]
+  TB_20ms [out]
+  TB_20us [out]
+  TB_50ms [out]
+  TB_50us [out]
+  TB_100us [out]
+  TB_200us [out]
+  TB_500us [out]
+  WRAD [out]
+  A00.C [reg]
+  A01.C [reg]
+  A02.C [reg]
+  A03.C [reg]
+  A04.C [reg]
+  A05.C [reg]
+  A06.C [reg]
+  A07.C [reg]
+  A08.C [reg]
+  A09.C [reg]
+  A10.C [reg]
+  A11.C [reg]
+  C8.C [reg]
+  D0_OUTPUT_QC.C [reg]
+  E0_OUTPUT_QC.C [reg]
+  F0_OUTPUT_QC.C [reg]
+  G0_OUTPUT_QC.C [reg]
+  H0_OUTPUT_QC.C [reg]
+  N_49.C [reg]
+  N_57.C [reg]
+  READ.C [reg]
+  READY.C [reg]
+  TB_1ms.C [reg]
+  TB_1us.C [reg]
+  TB_2ms.C [reg]
+  TB_2us.C [reg]
+  TB_5ms.C [reg]
+  TB_5us.C [reg]
+  TB_10ms.C [reg]
+  TB_10us.C [reg]
+  TB_20ms.C [reg]
+  TB_20us.C [reg]
+  TB_50ms.C [reg]
+  TB_50us.C [reg]
+  TB_100us.C [reg]
+  TB_200us.C [reg]
+  TB_500us.C [reg]
+  WRAD.C [reg]
+  A00.D [reg]
+  A01.D [reg]
+  A02.D [reg]
+  A03.D [reg]
+  A04.D [reg]
+  A05.D [reg]
+  A06.D [reg]
+  A07.D [reg]
+  A08.D [reg]
+  A09.D [reg]
+  A10.D [reg]
+  A11.D [reg]
+  C8.D [reg]
+  D0_OUTPUT_QC.D [reg]
+  E0_OUTPUT_QC.D [reg]
+  F0_OUTPUT_QC.D [reg]
+  G0_OUTPUT_QC.D [reg]
+  H0_OUTPUT_QC.D [reg]
+  N_49.D [reg]
+  N_57.D [reg]
+  READ.D [reg]
+  READY.D [reg]
+  TB_1ms.D [reg]
+  TB_1us.D [reg]
+  TB_2ms.D [reg]
+  TB_2us.D [reg]
+  TB_5ms.D [reg]
+  TB_5us.D [reg]
+  TB_10ms.D [reg]
+  TB_10us.D [reg]
+  TB_20ms.D [reg]
+  TB_20us.D [reg]
+  TB_50ms.D [reg]
+  TB_50us.D [reg]
+  TB_100us.D [reg]
+  TB_200us.D [reg]
+  TB_500us.D [reg]
+  WRAD.D [reg]
+
+  //SOURCE NODES;
+  CLK [in]
+  CLR [in]
+  R2 [in]
+  R3 [in]
+  S1 [in]
+  S2 [in]
+  A00.Q [reg]
+  A01.Q [reg]
+  A02.Q [reg]
+  A03.Q [reg]
+  A04.Q [reg]
+  A05.Q [reg]
+  A06.Q [reg]
+  A07.Q [reg]
+  A08.Q [reg]
+  A09.Q [reg]
+  A10.Q [reg]
+  A11.Q [reg]
+  C8.Q [reg]
+  D0_OUTPUT_QC.Q [reg]
+  E0_OUTPUT_QC.Q [reg]
+  F0_OUTPUT_QC.Q [reg]
+  G0_OUTPUT_QC.Q [reg]
+  H0_OUTPUT_QC.Q [reg]
+  N_49.Q [reg]
+  N_57.Q [reg]
+  READ.Q [reg]
+  READY.Q [reg]
+  TB_1ms.Q [reg]
+  TB_1us.Q [reg]
+  TB_2ms.Q [reg]
+  TB_2us.Q [reg]
+  TB_5ms.Q [reg]
+  TB_5us.Q [reg]
+  TB_10ms.Q [reg]
+  TB_10us.Q [reg]
+  TB_20ms.Q [reg]
+  TB_20us.Q [reg]
+  TB_50ms.Q [reg]
+  TB_50us.Q [reg]
+  TB_100us.Q [reg]
+  TB_200us.Q [reg]
+  TB_500us.Q [reg]
+  WRAD.Q [reg]
+
+
+Section fMAX
+
+  Maximum Operating Frequency: 83.33 MHz
+  Clock Source From:           S2
+  Logic Levels:                1
+  Path Delay:                  12.0 ns
+  Path Expansion                                Source                        Destination
+  ==============                                ======                        ===========
+    8.0  tCOAi                                  A00.C                         A00.Q
+    0.0                                         A00.Q                         A00.D
+    4.0  tSA                                    A00.D                         A00.C
+
+  Clock Source From: CLK
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+    8.5           1      A1       =>  A1        D0_OUTPUT_QC.C                D0_OUTPUT_QC.D                CLK
+    8.5           1      A1       =>  C8        D0_OUTPUT_QC.C                TB_50ms.D                     CLK
+    8.5           1      E9       =>  E9        E0_OUTPUT_QC.C                E0_OUTPUT_QC.D                CLK
+    8.5           1      E9       =>  E1        E0_OUTPUT_QC.C                TB_5ms.D                      CLK
+    8.5           1      D5       =>  D5        F0_OUTPUT_QC.C                F0_OUTPUT_QC.D                CLK
+    8.5           1      D5       =>  D4        F0_OUTPUT_QC.C                TB_500us.D                    CLK
+    8.5           1      C5       =>  C5        G0_OUTPUT_QC.C                G0_OUTPUT_QC.D                CLK
+    8.5           1      C5       =>  C12       G0_OUTPUT_QC.C                TB_50us.D                     CLK
+    8.5           1      A5       =>  A5        H0_OUTPUT_QC.C                H0_OUTPUT_QC.D                CLK
+    8.5           1      A5       =>  A8        H0_OUTPUT_QC.C                TB_5us.D                      CLK
+    8.5           1      F1       =>  F1        TB_1ms.C                      TB_1ms.D                      CLK
+    8.5           1      F1       =>  E0        TB_1ms.C                      TB_2ms.D                      CLK
+    8.5           1      F1       =>  E1        TB_1ms.C                      TB_5ms.D                      CLK
+    8.5           1      A12      =>  A12       TB_1us.C                      TB_1us.D                      CLK
+    8.5           1      A12      =>  A0        TB_1us.C                      TB_2us.D                      CLK
+    8.5           1      A12      =>  A8        TB_1us.C                      TB_5us.D                      CLK
+    8.5           1      E0       =>  E9        TB_2ms.C                      E0_OUTPUT_QC.D                CLK
+    8.5           1      E0       =>  E0        TB_2ms.C                      TB_2ms.D                      CLK
+    8.5           1      E0       =>  E1        TB_2ms.C                      TB_5ms.D                      CLK
+    8.5           1      A0       =>  A5        TB_2us.C                      H0_OUTPUT_QC.D                CLK
+    8.5           1      A0       =>  A0        TB_2us.C                      TB_2us.D                      CLK
+    8.5           1      A0       =>  A8        TB_2us.C                      TB_5us.D                      CLK
+    8.5           1      E1       =>  E0        TB_5ms.C                      TB_2ms.D                      CLK
+    8.5           1      E1       =>  E1        TB_5ms.C                      TB_5ms.D                      CLK
+    8.5           1      E1       =>  E12       TB_5ms.C                      TB_10ms.D                     CLK
+    8.5           1      A8       =>  A0        TB_5us.C                      TB_2us.D                      CLK
+    8.5           1      A8       =>  A8        TB_5us.C                      TB_5us.D                      CLK
+    8.5           1      A8       =>  A4        TB_5us.C                      TB_10us.D                     CLK
+    8.5           1      E12      =>  E12       TB_10ms.C                     TB_10ms.D                     CLK
+    8.5           1      E12      =>  C0        TB_10ms.C                     TB_20ms.D                     CLK
+    8.5           1      E12      =>  C8        TB_10ms.C                     TB_50ms.D                     CLK
+    8.5           1      A4       =>  A4        TB_10us.C                     TB_10us.D                     CLK
+    8.5           1      A4       =>  C4        TB_10us.C                     TB_20us.D                     CLK
+    8.5           1      A4       =>  C12       TB_10us.C                     TB_50us.D                     CLK
+    8.5           1      C0       =>  A1        TB_20ms.C                     D0_OUTPUT_QC.D                CLK
+    8.5           1      C0       =>  C0        TB_20ms.C                     TB_20ms.D                     CLK
+    8.5           1      C0       =>  C8        TB_20ms.C                     TB_50ms.D                     CLK
+    8.5           1      C4       =>  C5        TB_20us.C                     G0_OUTPUT_QC.D                CLK
+    8.5           1      C4       =>  C4        TB_20us.C                     TB_20us.D                     CLK
+    8.5           1      C4       =>  C12       TB_20us.C                     TB_50us.D                     CLK
+    8.5           1      C8       =>  C0        TB_50ms.C                     TB_20ms.D                     CLK
+    8.5           1      C8       =>  C8        TB_50ms.C                     TB_50ms.D                     CLK
+    8.5           1      C12      =>  C4        TB_50us.C                     TB_20us.D                     CLK
+    8.5           1      C12      =>  C12       TB_50us.C                     TB_50us.D                     CLK
+    8.5           1      C12      =>  D8        TB_50us.C                     TB_100us.D                    CLK
+    8.5           1      D8       =>  D8        TB_100us.C                    TB_100us.D                    CLK
+    8.5           1      D8       =>  D0        TB_100us.C                    TB_200us.D                    CLK
+    8.5           1      D8       =>  D4        TB_100us.C                    TB_500us.D                    CLK
+    8.5           1      D0       =>  D5        TB_200us.C                    F0_OUTPUT_QC.D                CLK
+    8.5           1      D0       =>  D0        TB_200us.C                    TB_200us.D                    CLK
+    8.5           1      D0       =>  D4        TB_200us.C                    TB_500us.D                    CLK
+    8.5           1      D4       =>  F1        TB_500us.C                    TB_1ms.D                      CLK
+    8.5           1      D4       =>  D0        TB_500us.C                    TB_200us.D                    CLK
+    8.5           1      D4       =>  D4        TB_500us.C                    TB_500us.D                    CLK
+    8.5           1      B9       =>  D1        WRAD.C                        N_57.D                        S2
+
+  Clock Source From: S2
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+   12.0           1      F0       =>  F0        A00.C                         A00.D                          
+   12.0           1      F0       =>  F12       A00.C                         A01.D                          
+   12.0           1      F12      =>  F12       A01.C                         A01.D                          
+   12.0           1      F12      =>  F8        A01.C                         A02.D                          
+   12.0           1      F8       =>  F8        A02.C                         A02.D                          
+   12.0           1      F8       =>  B5        A02.C                         A03.D                          
+   12.0           1      B5       =>  B5        A03.C                         A03.D                          
+   12.0           1      B5       =>  B1        A03.C                         A04.D                          
+   12.0           1      B1       =>  B1        A04.C                         A04.D                          
+   12.0           1      B1       =>  E8        A04.C                         A05.D                          
+   12.0           1      E8       =>  E8        A05.C                         A05.D                          
+   12.0           1      E8       =>  E4        A05.C                         A06.D                          
+   12.0           1      E4       =>  E4        A06.C                         A06.D                          
+   12.0           1      E4       =>  B12       A06.C                         A07.D                          
+   12.0           1      B12      =>  B12       A07.C                         A07.D                          
+   12.0           1      B12      =>  B8        A07.C                         A08.D                          
+   12.0           1      B8       =>  B8        A08.C                         A08.D                          
+   12.0           1      B8       =>  B4        A08.C                         A09.D                          
+   12.0           1      B4       =>  B4        A09.C                         A09.D                          
+   12.0           1      B4       =>  B0        A09.C                         A10.D                          
+   12.0           1      B0       =>  B0        A10.C                         A10.D                          
+   12.0           1      B0       =>  F4        A10.C                         A11.D                          
+   12.0           1      F4       =>  F4        A11.C                         A11.D                          
+   12.0           1      F9       =>  F0        N_49.C                        A00.D                          
+    8.5           1      D1       =>  D1        N_57.C                        N_57.D                        S2
+    8.5           1      D1       =>  B9        N_57.C                        WRAD.D                        CLK
+    7.0           1      D1       =>  F0        N_57.C                        A00.D                          
+
+
+Section tSU
+
+  tSU,    tHD   Level   Location(From => To)    Source                        Destination                   Reference_Clock
+  ===========   =====   ====================    ======                        ===========                   ===============
+   5.5,   0.0     1     p61       =>  A12       CLK                           TB_1us.D                      CLK
+
+
+Section tCO
+
+    tCO         Level   Location(From => To)    Source                        Destination                   Register_Clock
+    ===         =====   ====================    ======                        ===========                   ==============
+   13.0           2     p11       => p68        S2                            CE_RAM                        N_57.C
+    6.0           1     p61       => p83        CLK                           TB_1ms                        TB_1ms.C
+    6.0           1     p61       => p96        CLK                           TB_1us                        TB_1us.C
+    6.0           1     p61       => p59        CLK                           TB_2ms                        TB_2ms.C
+    6.0           1     p61       => p94        CLK                           TB_2us                        TB_2us.C
+    6.0           1     p61       => p58        CLK                           TB_5ms                        TB_5ms.C
+    6.0           1     p61       => p5         CLK                           TB_5us                        TB_5us.C
+    6.0           1     p61       => p65        CLK                           TB_10ms                       TB_10ms.C
+    6.0           1     p61       => p92        CLK                           TB_10us                       TB_10us.C
+    6.0           1     p61       => p32        CLK                           TB_20ms                       TB_20ms.C
+    6.0           1     p61       => p34        CLK                           TB_20us                       TB_20us.C
+    6.0           1     p61       => p20        CLK                           TB_50ms                       TB_50ms.C
+    6.0           1     p61       => p30        CLK                           TB_50us                       TB_50us.C
+    6.0           1     p61       => p55        CLK                           TB_100us                      TB_100us.C
+    6.0           1     p61       => p44        CLK                           TB_200us                      TB_200us.C
+    6.0           1     p61       => p42        CLK                           TB_500us                      TB_500us.C
+    6.0           1     p61       => p9         CLK                           WRAD                          WRAD.C
+    6.0           1     p14       => p33        R3                            C8                            C8.C

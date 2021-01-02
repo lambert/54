@@ -1,0 +1,186 @@
+
+[DEVICE]
+Family = M4A5;
+PartType = M4A5-96/48;
+Package = 100TQFP;
+PartNumber = M4A5-96/48-10VC;
+Speed = -10;
+Operating_condition = COM;
+EN_Segment = No;
+Pin_MC_1to1 = No;
+EN_PinReserve_IO = Yes;
+EN_PinReserve_BIDIR = Yes;
+Voltage = 5.0;
+
+[REVISION]
+RCS = $Revision: 1.5 $;
+Parent = m4a5.lci;
+SDS_File = m4a5.sds;
+Design = control.tt4;
+DATE = 7/9/06;
+TIME = 22:07:50;
+Source_Format = Schematic_VHDL;
+Type = TT2;
+Pre_Fit_Time = 1;
+
+[IGNORE ASSIGNMENTS]
+Pin_Assignments = No;
+Pin_Keep_Block = No;
+Pin_Keep_Segment = No;
+Group_Assignments = No;
+Macrocell_Assignments = No;
+Macrocell_Keep_Block = No;
+Macrocell_Keep_Segment = No;
+Pin_Reservation = No;
+Block_Reservation = No;
+Segment_Reservation = No;
+Timing_Constraints = No;
+
+[CLEAR ASSIGNMENTS]
+Pin_Assignments = No;
+Pin_Keep_Block = No;
+Pin_Keep_Segment = No;
+Group_Assignments = No;
+Macrocell_Assignments = No;
+Macrocell_Keep_Block = No;
+Macrocell_Keep_Segment = No;
+Pin_Reservation = No;
+Block_Reservation = No;
+Segment_Reservation = No;
+Timing_Constraints = No;
+
+[BACKANNOTATE ASSIGNMENTS]
+Pin_Block = No;
+Pin_Macrocell_Block = No;
+Routing = No;
+
+[GLOBAL CONSTRAINTS]
+Max_PTerm_Split = 16;
+Max_PTerm_Collapse = 16;
+Max_Pin_Percent = 100;
+Max_Macrocell_Percent = 100;
+Max_GLB_Input_Percent = 100;
+Max_Seg_In_Percent = 100;
+Logic_Reduction = Yes;
+XOR_Synthesis = Yes;
+DT_Synthesis = Yes;
+Netlist = VHDL;
+Node_Collapse = Yes;
+Run_Time = 0;
+Set_Reset_Dont_Care = No;
+Clock_Optimize = No;
+In_Reg_Optimize = Yes;
+Balanced_Partitioning = Yes;
+Device_max_fanin = 33;
+Device_max_pterms = 20;
+Usercode = 0;
+Usercode_Format = Hex;
+
+[LOCATION ASSIGNMENTS]
+layer = OFF;
+S2 = pin, 11, -, -, -;
+CE_RAM = pin, 68, -, E, -;
+READY = pin, 69, -, F, -;
+READ = pin, 46, -, D, -;
+CLR = pin, 36, -, -, -;
+CLK = pin, 61, -, -, -;
+R2 = pin, 41, -, -, -;
+R3 = pin, 14, -, -, -;
+S1 = pin, 86, -, -, -;
+WRAD = pin, 9, -, B, -;
+C8 = pin, 33, -, C, -;
+TB_1us = pin, 96, -, A, -;
+TB_2us = pin, 94, -, A, -;
+TB_5us = pin, 5, -, A, -;
+TB_10us = pin, 92, -, A, -;
+TB_20us = pin, 34, -, C, -;
+TB_50us = pin, 30, -, C, -;
+TB_100us = pin, 55, -, D, -;
+TB_200us = pin, 44, -, D, -;
+TB_500us = pin, 42, -, D, -;
+TB_1ms = pin, 83, -, F, -;
+TB_2ms = pin, 59, -, E, -;
+TB_5ms = pin, 58, -, E, -;
+TB_10ms = pin, 65, -, E, -;
+TB_20ms = pin, 32, -, C, -;
+TB_50ms = pin, 20, -, C, -;
+A00 = pin, 82, -, F, -;
+A01 = pin, 80, -, F, -;
+A02 = pin, 70, -, F, -;
+A03 = pin, 7, -, B, -;
+A04 = pin, 17, -, B, -;
+A05 = pin, 67, -, E, -;
+A06 = pin, 57, -, E, -;
+A07 = pin, 10, -, B, -;
+A08 = pin, 8, -, B, -;
+A09 = pin, 18, -, B, -;
+A10 = pin, 16, -, B, -;
+A11 = pin, 84, -, F, -;
+N_57 = node, -, -, D, 1;
+N_49 = node, -, -, F, 9;
+D0_OUTPUT_QC = node, -, -, A, 1;
+E0_OUTPUT_QC = node, -, -, E, 9;
+F0_OUTPUT_QC = node, -, -, D, 5;
+G0_OUTPUT_QC = node, -, -, C, 5;
+H0_OUTPUT_QC = node, -, -, A, 5;
+
+[GROUP ASSIGNMENTS]
+layer = OFF;
+
+[RESOURCE RESERVATIONS]
+layer = OFF;
+
+[SLEWRATE]
+Default = FAST;
+
+[PULLUP]
+Default = Hold;
+
+[NETLIST/DELAY FORMAT]
+Delay_File = SDF;
+Netlist = VHDL;
+
+[OSM BYPASS]
+
+[FITTER REPORT FORMAT]
+Fitter_Options = Yes;
+Pinout_Diagram = No;
+Pinout_Listing = Yes;
+Detailed_Block_Segment_Summary = Yes;
+Input_Signal_List = Yes;
+Output_Signal_List = Yes;
+Bidir_Signal_List = Yes;
+Node_Signal_List = Yes;
+Signal_Fanout_List = Yes;
+Block_Segment_Fanin_List = Yes;
+Postfit_Eqn = Yes;
+Prefit_Eqn = Yes;
+Page_Break = Yes;
+
+[POWER]
+Powerlevel = Low, High;
+Default = High;
+Type = GLB;
+
+[SOURCE CONSTRAINT OPTION]
+
+[TIMING ANALYZER]
+Last_source = ;Last_source_type = Fmax;
+
+[Pin attributes list]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[Explorer Results]
+
+[Explorer User Settings]
+
+[Timing Results]
+Fmax = 83.33;
+Logic_level = 1;

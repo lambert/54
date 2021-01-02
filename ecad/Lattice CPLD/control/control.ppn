@@ -1,0 +1,48 @@
+// 
+// Software Version 8.2
+// Targeted Device : ispLSI2064A-80LJ84
+// Platform : Windows NT 5.1
+// Date : Sun Mar 11 21:51:50 2007
+// Elapsed Time : 00:00:01
+// 
+                     GND        SYS          1
+                   READY        OUT          3
+                TB_200US        OUT          6
+                    READ        OUT          7
+                TB_500US        OUT          8
+                  TB_1MS        OUT         11
+                  CE_RAM        OUT         12
+                    WRAD        OUT         15
+                      R2         IN         18
+                      S2         IN         20
+                     VCC        SYS         21
+                     GND        SYS         22
+                   RESET        SYS         24
+                     A11        OUT         26
+                      S1         IN         27
+                     A01        OUT         28
+                     A00        OUT         29
+                 TB_10US        OUT         30
+                     A02        OUT         31
+                  TB_2US        OUT         33
+                  TB_5US        OUT         35
+                     GND        SYS         43
+                TB_100US        OUT         45
+                 TB_50US        OUT         46
+                     A07        OUT         47
+                 TB_20US        OUT         48
+                     A09        OUT         49
+                     A08        OUT         50
+                     A06        OUT         52
+                      C8        OUT         53
+                     CLK         IN         59
+                     GND        SYS         64
+                     VCC        SYS         65
+                      R3         IN         66
+                     A10        OUT         68
+                     A05        OUT         69
+                     A04        OUT         70
+                     A03        OUT         71
+                  TB_5MS        OUT         72
+                  TB_2MS        OUT         74
+                  TB_1US        OUT         75

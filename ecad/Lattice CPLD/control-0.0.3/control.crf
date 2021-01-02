@@ -1,0 +1,17 @@
+// Signal Name Cross Reference File
+// ispLEVER 6.0.00.33.17.06
+
+// Design 'control' created Sat Jul 15 19:26:13 2006
+
+
+// LEGEND:  '>'  Functional Block Port Separator
+//          '/'  Hierarchy Path Separator
+//          '@'  Automatically Generated Node
+
+
+// Hierarchical Name                    Short Name
+FB100/CNT104>OUTPUT_QC               	D0_OUTPUT_QC
+FB100/CNT103>OUTPUT_QC               	E0_OUTPUT_QC
+FB100/CNT102>OUTPUT_QC               	F0_OUTPUT_QC
+FB100/CNT101>OUTPUT_QC               	G0_OUTPUT_QC
+FB100/CNT100>OUTPUT_QC               	H0_OUTPUT_QC

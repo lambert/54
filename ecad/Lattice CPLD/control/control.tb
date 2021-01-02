@@ -1,0 +1,113 @@
+-- VHDL Stimulus Data from Waveform Editor
+-- File: control - 6-9-2006 0:25:28
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY control IS
+END;
+
+ARCHITECTURE behavior OF testbench IS
+
+ COMPONENT  PORT( 
+   R2 : IN std_logic;
+   R3 : IN std_logic;
+   S1 : IN std_logic;
+   S2 : IN std_logic;
+   A00 : OUT std_logic;
+   A01 : OUT std_logic;
+   CLK : IN std_logic;
+   A02 : OUT std_logic;
+   A03 : OUT std_logic;
+   A04 : OUT std_logic;
+   A05 : OUT std_logic;
+   A06 : OUT std_logic;
+   A07 : OUT std_logic;
+   A08 : OUT std_logic);
+ END COMPONENT;
+
+ SIGNAL R2 : std_logic;
+ SIGNAL R3 : std_logic;
+ SIGNAL S1 : std_logic;
+ SIGNAL S2 : std_logic;
+ SIGNAL A00 : std_logic;
+ SIGNAL A01 : std_logic;
+ SIGNAL CLK : std_logic;
+ SIGNAL A02 : std_logic;
+ SIGNAL A03 : std_logic;
+ SIGNAL A04 : std_logic;
+ SIGNAL A05 : std_logic;
+ SIGNAL A06 : std_logic;
+ SIGNAL A07 : std_logic;
+ SIGNAL A08 : std_logic;
+
+BEGIN
+
+ uut: control PORT MAP( 
+   R2 => R2,
+   R3 => R3,
+   S1 => S1,
+   S2 => S2,
+   A00 => A00,
+   A01 => A01,
+   CLK => CLK,
+   A02 => A02,
+   A03 => A03,
+   A04 => A04,
+   A05 => A05,
+   A06 => A06,
+   A07 => A07,
+   A08 => A08);
+
+ p_R2: PROCESS -- stimulus for signal R2
+   BEGIN
+   WAIT; -- forever
+ END PROCESS;
+
+ p_R3: PROCESS -- stimulus for signal R3
+   BEGIN
+   WAIT; -- forever
+ END PROCESS;
+
+ p_S1: PROCESS -- stimulus for signal S1
+   BEGIN
+   S1 <= '1'; WAIT FOR 10 NS;
+   S1 <= '0'; WAIT FOR 2200 NS;
+   WAIT; -- forever
+ END PROCESS;
+
+ p_S2: PROCESS -- stimulus for signal S2
+   BEGIN
+   S2 <= '0'; WAIT FOR 1000 NS;
+   S2 <= '1'; WAIT FOR 250 NS;
+   S2 <= '0'; WAIT FOR 750 NS;
+   S2 <= '1'; WAIT FOR 250 NS;
+   WAIT; -- forever
+ END PROCESS;
+
+ p_CLK: PROCESS -- stimulus for signal CLK
+   BEGIN
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   CLK <= '0'; WAIT FOR 250 NS;
+   CLK <= '1'; WAIT FOR 250 NS;
+   WAIT; -- forever
+ END PROCESS;
+
+END;

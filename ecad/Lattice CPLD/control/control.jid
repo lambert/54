@@ -1,0 +1,10 @@
+. control control.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\control.sch
+FB100 timebase timebase.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\timebase.sch
+FB200 addresscounter addresscounter.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\addresscounter.sch
+FB100.FB101 fbdc fbdc.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\fbdc.sch
+FB100.FB102 fbdc fbdc.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\fbdc.sch
+FB100.FB103 fbdc fbdc.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\fbdc.sch
+FB100.FB104 fbdc fbdc.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\fbdc.sch
+FB200.FB201 fbbc fbbc.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\fbbc.sch
+FB200.FB202 fbbc fbbc.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\fbbc.sch
+FB200.FB203 fbbc fbbc.sch c:\documents and settings\bert\mijn documenten\projects\rabulab\54_control_unit\electrical\lattice\control\fbbc.sch

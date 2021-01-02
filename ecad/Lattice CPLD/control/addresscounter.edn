@@ -1,0 +1,166 @@
+(edif ECS
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2007 2 11 21 51 28)
+      (program "edifnets" (Version "2.1"))
+      (dataOrigin "ispLEVER"
+        (Version "2.01.28.41.02"))))
+  (library MAIN (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell FBBC (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port CLEAR
+            (direction INPUT))
+          (port CLK
+            (direction INPUT))
+          (port QA
+            (direction OUTPUT))
+          (port QB
+            (direction OUTPUT))
+          (port QC
+            (direction OUTPUT))
+          (port QD
+            (direction OUTPUT)))))
+    (cell ADDRESSCOUNTER (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port GND (direction INPUT))
+          (port VCC (direction INPUT))
+          (port AC_CLEAR
+            (direction INPUT))
+          (port AC_CLK
+            (direction INPUT))
+          (port A00
+            (direction OUTPUT))
+          (port A01
+            (direction OUTPUT))
+          (port A02
+            (direction OUTPUT))
+          (port A03
+            (direction OUTPUT))
+          (port A04
+            (direction OUTPUT))
+          (port A05
+            (direction OUTPUT))
+          (port A06
+            (direction OUTPUT))
+          (port A07
+            (direction OUTPUT))
+          (port A08
+            (direction OUTPUT))
+          (port A09
+            (direction OUTPUT))
+          (port A10
+            (direction OUTPUT))
+          (port A11
+            (direction OUTPUT)))
+        (contents
+          (instance FB203
+            (viewRef V1
+              (cellRef FBBC)))
+          (instance FB202
+            (viewRef V1
+              (cellRef FBBC)))
+          (instance FB201
+            (viewRef V1
+              (cellRef FBBC)))
+          (net GND
+            (joined
+              (globalPortRef GND)))
+          (net VCC
+            (joined
+              (globalPortRef VCC)))
+          (net AC_CLEAR
+            (joined
+              (portRef AC_CLEAR)
+              (portRef CLEAR
+                (instanceRef FB203))
+              (portRef CLEAR
+                (instanceRef FB201))
+              (portRef CLEAR
+                (instanceRef FB202))))
+          (net AC_CLK
+            (joined
+              (portRef AC_CLK)
+              (portRef CLK
+                (instanceRef FB203))
+              (portRef A
+                (instanceRef FB201))
+              (portRef CLK
+                (instanceRef FB201))
+              (portRef CLK
+                (instanceRef FB202))))
+          (net A11
+            (joined
+              (portRef A11)
+              (portRef QD
+                (instanceRef FB203))))
+          (net A10
+            (joined
+              (portRef A10)
+              (portRef QC
+                (instanceRef FB203))))
+          (net A09
+            (joined
+              (portRef A09)
+              (portRef QB
+                (instanceRef FB203))))
+          (net A08
+            (joined
+              (portRef A08)
+              (portRef QA
+                (instanceRef FB203))))
+          (net A07
+            (joined
+              (portRef A07)
+              (portRef A
+                (instanceRef FB203))
+              (portRef QD
+                (instanceRef FB202))))
+          (net A06
+            (joined
+              (portRef A06)
+              (portRef QC
+                (instanceRef FB202))))
+          (net A05
+            (joined
+              (portRef A05)
+              (portRef QB
+                (instanceRef FB202))))
+          (net A04
+            (joined
+              (portRef A04)
+              (portRef QA
+                (instanceRef FB202))))
+          (net A03
+            (joined
+              (portRef A03)
+              (portRef A
+                (instanceRef FB202))
+              (portRef QD
+                (instanceRef FB201))))
+          (net A02
+            (joined
+              (portRef A02)
+              (portRef QC
+                (instanceRef FB201))))
+          (net A01
+            (joined
+              (portRef A01)
+              (portRef QB
+                (instanceRef FB201))))
+          (net A00
+            (joined
+              (portRef A00)
+              (portRef QA
+                (instanceRef FB201))))))))
+  (design addresscounter
+    (cellRef addresscounter
+      (libraryRef MAIN))))

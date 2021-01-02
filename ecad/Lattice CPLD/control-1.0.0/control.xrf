@@ -1,0 +1,20 @@
+Signal Name Cross Reference File
+
+ispLEVER 2.01.28.41.02
+
+Design 'control' created Sun Jul 09 22:07:47 2006
+
+Title:  control.bls 
+
+ LEGEND:  '>'  Functional Block Port Separator
+          '/'  Hierarchy Path Separator
+          '@'  Automatically Generated Node
+
+
+Short Name                              Hierarchical Name
+----------                              -----------------
+D0_OUTPUT_QC                         	FB100/CNT104>OUTPUT_QC
+E0_OUTPUT_QC                         	FB100/CNT103>OUTPUT_QC
+F0_OUTPUT_QC                         	FB100/CNT102>OUTPUT_QC
+G0_OUTPUT_QC                         	FB100/CNT101>OUTPUT_QC
+H0_OUTPUT_QC                         	FB100/CNT100>OUTPUT_QC

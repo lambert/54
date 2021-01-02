@@ -1,0 +1,227 @@
+ ispLEVER 2.01.28.41.02 Linked Equations File
+Copyright(C), 1992-2002, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design control created  Sun Jul 09 16:08:04 2006
+
+Title:  control.bls 
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          1        1    Pin   O_Q.AR 
+   2          4        1    Pin   O_Q.D 
+   1          1        1    Pin   O_Q.C 
+   1          1        1    Pin   O_P.AR 
+   3          3        1    Pin   O_P.D 
+   1          1        1    Pin   O_P.C 
+   1          1        1    Pin   O_N.AR 
+   2          2        1    Pin   O_N.D 
+   1          1        1    Pin   O_N.C 
+   1          1        1    Pin   O_M.AR 
+   2          4        1    Pin   O_M.D 
+   1          1        1    Pin   O_M.C 
+   1          1        1    Pin   O_L.AR 
+   3          3        1    Pin   O_L.D 
+   1          1        1    Pin   O_L.C 
+   1          1        1    Pin   O_K.AR 
+   2          2        1    Pin   O_K.D 
+   1          1        1    Pin   O_K.C 
+   1          1        1    Pin   O_J.AR 
+   2          4        1    Pin   O_J.D 
+   1          1        1    Pin   O_J.C 
+   1          1        1    Pin   O_H.AR 
+   3          3        1    Pin   O_H.D 
+   1          1        1    Pin   O_H.C 
+   1          1        1    Pin   O_G.AR 
+   2          2        1    Pin   O_G.D 
+   1          1        1    Pin   O_G.C 
+   1          1        1    Pin   O_F.AR 
+   2          4        1    Pin   O_F.D 
+   1          1        1    Pin   O_F.C 
+   1          1        1    Pin   O_E.AR 
+   3          3        1    Pin   O_E.D 
+   1          1        1    Pin   O_E.C 
+   1          1        1    Pin   O_D.AR 
+   2          2        1    Pin   O_D.D 
+   1          1        1    Pin   O_D.C 
+   1          1        1    Pin   O_C.AR 
+   2          4        1    Pin   O_C.D 
+   1          1        1    Pin   O_C.C 
+   1          1        1    Pin   O_B.AR 
+   3          3        1    Pin   O_B.D 
+   1          1        1    Pin   O_B.C 
+   1          1        1    Pin   O_A.AR 
+   2          2        1    Pin   O_A.D 
+   1          1        1    Pin   O_A.C 
+   1          1        1    Node  K0_OUTPUT_QC.AR 
+   2          2        1    Node  K0_OUTPUT_QC.D 
+   1          1        1    Node  K0_OUTPUT_QC.C 
+   1          1        1    Node  H0_OUTPUT_QC.AR 
+   2          2        1    Node  H0_OUTPUT_QC.D 
+   1          1        1    Node  H0_OUTPUT_QC.C 
+   1          1        1    Node  G0_OUTPUT_QC.AR 
+   2          2        1    Node  G0_OUTPUT_QC.D 
+   1          1        1    Node  G0_OUTPUT_QC.C 
+   1          1        1    Node  F0_OUTPUT_QC.AR 
+   2          2        1    Node  F0_OUTPUT_QC.D 
+   1          1        1    Node  F0_OUTPUT_QC.C 
+   1          1        1    Node  E0_OUTPUT_QC.AR 
+   2          2        1    Node  E0_OUTPUT_QC.D 
+   1          1        1    Node  E0_OUTPUT_QC.C 
+=========
+  85                 P-Term Total: 85
+                       Total Pins: 17
+                      Total Nodes: 5
+            Average P-Term/Output: 2
+
+
+Equations:
+
+O_Q.AR = (CLR);
+
+O_Q.D = (!O_N.Q & O_Q.Q
+     # O_N.Q & O_P.Q & !O_Q.Q & K0_OUTPUT_QC.Q);
+
+O_Q.C = (!CLK);
+
+O_P.AR = (CLR);
+
+O_P.D = (!O_N.Q & O_P.Q
+     # O_P.Q & O_Q.Q
+     # O_N.Q & !O_P.Q & !O_Q.Q);
+
+O_P.C = (!CLK);
+
+O_N.AR = (CLR);
+
+O_N.D = (!O_M.Q & O_N.Q
+     # O_M.Q & !O_N.Q);
+
+O_N.C = (!CLK);
+
+O_M.AR = (CLR);
+
+O_M.D = (!O_K.Q & O_M.Q
+     # O_K.Q & O_L.Q & !O_M.Q & H0_OUTPUT_QC.Q);
+
+O_M.C = (!CLK);
+
+O_L.AR = (CLR);
+
+O_L.D = (!O_K.Q & O_L.Q
+     # O_L.Q & O_M.Q
+     # O_K.Q & !O_L.Q & !O_M.Q);
+
+O_L.C = (!CLK);
+
+O_K.AR = (CLR);
+
+O_K.D = (!O_J.Q & O_K.Q
+     # O_J.Q & !O_K.Q);
+
+O_K.C = (!CLK);
+
+O_J.AR = (CLR);
+
+O_J.D = (!O_G.Q & O_J.Q
+     # O_G.Q & O_H.Q & !O_J.Q & G0_OUTPUT_QC.Q);
+
+O_J.C = (!CLK);
+
+O_H.AR = (CLR);
+
+O_H.D = (!O_G.Q & O_H.Q
+     # O_H.Q & O_J.Q
+     # O_G.Q & !O_H.Q & !O_J.Q);
+
+O_H.C = (!CLK);
+
+O_G.AR = (CLR);
+
+O_G.D = (!O_F.Q & O_G.Q
+     # O_F.Q & !O_G.Q);
+
+O_G.C = (!CLK);
+
+O_F.AR = (CLR);
+
+O_F.D = (!O_D.Q & O_F.Q
+     # O_D.Q & O_E.Q & !O_F.Q & F0_OUTPUT_QC.Q);
+
+O_F.C = (!CLK);
+
+O_E.AR = (CLR);
+
+O_E.D = (!O_D.Q & O_E.Q
+     # O_E.Q & O_F.Q
+     # O_D.Q & !O_E.Q & !O_F.Q);
+
+O_E.C = (!CLK);
+
+O_D.AR = (CLR);
+
+O_D.D = (!O_C.Q & O_D.Q
+     # O_C.Q & !O_D.Q);
+
+O_D.C = (!CLK);
+
+O_C.AR = (CLR);
+
+O_C.D = (!O_A.Q & O_C.Q
+     # O_A.Q & O_B.Q & !O_C.Q & E0_OUTPUT_QC.Q);
+
+O_C.C = (!CLK);
+
+O_B.AR = (CLR);
+
+O_B.D = (!O_A.Q & O_B.Q
+     # O_B.Q & O_C.Q
+     # O_A.Q & !O_B.Q & !O_C.Q);
+
+O_B.C = (!CLK);
+
+O_A.AR = (CLR);
+
+O_A.D = (!CLK & O_A.Q
+     # CLK & !O_A.Q);
+
+O_A.C = (!CLK);
+
+K0_OUTPUT_QC.AR = (CLR);
+
+K0_OUTPUT_QC.D = (!O_P.Q & K0_OUTPUT_QC.Q
+     # O_P.Q & !K0_OUTPUT_QC.Q);
+
+K0_OUTPUT_QC.C = (!CLK);
+
+H0_OUTPUT_QC.AR = (CLR);
+
+H0_OUTPUT_QC.D = (!O_L.Q & H0_OUTPUT_QC.Q
+     # O_L.Q & !H0_OUTPUT_QC.Q);
+
+H0_OUTPUT_QC.C = (!CLK);
+
+G0_OUTPUT_QC.AR = (CLR);
+
+G0_OUTPUT_QC.D = (!O_H.Q & G0_OUTPUT_QC.Q
+     # O_H.Q & !G0_OUTPUT_QC.Q);
+
+G0_OUTPUT_QC.C = (!CLK);
+
+F0_OUTPUT_QC.AR = (CLR);
+
+F0_OUTPUT_QC.D = (!O_E.Q & F0_OUTPUT_QC.Q
+     # O_E.Q & !F0_OUTPUT_QC.Q);
+
+F0_OUTPUT_QC.C = (!CLK);
+
+E0_OUTPUT_QC.AR = (CLR);
+
+E0_OUTPUT_QC.D = (!O_B.Q & E0_OUTPUT_QC.Q
+     # O_B.Q & !E0_OUTPUT_QC.Q);
+
+E0_OUTPUT_QC.C = (!CLK);
+
+
+Reverse-Polarity Equations:
+

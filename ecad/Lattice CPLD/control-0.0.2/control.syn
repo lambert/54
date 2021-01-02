@@ -1,0 +1,17 @@
+JDF B
+// Created by Version 2.1 
+PROJECT control
+DESIGN control Normal
+DEVKIT M4A5-96/48-10VC
+ENTRY Schematic/VHDL
+MODULE addressbus.sch
+MODSTYLE addressbus Normal
+MODULE fbbc.sch
+MODSTYLE fbbc Normal
+MODULE fbdc.sch
+MODSTYLE fbdc Normal
+MODULE control.sch
+MODSTYLE control Normal
+MODULE timebase.sch
+MODSTYLE timebase Normal
+SYNTHESIS_TOOL Exemplar

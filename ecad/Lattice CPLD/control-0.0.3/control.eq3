@@ -1,0 +1,405 @@
+ ispLEVER 6.0.00.33.17.06 Linked Equations File
+Copyright(C), 1992-2006, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design control created  Sat Jul 15 19:26:13 2006
+
+Title:  control.bls 
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          2        1    Pin   CE_RAM 
+   0          0        1    Pin   READY.D 
+   1          1        1    Pin   READY.AP 
+   1          1        1    Pin   READY.C 
+   1          1        1    Pin   READ.AR 
+   1          0        1    Pin   READ.D 
+   1          1        1    Pin   READ.C 
+   1          0        1    Pin   WRAD.AR 
+   1          1        1    Pin   WRAD.D 
+   1          1        1    Pin   WRAD.C 
+   1          1        1    Pin   C8.AR 
+   1          0        1    Pin   C8.D 
+   1          1        1    Pin   C8.C 
+   1          1        1    Pin   TB_1us.AR 
+   2          2        1    Pin   TB_1us.D 
+   1          1        1    Pin   TB_1us.C 
+   1          1        1    Pin   TB_2us.AR 
+   3          3        1    Pin   TB_2us.D 
+   1          1        1    Pin   TB_2us.C 
+   1          1        1    Pin   TB_5us.AR 
+   2          4        1    Pin   TB_5us.D 
+   1          1        1    Pin   TB_5us.C 
+   1          1        1    Pin   TB_10us.AR 
+   2          2        1    Pin   TB_10us.D 
+   1          1        1    Pin   TB_10us.C 
+   1          1        1    Pin   TB_20us.AR 
+   3          3        1    Pin   TB_20us.D 
+   1          1        1    Pin   TB_20us.C 
+   1          1        1    Pin   TB_50us.AR 
+   2          4        1    Pin   TB_50us.D 
+   1          1        1    Pin   TB_50us.C 
+   1          1        1    Pin   TB_100us.AR 
+   2          2        1    Pin   TB_100us.D 
+   1          1        1    Pin   TB_100us.C 
+   1          1        1    Pin   TB_200us.AR 
+   3          3        1    Pin   TB_200us.D 
+   1          1        1    Pin   TB_200us.C 
+   1          1        1    Pin   TB_500us.AR 
+   2          4        1    Pin   TB_500us.D 
+   1          1        1    Pin   TB_500us.C 
+   1          1        1    Pin   TB_1ms.AR 
+   2          2        1    Pin   TB_1ms.D 
+   1          1        1    Pin   TB_1ms.C 
+   1          1        1    Pin   TB_2ms.AR 
+   3          3        1    Pin   TB_2ms.D 
+   1          1        1    Pin   TB_2ms.C 
+   1          1        1    Pin   TB_5ms.AR 
+   2          4        1    Pin   TB_5ms.D 
+   1          1        1    Pin   TB_5ms.C 
+   1          1        1    Pin   TB_10ms.AR 
+   2          2        1    Pin   TB_10ms.D 
+   1          1        1    Pin   TB_10ms.C 
+   1          1        1    Pin   TB_20ms.AR 
+   3          3        1    Pin   TB_20ms.D 
+   1          1        1    Pin   TB_20ms.C 
+   1          1        1    Pin   TB_50ms.AR 
+   2          4        1    Pin   TB_50ms.D 
+   1          1        1    Pin   TB_50ms.C 
+   1          1        1    Pin   A00.AR 
+   3          3        1    Pin   A00.D 
+   1          2        1    Pin   A00.C- 
+   1          1        1    Pin   A01.AR 
+   2          2        1    Pin   A01.D 
+   1          2        1    Pin   A01.C- 
+   1          1        1    Pin   A02.AR 
+   2          2        1    Pin   A02.D 
+   1          2        1    Pin   A02.C- 
+   1          1        1    Pin   A03.AR 
+   2          2        1    Pin   A03.D 
+   1          2        1    Pin   A03.C- 
+   1          1        1    Pin   A04.AR 
+   2          2        1    Pin   A04.D 
+   1          2        1    Pin   A04.C- 
+   1          1        1    Pin   A05.AR 
+   2          2        1    Pin   A05.D 
+   1          2        1    Pin   A05.C- 
+   1          1        1    Pin   A06.AR 
+   2          2        1    Pin   A06.D 
+   1          2        1    Pin   A06.C- 
+   1          1        1    Pin   A07.AR 
+   2          2        1    Pin   A07.D 
+   1          2        1    Pin   A07.C- 
+   1          1        1    Pin   A08.AR 
+   2          2        1    Pin   A08.D 
+   1          2        1    Pin   A08.C- 
+   1          1        1    Pin   A09.AR 
+   2          2        1    Pin   A09.D 
+   1          2        1    Pin   A09.C- 
+   1          1        1    Pin   A10.AR 
+   2          2        1    Pin   A10.D 
+   1          2        1    Pin   A10.C- 
+   1          1        1    Pin   A11.AR 
+   2          2        1    Pin   A11.D 
+   1          2        1    Pin   A11.C- 
+   1          1        1    Node  N_57.AR 
+   1          2        1    Node  N_57.D- 
+   1          1        1    Node  N_57.C 
+   1          1        1    Node  N_49.AR 
+   1          0        1    Node  N_49.D 
+   1          1        1    Node  N_49.C 
+   1          1        1    Node  D0_OUTPUT_QC.AR 
+   2          2        1    Node  D0_OUTPUT_QC.D 
+   1          1        1    Node  D0_OUTPUT_QC.C 
+   1          1        1    Node  E0_OUTPUT_QC.AR 
+   2          2        1    Node  E0_OUTPUT_QC.D 
+   1          1        1    Node  E0_OUTPUT_QC.C 
+   1          1        1    Node  F0_OUTPUT_QC.AR 
+   2          2        1    Node  F0_OUTPUT_QC.D 
+   1          1        1    Node  F0_OUTPUT_QC.C 
+   1          1        1    Node  G0_OUTPUT_QC.AR 
+   2          2        1    Node  G0_OUTPUT_QC.D 
+   1          1        1    Node  G0_OUTPUT_QC.C 
+   1          1        1    Node  H0_OUTPUT_QC.AR 
+   2          2        1    Node  H0_OUTPUT_QC.D 
+   1          1        1    Node  H0_OUTPUT_QC.C 
+=========
+ 152                 P-Term Total: 152
+                       Total Pins: 38
+                      Total Nodes: 7
+            Average P-Term/Output: 1
+
+
+Equations:
+
+CE_RAM = (!N_57.Q & !N_49.Q);
+
+READY.D = (0);
+
+READY.AP = (R2);
+
+READY.C = (A11.Q);
+
+READ.AR = (R2);
+
+READ.D = (1);
+
+READ.C = (A11.Q);
+
+WRAD.AR = (1);
+
+WRAD.D = (!N_57.Q);
+
+WRAD.C = (CLK);
+
+C8.AR = (S1);
+
+C8.D = (1);
+
+C8.C = (R3);
+
+TB_1us.AR = (CLR);
+
+TB_1us.D = (!CLK & TB_1us.Q
+     # CLK & !TB_1us.Q);
+
+TB_1us.C = (!CLK);
+
+TB_2us.AR = (CLR);
+
+TB_2us.D = (!TB_1us.Q & TB_2us.Q
+     # TB_2us.Q & TB_5us.Q
+     # TB_1us.Q & !TB_2us.Q & !TB_5us.Q);
+
+TB_2us.C = (!CLK);
+
+TB_5us.AR = (CLR);
+
+TB_5us.D = (!TB_1us.Q & TB_5us.Q
+     # TB_1us.Q & TB_2us.Q & !TB_5us.Q & H0_OUTPUT_QC.Q);
+
+TB_5us.C = (!CLK);
+
+TB_10us.AR = (CLR);
+
+TB_10us.D = (!TB_5us.Q & TB_10us.Q
+     # TB_5us.Q & !TB_10us.Q);
+
+TB_10us.C = (!CLK);
+
+TB_20us.AR = (CLR);
+
+TB_20us.D = (!TB_10us.Q & TB_20us.Q
+     # TB_20us.Q & TB_50us.Q
+     # TB_10us.Q & !TB_20us.Q & !TB_50us.Q);
+
+TB_20us.C = (!CLK);
+
+TB_50us.AR = (CLR);
+
+TB_50us.D = (!TB_10us.Q & TB_50us.Q
+     # TB_10us.Q & TB_20us.Q & !TB_50us.Q & G0_OUTPUT_QC.Q);
+
+TB_50us.C = (!CLK);
+
+TB_100us.AR = (CLR);
+
+TB_100us.D = (!TB_50us.Q & TB_100us.Q
+     # TB_50us.Q & !TB_100us.Q);
+
+TB_100us.C = (!CLK);
+
+TB_200us.AR = (CLR);
+
+TB_200us.D = (!TB_100us.Q & TB_200us.Q
+     # TB_200us.Q & TB_500us.Q
+     # TB_100us.Q & !TB_200us.Q & !TB_500us.Q);
+
+TB_200us.C = (!CLK);
+
+TB_500us.AR = (CLR);
+
+TB_500us.D = (!TB_100us.Q & TB_500us.Q
+     # TB_100us.Q & TB_200us.Q & !TB_500us.Q & F0_OUTPUT_QC.Q);
+
+TB_500us.C = (!CLK);
+
+TB_1ms.AR = (CLR);
+
+TB_1ms.D = (!TB_500us.Q & TB_1ms.Q
+     # TB_500us.Q & !TB_1ms.Q);
+
+TB_1ms.C = (!CLK);
+
+TB_2ms.AR = (CLR);
+
+TB_2ms.D = (!TB_1ms.Q & TB_2ms.Q
+     # TB_2ms.Q & TB_5ms.Q
+     # TB_1ms.Q & !TB_2ms.Q & !TB_5ms.Q);
+
+TB_2ms.C = (!CLK);
+
+TB_5ms.AR = (CLR);
+
+TB_5ms.D = (!TB_1ms.Q & TB_5ms.Q
+     # TB_1ms.Q & TB_2ms.Q & !TB_5ms.Q & E0_OUTPUT_QC.Q);
+
+TB_5ms.C = (!CLK);
+
+TB_10ms.AR = (CLR);
+
+TB_10ms.D = (!TB_5ms.Q & TB_10ms.Q
+     # TB_5ms.Q & !TB_10ms.Q);
+
+TB_10ms.C = (!CLK);
+
+TB_20ms.AR = (CLR);
+
+TB_20ms.D = (!TB_10ms.Q & TB_20ms.Q
+     # TB_20ms.Q & TB_50ms.Q
+     # TB_10ms.Q & !TB_20ms.Q & !TB_50ms.Q);
+
+TB_20ms.C = (!CLK);
+
+TB_50ms.AR = (CLR);
+
+TB_50ms.D = (!TB_10ms.Q & TB_50ms.Q
+     # TB_10ms.Q & TB_20ms.Q & !TB_50ms.Q & D0_OUTPUT_QC.Q);
+
+TB_50ms.C = (!CLK);
+
+A00.AR = (!C8.Q);
+
+A00.D = (N_57.Q & !A00.Q
+     # N_49.Q & !A00.Q
+     # !N_57.Q & !N_49.Q & A00.Q);
+
+!A00.C = (!N_57.Q & !N_49.Q);
+
+A01.AR = (!C8.Q);
+
+A01.D = (A00.Q & A01.Q
+     # !A00.Q & !A01.Q);
+
+!A01.C = (!N_57.Q & !N_49.Q);
+
+A02.AR = (!C8.Q);
+
+A02.D = (A01.Q & A02.Q
+     # !A01.Q & !A02.Q);
+
+!A02.C = (!N_57.Q & !N_49.Q);
+
+A03.AR = (!C8.Q);
+
+A03.D = (A02.Q & A03.Q
+     # !A02.Q & !A03.Q);
+
+!A03.C = (!N_57.Q & !N_49.Q);
+
+A04.AR = (!C8.Q);
+
+A04.D = (A03.Q & A04.Q
+     # !A03.Q & !A04.Q);
+
+!A04.C = (!N_57.Q & !N_49.Q);
+
+A05.AR = (!C8.Q);
+
+A05.D = (A04.Q & A05.Q
+     # !A04.Q & !A05.Q);
+
+!A05.C = (!N_57.Q & !N_49.Q);
+
+A06.AR = (!C8.Q);
+
+A06.D = (A05.Q & A06.Q
+     # !A05.Q & !A06.Q);
+
+!A06.C = (!N_57.Q & !N_49.Q);
+
+A07.AR = (!C8.Q);
+
+A07.D = (A06.Q & A07.Q
+     # !A06.Q & !A07.Q);
+
+!A07.C = (!N_57.Q & !N_49.Q);
+
+A08.AR = (!C8.Q);
+
+A08.D = (A07.Q & A08.Q
+     # !A07.Q & !A08.Q);
+
+!A08.C = (!N_57.Q & !N_49.Q);
+
+A09.AR = (!C8.Q);
+
+A09.D = (A08.Q & A09.Q
+     # !A08.Q & !A09.Q);
+
+!A09.C = (!N_57.Q & !N_49.Q);
+
+A10.AR = (!C8.Q);
+
+A10.D = (A09.Q & A10.Q
+     # !A09.Q & !A10.Q);
+
+!A10.C = (!N_57.Q & !N_49.Q);
+
+A11.AR = (!C8.Q);
+
+A11.D = (A11.Q & A10.Q
+     # !A11.Q & !A10.Q);
+
+!A11.C = (!N_57.Q & !N_49.Q);
+
+N_57.AR = (WRAD.Q);
+
+!N_57.D = (!N_57.Q & !WRAD.Q);
+
+N_57.C = (S2);
+
+N_49.AR = (R2);
+
+N_49.D = (1);
+
+N_49.C = (A11.Q);
+
+D0_OUTPUT_QC.AR = (CLR);
+
+D0_OUTPUT_QC.D = (!TB_20ms.Q & D0_OUTPUT_QC.Q
+     # TB_20ms.Q & !D0_OUTPUT_QC.Q);
+
+D0_OUTPUT_QC.C = (!CLK);
+
+E0_OUTPUT_QC.AR = (CLR);
+
+E0_OUTPUT_QC.D = (!TB_2ms.Q & E0_OUTPUT_QC.Q
+     # TB_2ms.Q & !E0_OUTPUT_QC.Q);
+
+E0_OUTPUT_QC.C = (!CLK);
+
+F0_OUTPUT_QC.AR = (CLR);
+
+F0_OUTPUT_QC.D = (!TB_200us.Q & F0_OUTPUT_QC.Q
+     # TB_200us.Q & !F0_OUTPUT_QC.Q);
+
+F0_OUTPUT_QC.C = (!CLK);
+
+G0_OUTPUT_QC.AR = (CLR);
+
+G0_OUTPUT_QC.D = (!TB_20us.Q & G0_OUTPUT_QC.Q
+     # TB_20us.Q & !G0_OUTPUT_QC.Q);
+
+G0_OUTPUT_QC.C = (!CLK);
+
+H0_OUTPUT_QC.AR = (CLR);
+
+H0_OUTPUT_QC.D = (!TB_2us.Q & H0_OUTPUT_QC.Q
+     # TB_2us.Q & !H0_OUTPUT_QC.Q);
+
+H0_OUTPUT_QC.C = (!CLK);
+
+
+Reverse-Polarity Equations:
+

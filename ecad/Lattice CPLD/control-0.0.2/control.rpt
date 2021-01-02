@@ -1,0 +1,1169 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.01.28.41.02                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+
+
+Project_Summary
+~~~~~~~~~~~~~~~
+
+Project Name :          control
+Project Path :          C:\DOCUME~1\bert\MIJNDO~1\MIJNPR~1\Rabulab\54_CON~1\ELECTR~1\Lattice\control
+Project Fitted on :     Sun Jul 09 22:07:50 2006
+
+Device :                M4A5-96/48
+Package :               100TQFP
+Speed :                 -10
+Partnumber :            M4A5-96/48-10VC
+Source Format :         Schematic_VHDL
+
+
+// Project 'control' was Fitted Successfully! //
+
+
+Compilation_Times
+~~~~~~~~~~~~~~~~~
+Reading/DRC                                   0 sec
+Partition                                     0 sec
+Place                                         0 sec
+Route                                         0 sec
+Jedec/Report generation                       0 sec
+                                         --------
+Fitter                                   00:00:00
+
+
+Design_Summary
+~~~~~~~~~~~~~~
+  Total Input Pins :                  6
+  Total Output Pins :                32
+  Total Bidir I/O Pins :              0
+  Total Flip-Flops :                 38
+  Total Product Terms :              77
+  Total Reserved Pins :               0
+  Total Reserved Blocks :             0
+
+
+Device_Resource_Summary
+~~~~~~~~~~~~~~~~~~~~~~~
+                                 Total
+                               Available  Used  Available  Utilization
+Dedicated Pins
+  Input-Only Pins                 4        3      1    -->    75%
+  Clock/Input Pins                4        3      1    -->    75%
+I/O Pins                         48       32     16    -->    66%
+Logic Macrocells                 96       39     57    -->    40%
+  Input Registers                48        0     48    -->     0%
+  Unusable Macrocells            ..        0     ..
+
+CSM Outputs/Total Block Inputs  198       64    134    -->    32%
+Logical Product Terms           480       77    403    -->    16%
+Product Term Clusters            96       37     59    -->    38%
+
+
+Blocks_Resource_Summary
+~~~~~~~~~~~~~~~~~~~~~~~
+                                                                  # of PT  
+                   I/O    Inp    Macrocells   Macrocells   logic  clusters 
+          Fanin    Pins   Reg   Used Unusable  available    PTs   available  Pwr
+---------------------------------------------------------------------------------
+Maximum     33      8      8     --     --         16       80       16       -
+---------------------------------------------------------------------------------
+Block  A     9      4      0      6      0         10       13       10       Hi 
+Block  B    11      7      0      7      0          9       13       10       Hi 
+Block  C    10      5      0      6      0         10       13       11       Hi 
+Block  D    10      4      0      6      0         10       11       12       Hi 
+Block  E    12      6      0      7      0          9       14       10       Hi 
+Block  F    12      6      0      7      0          9       13       11       Hi 
+---------------------------------------------------------------------------------
+
+<Note> Four rightmost columns above reflect last status of the placement process.
+<Note> Pwr (Power) : Hi = High
+                     Lo = Low.
+
+
+Optimizer_and_Fitter_Options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pin Assignment :                       Yes
+Group Assignment :                     No
+Pin Reservation :                      No (1)
+Block Reservation :                    No
+
+@Ignore_Project_Constraints :
+  Pin Assignments :                    No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+  Group Assignments :                  No
+  Macrocell Assignment :               No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+
+@Backannotate_Project_Constraints
+  Pin Assignments :                    No
+  Pin And Block Assignments :          No
+  Pin, Macrocell and Block :           No
+
+@Timing_Constraints :                  No
+
+@Global_Project_Optimization :
+  Balanced Partitioning :              Yes
+  Spread Placement :                   Yes
+
+  Note :
+    Pack Design :
+       Balanced Partitioning = No
+       Spread Placement      = No
+    Spread Design :
+       Balanced Partitioning = Yes
+       Spread Placement      = Yes
+
+@Logic_Synthesis :
+  Logic Reduction :                    Yes
+  Node Collapsing :                    Yes
+  D/T Synthesis :                      Yes
+  Clock Optimization :                 No
+  Input Register Optimization :        Yes
+  XOR Synthesis :                      Yes
+  Max. P-Term for Collapsing :         16
+  Max. P-Term for Splitting :          16
+  Max. Equation Fanin :                32
+  Keep Xor :                           Yes
+
+@Utilization_options
+  Max. % of macrocells used :          100
+  Max. % of block inputs used :        100
+  Max. % of segment lines used :       ---
+  Max. % of macrocells used :          ---
+
+
+@Import_Source_Constraint_Option       No
+
+@Zero_Hold_Time                        No
+
+@Pull_up                               No
+
+@User_Signature                        #H0
+
+@Output_Slew_Rate                      Default = Fast(2)
+
+@Power                                 Default = High(2)
+
+
+Device Options:
+<Note> 1 : Reserved unused I/Os can be independently driven to Low or High, and does not
+           follow the drive level set for the Global Configure Unused I/O Option.
+<Note> 2 : For user-specified constraints on individual signals, refer to the Output, 
+           Bidir and Burried Signal Lists.
+
+
+
+
+Pinout_Listing
+~~~~~~~~~~~~~~
+      | Pin  |Blk |Assigned|
+Pin No| Type |Pad |Pin     | Signal name
+---------------------------------------------------------------
+    1 |   NC |    |        |
+    2 | JTAG |    |        |
+    3 |   NC |    |        |
+    4 |   NC |    |        |
+    5 |  I_O | A1 |        |TB_5us
+6     |  I_O | A0 |        |
+7     |  I_O | B0 |        |A03
+8     |  I_O | B1 |        |A08
+9     |  I_O | B2 |        |WRAD
+10    |  I_O | B3 |        |A07
+11    | CkIn |    |   *    |S2
+12    |  Vcc |    |        |
+13    |  GND |    |        |
+14    | CkIn |    |   *    |R3
+15    |  I_O | B4 |        |
+16    |  I_O | B5 |        |A10
+17    |  I_O | B6 |        |A04
+18    |  I_O | B7 |        |A09
+19    |  I_O | C0 |        |
+20    |  I_O | C1 |        |TB_50ms
+21    |   NC |    |        |
+22    |   NC |    |        |
+23    | JTAG |    |        |
+24    | JTAG |    |        |
+25    |   NC |    |        |
+26    |  GND |    |        |
+27    |   NC |    |        |
+28    |   NC |    |        |
+29    |  I_O | C2 |        |
+30    |  I_O | C3 |        |TB_50us
+31    |  I_O | C4 |        |
+32    |  I_O | C5 |        |TB_20ms
+33    |  I_O | C6 |        |C8
+34    |  I_O | C7 |        |TB_20us
+35    |   NC |    |        |
+36    |  Inp |    |        |CLR
+37    |   NC |    |        |
+38    |   NC |    |        |
+39    |  GND |    |        |
+40    |  Vcc |    |        |
+41    |  Inp |    |        |R2
+42    |  I_O | D7 |        |TB_500us
+43    |  I_O | D6 |        |
+44    |  I_O | D5 |        |TB_200us
+45    |  I_O | D4 |        |
+46    |  I_O | D3 |        |READ
+47    |  I_O | D2 |        |
+48    |   NC |    |        |
+49    |   NC |    |        |
+50    |  GND |    |        |
+51    |   NC |    |        |
+52    |   NC |    |        |
+53    |   NC |    |        |
+54    |   NC |    |        |
+55    |  I_O | D1 |        |TB_100us
+56    |  I_O | D0 |        |
+57    |  I_O | E7 |        |A06
+58    |  I_O | E6 |        |TB_5ms
+59    |  I_O | E5 |        |TB_2ms
+60    |  I_O | E4 |        |
+61    | CkIn |    |   *    |CLK
+62    |  Vcc |    |        |
+63    |  GND |    |        |
+64    | CkIn |    |        |
+65    |  I_O | E3 |        |TB_10ms
+66    |  I_O | E2 |        |
+67    |  I_O | E1 |        |A05
+68    |  I_O | E0 |        |CE_RAM
+69    |  I_O | F0 |        |READY
+70    |  I_O | F1 |        |A02
+71    |   NC |    |        |
+72    |   NC |    |        |
+73    |   NC |    |        |
+74    | JTAG |    |        |
+75    |   NC |    |        |
+76    |  GND |    |        |
+77    |   NC |    |        |
+78    |   NC |    |        |
+79    |  I_O | F2 |        |
+80    |  I_O | F3 |        |A01
+81    |  I_O | F4 |        |
+82    |  I_O | F5 |        |A00
+83    |  I_O | F6 |        |TB_1ms
+84    |  I_O | F7 |        |A11
+85    |   NC |    |        |
+86    |  Inp |    |        |S1
+87    |   NC |    |        |
+88    |   NC |    |        |
+89    |  GND |    |        |
+90    |  Vcc |    |        |
+91    |  Inp |    |        |
+92    |  I_O | A7 |        |TB_10us
+93    |  I_O | A6 |        |
+94    |  I_O | A5 |        |TB_2us
+95    |  I_O | A4 |        |
+96    |  I_O | A3 |        |TB_1us
+97    |  I_O | A2 |        |
+98    |   NC |    |        |
+99    |   NC |    |        |
+100   |  GND |    |        |
+
+---------------------------------------------------------------------------
+
+<Note> Blk Pad : This notation refers to the Block I/O pad number in the device.
+<Note> Assigned Pin : user or dedicated input assignment (E.g. Clock pins).
+<Note> Pin Type : 
+           CkIn : Dedicated input or clock pin 
+           CLK  : Dedicated clock pin
+           INP  : Dedicated input pin
+           JTAG : JTAG Control and test pin
+           NC   : No connected
+
+
+
+Input_Signal_List
+~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Input 
+Pin Blk PTs Type e s E   Fanout  Pwr Slew      Signal 
+----------------------------------------------------------------------
+ 11  .   . Ck/I          ---D--   -  Fast      S2   
+ 14  .   . Ck/I          --C---   -  Fast      R3   
+ 36  .   .  Ded          A-CDEF   -  Fast      CLR   
+ 41  .   .  Ded          ---D-F   -  Fast      R2   
+ 61  .   . Ck/I          ABCDEF   -  Fast      CLK   
+ 86  .   .  Ded          --C---   -  Fast      S1   
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+Output_Signal_List
+~~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Output 
+Pin Blk PTs Type e s E   Fanout  Pwr Slew      Signal 
+----------------------------------------------------------------------
+ 82  F   3  DFF  * *     ------   Hi Fast      A00   
+ 80  F   2  DFF  * *     ------   Hi Fast      A01   
+ 70  F   2  DFF  * *     ------   Hi Fast      A02   
+  7  B   2  DFF  * *     ------   Hi Fast      A03   
+ 17  B   2  DFF  * *     ------   Hi Fast      A04   
+ 67  E   2  DFF  * *     ------   Hi Fast      A05   
+ 57  E   2  DFF  * *     ------   Hi Fast      A06   
+ 10  B   2  DFF  * *     ------   Hi Fast      A07   
+  8  B   2  DFF  * *     ------   Hi Fast      A08   
+ 18  B   2  DFF  * *     ------   Hi Fast      A09   
+ 16  B   2  DFF  * *     ------   Hi Fast      A10   
+ 84  F   2  DFF  * *     ------   Hi Fast      A11   
+ 33  C   1  DFF  * *     ------   Hi Fast      C8   
+ 68  E   1  COM          ------   Hi Fast      CE_RAM   
+ 46  D   1  DFF  * *     ------   Hi Fast      READ   
+ 69  F   1  DFF  * *     ------   Hi Fast      READY   
+ 55  D   2  DFF  * *     ------   Hi Fast      TB_100us   
+ 65  E   2  DFF  * *     ------   Hi Fast      TB_10ms   
+ 92  A   2  DFF  * *     ------   Hi Fast      TB_10us   
+ 83  F   2  DFF  * *     ------   Hi Fast      TB_1ms   
+ 96  A   2  DFF  * *     ------   Hi Fast      TB_1us   
+ 44  D   3  DFF  * *     ------   Hi Fast      TB_200us   
+ 32  C   3  DFF  * *     ------   Hi Fast      TB_20ms   
+ 34  C   3  DFF  * *     ------   Hi Fast      TB_20us   
+ 59  E   3  DFF  * *     ------   Hi Fast      TB_2ms   
+ 94  A   3  DFF  * *     ------   Hi Fast      TB_2us   
+ 42  D   2  DFF  * *     ------   Hi Fast      TB_500us   
+ 20  C   2  DFF  * *     ------   Hi Fast      TB_50ms   
+ 30  C   2  DFF  * *     ------   Hi Fast      TB_50us   
+ 58  E   2  DFF  * *     ------   Hi Fast      TB_5ms   
+  5  A   2  DFF  * *     ------   Hi Fast      TB_5us   
+  9  B   1  DFF  * *     ------   Hi Fast      WRAD   
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+Bidir_Signal_List
+~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Bidir 
+Pin Blk PTs Type e s E   Fanout  Pwr Slew      Signal 
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+Buried_Signal_List
+~~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Node 
+#Mc Blk PTs Type e s E   Fanout  Pwr Slew      Signal 
+----------------------------------------------------------------------
+ A1  A   2  DFF  * *     A-C---   Hi Fast      D0_OUTPUT_QC   
+ E9  E   2  DFF  * *     ----E-   Hi Fast      E0_OUTPUT_QC   
+ D5  D   2  DFF  * *     ---D--   Hi Fast      F0_OUTPUT_QC   
+ C5  C   2  DFF  * *     --C---   Hi Fast      G0_OUTPUT_QC   
+ A5  A   2  DFF  * *     A-----   Hi Fast      H0_OUTPUT_QC   
+ F9  F   1  DFF  * *     -B--EF   Hi Fast      N_49   
+ D1  D   1  DFF  * *     -B-DEF   Hi Fast      N_57   
+ F0  F   3  DFF  * *     -----F   Hi  -        RN_A00   --> A00
+ F12  F   2  DFF  * *     -----F   Hi  -        RN_A01   --> A01
+ F8  F   2  DFF  * *     -B---F   Hi  -        RN_A02   --> A02
+ B5  B   2  DFF  * *     -B----   Hi  -        RN_A03   --> A03
+ B1  B   2  DFF  * *     -B--E-   Hi  -        RN_A04   --> A04
+ E8  E   2  DFF  * *     ----E-   Hi  -        RN_A05   --> A05
+ E4  E   2  DFF  * *     -B--E-   Hi  -        RN_A06   --> A06
+ B12  B   2  DFF  * *     -B----   Hi  -        RN_A07   --> A07
+ B8  B   2  DFF  * *     -B----   Hi  -        RN_A08   --> A08
+ B4  B   2  DFF  * *     -B----   Hi  -        RN_A09   --> A09
+ B0  B   2  DFF  * *     -B---F   Hi  -        RN_A10   --> A10
+ F4  F   2  DFF  * *     ---D-F   Hi  -        RN_A11   --> A11
+ C1  C   1  DFF  * *     -B--EF   Hi  -        RN_C8   --> C8
+ D8  D   2  DFF  * *     ---D--   Hi  -        RN_TB_100us   --> TB_100us
+ E12  E   2  DFF  * *     --C-E-   Hi  -        RN_TB_10ms   --> TB_10ms
+ A4  A   2  DFF  * *     A-C---   Hi  -        RN_TB_10us   --> TB_10us
+ F1  F   2  DFF  * *     ----EF   Hi  -        RN_TB_1ms   --> TB_1ms
+ A12  A   2  DFF  * *     A-----   Hi  -        RN_TB_1us   --> TB_1us
+ D0  D   3  DFF  * *     ---D--   Hi  -        RN_TB_200us   --> TB_200us
+ C0  C   3  DFF  * *     A-C---   Hi  -        RN_TB_20ms   --> TB_20ms
+ C4  C   3  DFF  * *     --C---   Hi  -        RN_TB_20us   --> TB_20us
+ E0  E   3  DFF  * *     ----E-   Hi  -        RN_TB_2ms   --> TB_2ms
+ A0  A   3  DFF  * *     A-----   Hi  -        RN_TB_2us   --> TB_2us
+ D4  D   2  DFF  * *     ---D-F   Hi  -        RN_TB_500us   --> TB_500us
+ C8  C   2  DFF  * *     --C---   Hi  -        RN_TB_50ms   --> TB_50ms
+ C12  C   2  DFF  * *     --CD--   Hi  -        RN_TB_50us   --> TB_50us
+ E1  E   2  DFF  * *     ----E-   Hi  -        RN_TB_5ms   --> TB_5ms
+ A8  A   2  DFF  * *     A-----   Hi  -        RN_TB_5us   --> TB_5us
+ B9  B   1  DFF  * *     ---D--   Hi  -        RN_WRAD   --> WRAD
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+
+Signals_Fanout_List
+~~~~~~~~~~~~~~~~~~~
+Signal Source  :    Fanout List
+-----------------------------------------------------------------------------
+        CLR{. }:         TB_1us{ A}         TB_2us{ A}         TB_5us{ A}
+               :        TB_10us{ A}        TB_20us{ C}        TB_50us{ C}
+               :       TB_100us{ D}       TB_200us{ D}       TB_500us{ D}
+               :         TB_1ms{ F}         TB_2ms{ E}         TB_5ms{ E}
+               :        TB_10ms{ E}        TB_20ms{ C}        TB_50ms{ C}
+               :   D0_OUTPUT_QC{ A}   E0_OUTPUT_QC{ E}   F0_OUTPUT_QC{ D}
+               :   G0_OUTPUT_QC{ C}   H0_OUTPUT_QC{ A}
+        CLK{. }:         TB_1us{ A}
+         R2{. }:          READY{ F}           READ{ D}           N_49{ F}
+         S1{. }:             C8{ C}
+    RN_WRAD{ C}:           N_57{ D}
+      RN_C8{ D}:            A00{ F}            A01{ F}            A02{ F}
+               :            A03{ B}            A04{ B}            A05{ E}
+               :            A06{ E}            A07{ B}            A08{ B}
+               :            A09{ B}            A10{ B}            A11{ F}
+  RN_TB_1us{ B}:         TB_1us{ A}         TB_2us{ A}         TB_5us{ A}
+  RN_TB_2us{ B}:         TB_2us{ A}         TB_5us{ A}   H0_OUTPUT_QC{ A}
+  RN_TB_5us{ B}:         TB_2us{ A}         TB_5us{ A}        TB_10us{ A}
+ RN_TB_10us{ B}:        TB_10us{ A}        TB_20us{ C}        TB_50us{ C}
+ RN_TB_20us{ D}:        TB_20us{ C}        TB_50us{ C}   G0_OUTPUT_QC{ C}
+ RN_TB_50us{ D}:        TB_20us{ C}        TB_50us{ C}       TB_100us{ D}
+RN_TB_100us{ E}:       TB_100us{ D}       TB_200us{ D}       TB_500us{ D}
+RN_TB_200us{ E}:       TB_200us{ D}       TB_500us{ D}   F0_OUTPUT_QC{ D}
+RN_TB_500us{ E}:       TB_200us{ D}       TB_500us{ D}         TB_1ms{ F}
+  RN_TB_1ms{ G}:         TB_1ms{ F}         TB_2ms{ E}         TB_5ms{ E}
+  RN_TB_2ms{ F}:         TB_2ms{ E}         TB_5ms{ E}   E0_OUTPUT_QC{ E}
+  RN_TB_5ms{ F}:         TB_2ms{ E}         TB_5ms{ E}        TB_10ms{ E}
+ RN_TB_10ms{ F}:        TB_10ms{ E}        TB_20ms{ C}        TB_50ms{ C}
+ RN_TB_20ms{ D}:        TB_20ms{ C}        TB_50ms{ C}   D0_OUTPUT_QC{ A}
+ RN_TB_50ms{ D}:        TB_20ms{ C}        TB_50ms{ C}
+     RN_A00{ G}:            A00{ F}            A01{ F}
+     RN_A01{ G}:            A01{ F}            A02{ F}
+     RN_A02{ G}:            A02{ F}            A03{ B}
+     RN_A03{ C}:            A03{ B}            A04{ B}
+     RN_A04{ C}:            A04{ B}            A05{ E}
+     RN_A05{ F}:            A05{ E}            A06{ E}
+     RN_A06{ F}:            A06{ E}            A07{ B}
+     RN_A07{ C}:            A07{ B}            A08{ B}
+     RN_A08{ C}:            A08{ B}            A09{ B}
+     RN_A09{ C}:            A09{ B}            A10{ B}
+     RN_A10{ C}:            A10{ B}            A11{ F}
+     RN_A11{ G}:          READY{ F}           READ{ D}            A11{ F}
+               :           N_49{ F}
+       N_57{ E}:         CE_RAM{ E}           WRAD{ B}            A00{ F}
+               :            A01{ F}            A02{ F}            A03{ B}
+               :            A04{ B}            A05{ E}            A06{ E}
+               :            A07{ B}            A08{ B}            A09{ B}
+               :            A10{ B}            A11{ F}           N_57{ D}
+       N_49{ G}:         CE_RAM{ E}            A00{ F}            A01{ F}
+               :            A02{ F}            A03{ B}            A04{ B}
+               :            A05{ E}            A06{ E}            A07{ B}
+               :            A08{ B}            A09{ B}            A10{ B}
+               :            A11{ F}
+D0_OUTPUT_QC{ B}:        TB_50ms{ C}   D0_OUTPUT_QC{ A}
+E0_OUTPUT_QC{ F}:         TB_5ms{ E}   E0_OUTPUT_QC{ E}
+F0_OUTPUT_QC{ E}:       TB_500us{ D}   F0_OUTPUT_QC{ D}
+G0_OUTPUT_QC{ D}:        TB_50us{ C}   G0_OUTPUT_QC{ C}
+H0_OUTPUT_QC{ B}:         TB_5us{ A}   H0_OUTPUT_QC{ A}
+-----------------------------------------------------------------------------
+
+<Note> {.} : Indicates block location of signal
+
+
+Set_Reset_Summary
+~~~~~~~~~~~~~~~~~
+
+Block  A
+block level set pt   : GND
+block level reset pt : CLR
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|  *  |  S  | BS  | BR  | TB_2us
+|  *  |  S  | BS  | BR  | TB_10us
+|  *  |  S  | BS  | BR  | TB_5us
+|  *  |  S  | BS  | BR  | TB_1us
+|  *  |  S  | BS  | BR  | RN_TB_10us
+|  *  |  S  | BS  | BR  | D0_OUTPUT_QC
+|  *  |  S  | BS  | BR  | RN_TB_2us
+|  *  |  S  | BS  | BR  | RN_TB_5us
+|  *  |  S  | BS  | BR  | RN_TB_1us
+|  *  |  S  | BS  | BR  | H0_OUTPUT_QC
+
+
+Block  B
+block level set pt   : GND
+block level reset pt : VCC
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|  *  |  A  |     |     | A10
+|  *  |  A  |     |     | A09
+|  *  |  A  |     |     | A08
+|  *  |  A  |     |     | A07
+|  *  |  A  |     |     | A04
+|  *  |  A  |     |     | A03
+|  *  |  S  | BS  | BR  | WRAD
+|  *  |  A  |     |     | RN_A10
+|  *  |  A  |     |     | RN_A04
+|  *  |  A  |     |     | RN_A09
+|  *  |  A  |     |     | RN_A08
+|  *  |  A  |     |     | RN_A07
+|  *  |  A  |     |     | RN_A03
+|  *  |  S  | BS  | BR  | RN_WRAD
+
+
+Block  C
+block level set pt   : GND
+block level reset pt : CLR
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|  *  |  S  | BS  | BR  | TB_20ms
+|  *  |  S  | BS  | BR  | TB_20us
+|  *  |  S  | BS  | BR  | TB_50ms
+|  *  |  S  | BS  | BR  | TB_50us
+|  *  |  A  |     |     | C8
+|  *  |  A  |     |     | RN_C8
+|  *  |  S  | BS  | BR  | RN_TB_20ms
+|  *  |  S  | BS  | BR  | RN_TB_50us
+|  *  |  S  | BS  | BR  | RN_TB_20us
+|  *  |  S  | BS  | BR  | RN_TB_50ms
+|  *  |  S  | BS  | BR  | G0_OUTPUT_QC
+
+
+Block  D
+block level set pt   : GND
+block level reset pt : CLR
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|  *  |  S  | BS  | BR  | TB_200us
+|  *  |  S  | BS  | BR  | TB_500us
+|  *  |  S  | BS  | BR  | TB_100us
+|  *  |  A  |     |     | READ
+|  *  |  A  |     |     | N_57
+|  *  |  S  | BS  | BR  | RN_TB_500us
+|  *  |  S  | BS  | BR  | RN_TB_200us
+|  *  |  S  | BS  | BR  | RN_TB_100us
+|  *  |  S  | BS  | BR  | F0_OUTPUT_QC
+
+
+Block  E
+block level set pt   : GND
+block level reset pt : CLR
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|  *  |  S  | BS  | BR  | TB_2ms
+|  *  |  A  |     |     | A06
+|  *  |  A  |     |     | A05
+|  *  |  S  | BS  | BR  | TB_10ms
+|  *  |  S  | BS  | BR  | TB_5ms
+|     |     |     |     | CE_RAM
+|  *  |  A  |     |     | RN_A06
+|  *  |  S  | BS  | BR  | RN_TB_10ms
+|  *  |  S  | BS  | BR  | RN_TB_2ms
+|  *  |  A  |     |     | RN_A05
+|  *  |  S  | BS  | BR  | RN_TB_5ms
+|  *  |  S  | BS  | BR  | E0_OUTPUT_QC
+
+
+Block  F
+block level set pt   : GND
+block level reset pt : CLR
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|  *  |  A  |     |     | A00
+|  *  |  A  |     |     | A11
+|  *  |  A  |     |     | A02
+|  *  |  A  |     |     | A01
+|  *  |  S  | BS  | BR  | TB_1ms
+|  *  |  A  |     |     | READY
+|  *  |  A  |     |     | N_49
+|  *  |  A  |     |     | RN_A11
+|  *  |  A  |     |     | RN_A02
+|  *  |  S  | BS  | BR  | RN_TB_1ms
+|  *  |  A  |     |     | RN_A00
+|  *  |  A  |     |     | RN_A01
+
+
+<Note> (S) means the macrocell is configured in synchronous mode
+       i.e. it uses the block-level set and reset pt.
+       (A) means the macrocell is configured in asynchronous mode
+       i.e. it can have its independant set or reset pt.
+       (BS) means the block-level set pt is selected.
+       (BR) means the block-level reset pt is selected.
+
+
+
+
+BLOCK_A_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx A0             ...           ...     mx A17             ...           ...
+mx A1    D0_OUTPUT_QC     mcell  A1     mx A18    H0_OUTPUT_QC     mcell  A5
+mx A2       RN_TB_2us     mcell  A0     mx A19             ...           ...
+mx A3      RN_TB_10us     mcell  A4     mx A20             ...           ...
+mx A4             ...           ...     mx A21             ...           ...
+mx A5             ...           ...     mx A22             ...           ...
+mx A6             CLK        pin 61     mx A23             ...           ...
+mx A7             CLR        pin 36     mx A24             ...           ...
+mx A8             ...           ...     mx A25             ...           ...
+mx A9             ...           ...     mx A26       RN_TB_1us    mcell  A12
+mx A10             ...           ...     mx A27             ...           ...
+mx A11       RN_TB_5us     mcell  A8     mx A28             ...           ...
+mx A12             ...           ...     mx A29             ...           ...
+mx A13             ...           ...     mx A30             ...           ...
+mx A14             ...           ...     mx A31             ...           ...
+mx A15      RN_TB_20ms     mcell  C0     mx A32             ...           ...
+mx A16             ...           ...
+----------------------------------------------------------------------------
+
+
+BLOCK_B_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx B0          RN_A03     mcell  B5     mx B17          RN_A07    mcell  B12
+mx B1             ...           ...     mx B18             ...           ...
+mx B2             ...           ...     mx B19          RN_A02     mcell  F8
+mx B3           RN_C8     mcell  C1     mx B20            N_57     mcell  D1
+mx B4          RN_A08     mcell  B8     mx B21             ...           ...
+mx B5          RN_A09     mcell  B4     mx B22             ...           ...
+mx B6            N_49     mcell  F9     mx B23             ...           ...
+mx B7             ...           ...     mx B24             ...           ...
+mx B8          RN_A10     mcell  B0     mx B25             ...           ...
+mx B9             ...           ...     mx B26             ...           ...
+mx B10          RN_A04     mcell  B1     mx B27             ...           ...
+mx B11             ...           ...     mx B28             ...           ...
+mx B12          RN_A06     mcell  E4     mx B29             ...           ...
+mx B13             ...           ...     mx B30             ...           ...
+mx B14             ...           ...     mx B31             ...           ...
+mx B15             ...           ...     mx B32             ...           ...
+mx B16             ...           ...
+----------------------------------------------------------------------------
+
+
+BLOCK_C_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx C0              S1        pin 86     mx C17             ...           ...
+mx C1    D0_OUTPUT_QC     mcell  A1     mx C18             ...           ...
+mx C2    G0_OUTPUT_QC     mcell  C5     mx C19             ...           ...
+mx C3      RN_TB_10us     mcell  A4     mx C20             ...           ...
+mx C4      RN_TB_10ms    mcell  E12     mx C21             ...           ...
+mx C5      RN_TB_20us     mcell  C4     mx C22             ...           ...
+mx C6             ...           ...     mx C23             ...           ...
+mx C7             CLR        pin 36     mx C24             ...           ...
+mx C8             ...           ...     mx C25             ...           ...
+mx C9             ...           ...     mx C26             ...           ...
+mx C10             ...           ...     mx C27             ...           ...
+mx C11             ...           ...     mx C28             ...           ...
+mx C12      RN_TB_50ms     mcell  C8     mx C29             ...           ...
+mx C13      RN_TB_50us    mcell  C12     mx C30             ...           ...
+mx C14             ...           ...     mx C31             ...           ...
+mx C15      RN_TB_20ms     mcell  C0     mx C32             ...           ...
+mx C16             ...           ...
+----------------------------------------------------------------------------
+
+
+BLOCK_D_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx D0     RN_TB_100us     mcell  D8     mx D17             ...           ...
+mx D1              R2        pin 41     mx D18             ...           ...
+mx D2          RN_A11     mcell  F4     mx D19            N_57     mcell  D1
+mx D3             ...           ...     mx D20             ...           ...
+mx D4             ...           ...     mx D21             ...           ...
+mx D5             ...           ...     mx D22             ...           ...
+mx D6     RN_TB_500us     mcell  D4     mx D23             ...           ...
+mx D7             CLR        pin 36     mx D24             ...           ...
+mx D8             ...           ...     mx D25             ...           ...
+mx D9    F0_OUTPUT_QC     mcell  D5     mx D26             ...           ...
+mx D10     RN_TB_200us     mcell  D0     mx D27             ...           ...
+mx D11         RN_WRAD     mcell  B9     mx D28             ...           ...
+mx D12             ...           ...     mx D29             ...           ...
+mx D13      RN_TB_50us    mcell  C12     mx D30             ...           ...
+mx D14             ...           ...     mx D31             ...           ...
+mx D15             ...           ...     mx D32             ...           ...
+mx D16             ...           ...
+----------------------------------------------------------------------------
+
+
+BLOCK_E_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx E0             ...           ...     mx E17          RN_A06     mcell  E4
+mx E1             ...           ...     mx E18             ...           ...
+mx E2      RN_TB_10ms    mcell  E12     mx E19            N_57     mcell  D1
+mx E3       RN_TB_2ms     mcell  E0     mx E20             ...           ...
+mx E4             ...           ...     mx E21             ...           ...
+mx E5             ...           ...     mx E22             ...           ...
+mx E6       RN_TB_1ms     mcell  F1     mx E23             ...           ...
+mx E7             CLR        pin 36     mx E24             ...           ...
+mx E8             ...           ...     mx E25             ...           ...
+mx E9             ...           ...     mx E26           RN_C8     mcell  C1
+mx E10          RN_A05     mcell  E8     mx E27             ...           ...
+mx E11       RN_TB_5ms     mcell  E1     mx E28             ...           ...
+mx E12          RN_A04     mcell  B1     mx E29             ...           ...
+mx E13            N_49     mcell  F9     mx E30             ...           ...
+mx E14             ...           ...     mx E31             ...           ...
+mx E15    E0_OUTPUT_QC     mcell  E9     mx E32             ...           ...
+mx E16             ...           ...
+----------------------------------------------------------------------------
+
+
+BLOCK_F_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx F0             ...           ...     mx F17          RN_A02     mcell  F8
+mx F1              R2        pin 41     mx F18             ...           ...
+mx F2          RN_A11     mcell  F4     mx F19            N_57     mcell  D1
+mx F3          RN_A00     mcell  F0     mx F20             ...           ...
+mx F4             ...           ...     mx F21             ...           ...
+mx F5             ...           ...     mx F22             ...           ...
+mx F6     RN_TB_500us     mcell  D4     mx F23             ...           ...
+mx F7             CLR        pin 36     mx F24             ...           ...
+mx F8          RN_A10     mcell  B0     mx F25             ...           ...
+mx F9             ...           ...     mx F26             ...           ...
+mx F10           RN_C8     mcell  C1     mx F27             ...           ...
+mx F11       RN_TB_1ms     mcell  F1     mx F28             ...           ...
+mx F12             ...           ...     mx F29             ...           ...
+mx F13            N_49     mcell  F9     mx F30             ...           ...
+mx F14          RN_A01    mcell  F12     mx F31             ...           ...
+mx F15             ...           ...     mx F32             ...           ...
+mx F16             ...           ...
+----------------------------------------------------------------------------
+
+<Note> CSM indicates the mux inputs from the Central Switch Matrix.
+<Note> Source indicates where the signal comes from (pin or macrocell). 
+
+
+
+
+PostFit_Equations
+~~~~~~~~~~~~~~~~~
+
+Title:  control.bls 
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          2        1    Pin   CE_RAM 
+   0          0        1    Pin   READY.D 
+   1          1        1    Pin   READY.AP 
+   1          1        1    Pin   READY.C 
+   1          1        1    Pin   READ.AR 
+   1          0        1    Pin   READ.D 
+   1          1        1    Pin   READ.C 
+   1          0        1    Pin   WRAD.AR 
+   1          1        1    Pin   WRAD.D 
+   1          1        1    Pin   WRAD.C 
+   1          1        1    Pin   C8.AR 
+   1          0        1    Pin   C8.D 
+   1          1        1    Pin   C8.C 
+   1          1        1    Pin   TB_1us.AR 
+   2          2        1    Pin   TB_1us.D 
+   1          1        1    Pin   TB_1us.C 
+   1          1        1    Pin   TB_2us.AR 
+   3          3        1    Pin   TB_2us.D 
+   1          1        1    Pin   TB_2us.C 
+   1          1        1    Pin   TB_5us.AR 
+   2          4        1    Pin   TB_5us.D 
+   1          1        1    Pin   TB_5us.C 
+   1          1        1    Pin   TB_10us.AR 
+   2          2        1    Pin   TB_10us.D 
+   1          1        1    Pin   TB_10us.C 
+   1          1        1    Pin   TB_20us.AR 
+   3          3        1    Pin   TB_20us.D 
+   1          1        1    Pin   TB_20us.C 
+   1          1        1    Pin   TB_50us.AR 
+   2          4        1    Pin   TB_50us.D 
+   1          1        1    Pin   TB_50us.C 
+   1          1        1    Pin   TB_100us.AR 
+   2          2        1    Pin   TB_100us.D 
+   1          1        1    Pin   TB_100us.C 
+   1          1        1    Pin   TB_200us.AR 
+   3          3        1    Pin   TB_200us.D 
+   1          1        1    Pin   TB_200us.C 
+   1          1        1    Pin   TB_500us.AR 
+   2          4        1    Pin   TB_500us.D 
+   1          1        1    Pin   TB_500us.C 
+   1          1        1    Pin   TB_1ms.AR 
+   2          2        1    Pin   TB_1ms.D 
+   1          1        1    Pin   TB_1ms.C 
+   1          1        1    Pin   TB_2ms.AR 
+   3          3        1    Pin   TB_2ms.D 
+   1          1        1    Pin   TB_2ms.C 
+   1          1        1    Pin   TB_5ms.AR 
+   2          4        1    Pin   TB_5ms.D 
+   1          1        1    Pin   TB_5ms.C 
+   1          1        1    Pin   TB_10ms.AR 
+   2          2        1    Pin   TB_10ms.D 
+   1          1        1    Pin   TB_10ms.C 
+   1          1        1    Pin   TB_20ms.AR 
+   3          3        1    Pin   TB_20ms.D 
+   1          1        1    Pin   TB_20ms.C 
+   1          1        1    Pin   TB_50ms.AR 
+   2          4        1    Pin   TB_50ms.D 
+   1          1        1    Pin   TB_50ms.C 
+   1          1        1    Pin   A00.AR 
+   3          3        1    Pin   A00.D 
+   1          2        1    Pin   A00.C- 
+   1          1        1    Pin   A01.AR 
+   2          2        1    Pin   A01.D 
+   1          2        1    Pin   A01.C- 
+   1          1        1    Pin   A02.AR 
+   2          2        1    Pin   A02.D 
+   1          2        1    Pin   A02.C- 
+   1          1        1    Pin   A03.AR 
+   2          2        1    Pin   A03.D 
+   1          2        1    Pin   A03.C- 
+   1          1        1    Pin   A04.AR 
+   2          2        1    Pin   A04.D 
+   1          2        1    Pin   A04.C- 
+   1          1        1    Pin   A05.AR 
+   2          2        1    Pin   A05.D 
+   1          2        1    Pin   A05.C- 
+   1          1        1    Pin   A06.AR 
+   2          2        1    Pin   A06.D 
+   1          2        1    Pin   A06.C- 
+   1          1        1    Pin   A07.AR 
+   2          2        1    Pin   A07.D 
+   1          2        1    Pin   A07.C- 
+   1          1        1    Pin   A08.AR 
+   2          2        1    Pin   A08.D 
+   1          2        1    Pin   A08.C- 
+   1          1        1    Pin   A09.AR 
+   2          2        1    Pin   A09.D 
+   1          2        1    Pin   A09.C- 
+   1          1        1    Pin   A10.AR 
+   2          2        1    Pin   A10.D 
+   1          2        1    Pin   A10.C- 
+   1          1        1    Pin   A11.AR 
+   2          2        1    Pin   A11.D 
+   1          2        1    Pin   A11.C- 
+   1          1        1    Node  N_57.AR 
+   1          2        1    Node  N_57.D- 
+   1          1        1    Node  N_57.C 
+   1          1        1    Node  N_49.AR 
+   1          0        1    Node  N_49.D 
+   1          1        1    Node  N_49.C 
+   1          1        1    Node  D0_OUTPUT_QC.AR 
+   2          2        1    Node  D0_OUTPUT_QC.D 
+   1          1        1    Node  D0_OUTPUT_QC.C 
+   1          1        1    Node  E0_OUTPUT_QC.AR 
+   2          2        1    Node  E0_OUTPUT_QC.D 
+   1          1        1    Node  E0_OUTPUT_QC.C 
+   1          1        1    Node  F0_OUTPUT_QC.AR 
+   2          2        1    Node  F0_OUTPUT_QC.D 
+   1          1        1    Node  F0_OUTPUT_QC.C 
+   1          1        1    Node  G0_OUTPUT_QC.AR 
+   2          2        1    Node  G0_OUTPUT_QC.D 
+   1          1        1    Node  G0_OUTPUT_QC.C 
+   1          1        1    Node  H0_OUTPUT_QC.AR 
+   2          2        1    Node  H0_OUTPUT_QC.D 
+   1          1        1    Node  H0_OUTPUT_QC.C 
+=========
+ 152                 P-Term Total: 152
+                       Total Pins: 38
+                      Total Nodes: 7
+            Average P-Term/Output: 1
+
+
+Equations:
+
+CE_RAM = (!N_57.Q & !N_49.Q);
+
+READY.D = (0);
+
+READY.AP = (R2);
+
+READY.C = (A11.Q);
+
+READ.AR = (R2);
+
+READ.D = (1);
+
+READ.C = (A11.Q);
+
+WRAD.AR = (1);
+
+WRAD.D = (!N_57.Q);
+
+WRAD.C = (CLK);
+
+C8.AR = (S1);
+
+C8.D = (1);
+
+C8.C = (R3);
+
+TB_1us.AR = (CLR);
+
+TB_1us.D = (!CLK & TB_1us.Q
+     # CLK & !TB_1us.Q);
+
+TB_1us.C = (!CLK);
+
+TB_2us.AR = (CLR);
+
+TB_2us.D = (!TB_1us.Q & TB_2us.Q
+     # TB_2us.Q & TB_5us.Q
+     # TB_1us.Q & !TB_2us.Q & !TB_5us.Q);
+
+TB_2us.C = (!CLK);
+
+TB_5us.AR = (CLR);
+
+TB_5us.D = (!TB_1us.Q & TB_5us.Q
+     # TB_1us.Q & TB_2us.Q & !TB_5us.Q & H0_OUTPUT_QC.Q);
+
+TB_5us.C = (!CLK);
+
+TB_10us.AR = (CLR);
+
+TB_10us.D = (!TB_5us.Q & TB_10us.Q
+     # TB_5us.Q & !TB_10us.Q);
+
+TB_10us.C = (!CLK);
+
+TB_20us.AR = (CLR);
+
+TB_20us.D = (!TB_10us.Q & TB_20us.Q
+     # TB_20us.Q & TB_50us.Q
+     # TB_10us.Q & !TB_20us.Q & !TB_50us.Q);
+
+TB_20us.C = (!CLK);
+
+TB_50us.AR = (CLR);
+
+TB_50us.D = (!TB_10us.Q & TB_50us.Q
+     # TB_10us.Q & TB_20us.Q & !TB_50us.Q & G0_OUTPUT_QC.Q);
+
+TB_50us.C = (!CLK);
+
+TB_100us.AR = (CLR);
+
+TB_100us.D = (!TB_50us.Q & TB_100us.Q
+     # TB_50us.Q & !TB_100us.Q);
+
+TB_100us.C = (!CLK);
+
+TB_200us.AR = (CLR);
+
+TB_200us.D = (!TB_100us.Q & TB_200us.Q
+     # TB_200us.Q & TB_500us.Q
+     # TB_100us.Q & !TB_200us.Q & !TB_500us.Q);
+
+TB_200us.C = (!CLK);
+
+TB_500us.AR = (CLR);
+
+TB_500us.D = (!TB_100us.Q & TB_500us.Q
+     # TB_100us.Q & TB_200us.Q & !TB_500us.Q & F0_OUTPUT_QC.Q);
+
+TB_500us.C = (!CLK);
+
+TB_1ms.AR = (CLR);
+
+TB_1ms.D = (!TB_500us.Q & TB_1ms.Q
+     # TB_500us.Q & !TB_1ms.Q);
+
+TB_1ms.C = (!CLK);
+
+TB_2ms.AR = (CLR);
+
+TB_2ms.D = (!TB_1ms.Q & TB_2ms.Q
+     # TB_2ms.Q & TB_5ms.Q
+     # TB_1ms.Q & !TB_2ms.Q & !TB_5ms.Q);
+
+TB_2ms.C = (!CLK);
+
+TB_5ms.AR = (CLR);
+
+TB_5ms.D = (!TB_1ms.Q & TB_5ms.Q
+     # TB_1ms.Q & TB_2ms.Q & !TB_5ms.Q & E0_OUTPUT_QC.Q);
+
+TB_5ms.C = (!CLK);
+
+TB_10ms.AR = (CLR);
+
+TB_10ms.D = (!TB_5ms.Q & TB_10ms.Q
+     # TB_5ms.Q & !TB_10ms.Q);
+
+TB_10ms.C = (!CLK);
+
+TB_20ms.AR = (CLR);
+
+TB_20ms.D = (!TB_10ms.Q & TB_20ms.Q
+     # TB_20ms.Q & TB_50ms.Q
+     # TB_10ms.Q & !TB_20ms.Q & !TB_50ms.Q);
+
+TB_20ms.C = (!CLK);
+
+TB_50ms.AR = (CLR);
+
+TB_50ms.D = (!TB_10ms.Q & TB_50ms.Q
+     # TB_10ms.Q & TB_20ms.Q & !TB_50ms.Q & D0_OUTPUT_QC.Q);
+
+TB_50ms.C = (!CLK);
+
+A00.AR = (!C8.Q);
+
+A00.D = (N_57.Q & !A00.Q
+     # N_49.Q & !A00.Q
+     # !N_57.Q & !N_49.Q & A00.Q);
+
+!A00.C = (!N_57.Q & !N_49.Q);
+
+A01.AR = (!C8.Q);
+
+A01.D = (A00.Q & A01.Q
+     # !A00.Q & !A01.Q);
+
+!A01.C = (!N_57.Q & !N_49.Q);
+
+A02.AR = (!C8.Q);
+
+A02.D = (A01.Q & A02.Q
+     # !A01.Q & !A02.Q);
+
+!A02.C = (!N_57.Q & !N_49.Q);
+
+A03.AR = (!C8.Q);
+
+A03.D = (A02.Q & A03.Q
+     # !A02.Q & !A03.Q);
+
+!A03.C = (!N_57.Q & !N_49.Q);
+
+A04.AR = (!C8.Q);
+
+A04.D = (A03.Q & A04.Q
+     # !A03.Q & !A04.Q);
+
+!A04.C = (!N_57.Q & !N_49.Q);
+
+A05.AR = (!C8.Q);
+
+A05.D = (A04.Q & A05.Q
+     # !A04.Q & !A05.Q);
+
+!A05.C = (!N_57.Q & !N_49.Q);
+
+A06.AR = (!C8.Q);
+
+A06.D = (A05.Q & A06.Q
+     # !A05.Q & !A06.Q);
+
+!A06.C = (!N_57.Q & !N_49.Q);
+
+A07.AR = (!C8.Q);
+
+A07.D = (A06.Q & A07.Q
+     # !A06.Q & !A07.Q);
+
+!A07.C = (!N_57.Q & !N_49.Q);
+
+A08.AR = (!C8.Q);
+
+A08.D = (A07.Q & A08.Q
+     # !A07.Q & !A08.Q);
+
+!A08.C = (!N_57.Q & !N_49.Q);
+
+A09.AR = (!C8.Q);
+
+A09.D = (A08.Q & A09.Q
+     # !A08.Q & !A09.Q);
+
+!A09.C = (!N_57.Q & !N_49.Q);
+
+A10.AR = (!C8.Q);
+
+A10.D = (A09.Q & A10.Q
+     # !A09.Q & !A10.Q);
+
+!A10.C = (!N_57.Q & !N_49.Q);
+
+A11.AR = (!C8.Q);
+
+A11.D = (A11.Q & A10.Q
+     # !A11.Q & !A10.Q);
+
+!A11.C = (!N_57.Q & !N_49.Q);
+
+N_57.AR = (WRAD.Q);
+
+!N_57.D = (!N_57.Q & !WRAD.Q);
+
+N_57.C = (S2);
+
+N_49.AR = (R2);
+
+N_49.D = (1);
+
+N_49.C = (A11.Q);
+
+D0_OUTPUT_QC.AR = (CLR);
+
+D0_OUTPUT_QC.D = (!TB_20ms.Q & D0_OUTPUT_QC.Q
+     # TB_20ms.Q & !D0_OUTPUT_QC.Q);
+
+D0_OUTPUT_QC.C = (!CLK);
+
+E0_OUTPUT_QC.AR = (CLR);
+
+E0_OUTPUT_QC.D = (!TB_2ms.Q & E0_OUTPUT_QC.Q
+     # TB_2ms.Q & !E0_OUTPUT_QC.Q);
+
+E0_OUTPUT_QC.C = (!CLK);
+
+F0_OUTPUT_QC.AR = (CLR);
+
+F0_OUTPUT_QC.D = (!TB_200us.Q & F0_OUTPUT_QC.Q
+     # TB_200us.Q & !F0_OUTPUT_QC.Q);
+
+F0_OUTPUT_QC.C = (!CLK);
+
+G0_OUTPUT_QC.AR = (CLR);
+
+G0_OUTPUT_QC.D = (!TB_20us.Q & G0_OUTPUT_QC.Q
+     # TB_20us.Q & !G0_OUTPUT_QC.Q);
+
+G0_OUTPUT_QC.C = (!CLK);
+
+H0_OUTPUT_QC.AR = (CLR);
+
+H0_OUTPUT_QC.D = (!TB_2us.Q & H0_OUTPUT_QC.Q
+     # TB_2us.Q & !H0_OUTPUT_QC.Q);
+
+H0_OUTPUT_QC.C = (!CLK);
+
+
+Reverse-Polarity Equations:
+

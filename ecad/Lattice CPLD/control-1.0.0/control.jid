@@ -1,0 +1,11 @@
+. control control.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\control.sch
+FB100.CNT103 fbdc fbdc.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\fbdc.sch
+FB100 timebase timebase.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\timebase.sch
+FB100.CNT102 fbdc fbdc.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\fbdc.sch
+FB100.CNT101 fbdc fbdc.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\fbdc.sch
+FB100.CNT100 fbdc fbdc.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\fbdc.sch
+FB100.CNT104 fbdc fbdc.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\fbdc.sch
+FB101 addressbus addressbus.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\addressbus.sch
+FB101.I24 fbbc fbbc.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\fbbc.sch
+FB101.I25 fbbc fbbc.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\fbbc.sch
+FB101.I26 fbbc fbbc.sch c:\documents and settings\bert\mijn documenten\mijn projecten\rabulab\54_control_unit\electrical\lattice\control\fbbc.sch

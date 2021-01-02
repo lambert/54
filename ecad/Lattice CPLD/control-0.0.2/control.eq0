@@ -1,0 +1,319 @@
+ispLEVER 2.01.28.41.02 Linked Equations File
+Copyright(C), 1992-2002, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design control created Sun Jul 09 22:00:25 2006
+
+Title: control.bls 
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   WRAD 
+   1/1        1        1    Pin   CE_RAM 
+   1/1        1        1    Pin   READY 
+   1/1        1        1    Pin   READ 
+   1/1        1        1    Pin   C8 
+   1/1        1        1    Pin   TB_1us 
+   1/1        1        1    Pin   TB_2us 
+   1/1        1        1    Pin   TB_5us 
+   1/1        1        1    Pin   TB_10us 
+   1/1        1        1    Pin   TB_20us 
+   1/1        1        1    Pin   TB_50us 
+   1/1        1        1    Pin   TB_100us 
+   1/1        1        1    Pin   TB_200us 
+   1/1        1        1    Pin   TB_500us 
+   1/1        1        1    Pin   TB_1ms 
+   1/1        1        1    Pin   TB_2ms 
+   1/1        1        1    Pin   TB_5ms 
+   1/1        1        1    Pin   TB_10ms 
+   1/1        1        1    Pin   TB_20ms 
+   1/1        1        1    Pin   TB_50ms 
+   1/1        1        1    Pin   A00 
+   1/1        1        1    Pin   A01 
+   1/1        1        1    Pin   A02 
+   1/1        1        1    Pin   A03 
+   1/1        1        1    Pin   A04 
+   1/1        1        1    Pin   A05 
+   1/1        1        1    Pin   A06 
+   1/1        1        1    Pin   A07 
+   1/1        1        1    Pin   A08 
+   1/1        1        1    Pin   A09 
+   1/1        1        1    Pin   A10 
+   1/1        1        1    Pin   A11 
+   1/1        1        1    Node  N_57.RE 
+   1/1        1        1    Node  N_57.J 
+   1/1        1        1    Node  N_57.K 
+   1/1        1        1    Node  N_57.C 
+   1/2        2        1    Node  N_56 
+   1/1        1        1    Node  N_55.RE 
+   1/1        1        1    Node  N_55.J 
+   1/1        1        1    Node  N_55.K 
+   1/1        1        1    Node  N_55.C 
+   1/1        1        1    Node  N_47 
+   1/1        1        1    Node  N_48 
+   1/1        1        1    Node  N_49.RE 
+   1/1        1        1    Node  N_49.J 
+   1/1        1        1    Node  N_49.K 
+   1/1        1        1    Node  N_49.C 
+   1/1        1        1    Node  N_52 
+   1/1        1        1    Node  N_53 
+   1/1        1        1    Node  N_54 
+   1          0        1    Node  VCC 
+   0          0        1    Node  GND 
+   1/1        1        1    Node  N_35 
+   1/1        1        1    Node  N_36 
+   1/1        1        1    Node  N_37 
+   1/1        1        1    Node  N_38 
+   1/1        1        1    Node  N_40.RE 
+   1/1        1        1    Node  N_40.J 
+   1/1        1        1    Node  N_40.K 
+   1/1        1        1    Node  N_40.C 
+=========
+  59/59         Best P-Term Total: 59
+                       Total Pins: 38
+                      Total Nodes: 43
+            Average P-Term/Output: 0
+
+
+Equations:
+
+WRAD = (N_55);
+
+CE_RAM = (N_56);
+
+READY = (N_48);
+
+READ = (N_49);
+
+C8 = (N_40);
+
+TB_1us = (N_6);
+
+TB_2us = (N_8);
+
+TB_5us = (N_11);
+
+TB_10us = (N_15);
+
+TB_20us = (N_19);
+
+TB_50us = (N_22);
+
+TB_100us = (N_26);
+
+TB_200us = (N_3);
+
+TB_500us = (N_27);
+
+TB_1ms = (N_23);
+
+TB_2ms = (N_16);
+
+TB_5ms = (N_12);
+
+TB_10ms = (N_9);
+
+TB_20ms = (N_7);
+
+TB_50ms = (N_5);
+
+A00 = (N_10);
+
+A01 = (N_13);
+
+A02 = (N_17);
+
+A03 = (N_20);
+
+A04 = (N_24);
+
+A05 = (N_28);
+
+A06 = (N_4);
+
+A07 = (N_29);
+
+A08 = (N_25);
+
+A09 = (N_21);
+
+A10 = (N_42);
+
+A11 = (N_14);
+
+N_57.RE = (N_55);
+
+N_57.J = (N_55);
+
+N_57.K = (GND);
+
+N_57.C = (N_47);
+
+N_56 = (N_48 & N_52);
+
+N_55.RE = (VCC);
+
+N_55.J = (N_52);
+
+N_55.K = (N_57);
+
+N_55.C = (N_54);
+
+N_47 = (S2);
+
+N_48 = (!N_49);
+
+N_49.RE = (N_37);
+
+N_49.J = (VCC);
+
+N_49.K = (GND);
+
+N_49.C = (N_14);
+
+N_52 = (!N_57);
+
+N_53 = (CLR);
+
+N_54 = (CLK);
+
+VCC = (1);
+
+GND = (0);
+
+N_35 = (R3);
+
+N_36 = (!N_40);
+
+N_37 = (R2);
+
+N_38 = (S1);
+
+N_40.RE = (N_38);
+
+N_40.J = (VCC);
+
+N_40.K = (GND);
+
+N_40.C = (N_35);
+
+
+Reverse-Polarity Equations:
+
+!WRAD = (!N_55);
+
+!CE_RAM = (!N_56);
+
+!READY = (!N_48);
+
+!READ = (!N_49);
+
+!C8 = (!N_40);
+
+!TB_1us = (!N_6);
+
+!TB_2us = (!N_8);
+
+!TB_5us = (!N_11);
+
+!TB_10us = (!N_15);
+
+!TB_20us = (!N_19);
+
+!TB_50us = (!N_22);
+
+!TB_100us = (!N_26);
+
+!TB_200us = (!N_3);
+
+!TB_500us = (!N_27);
+
+!TB_1ms = (!N_23);
+
+!TB_2ms = (!N_16);
+
+!TB_5ms = (!N_12);
+
+!TB_10ms = (!N_9);
+
+!TB_20ms = (!N_7);
+
+!TB_50ms = (!N_5);
+
+!A00 = (!N_10);
+
+!A01 = (!N_13);
+
+!A02 = (!N_17);
+
+!A03 = (!N_20);
+
+!A04 = (!N_24);
+
+!A05 = (!N_28);
+
+!A06 = (!N_4);
+
+!A07 = (!N_29);
+
+!A08 = (!N_25);
+
+!A09 = (!N_21);
+
+!A10 = (!N_42);
+
+!A11 = (!N_14);
+
+!N_57.RE = (!N_55);
+
+!N_57.J = (!N_55);
+
+!N_57.K = (!GND);
+
+!N_57.C = (!N_47);
+
+!N_56 = (!N_48
+     # !N_52);
+
+!N_55.RE = (!VCC);
+
+!N_55.J = (!N_52);
+
+!N_55.K = (!N_57);
+
+!N_55.C = (!N_54);
+
+!N_47 = (!S2);
+
+!N_48 = (N_49);
+
+!N_49.RE = (!N_37);
+
+!N_49.J = (!VCC);
+
+!N_49.K = (!GND);
+
+!N_49.C = (!N_14);
+
+!N_52 = (N_57);
+
+!N_53 = (!CLR);
+
+!N_54 = (!CLK);
+
+!N_35 = (!R3);
+
+!N_36 = (N_40);
+
+!N_37 = (!R2);
+
+!N_38 = (!S1);
+
+!N_40.RE = (!N_38);
+
+!N_40.J = (!VCC);
+
+!N_40.K = (!GND);
+
+!N_40.C = (!N_35);
+

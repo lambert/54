@@ -1,0 +1,208 @@
+#$ TOOL ispLEVER 6.0.00.33.17.06
+#$ DATE Sat Jul 15 19:26:13 2006
+#$ TITLE control.bls 
+#$ MODULE control
+#$ PINS 38 S2 WRAD'o'  CE_RAM'o'  READY'o'  READ'o'  C8'o'  CLR CLK R2 R3 S1 TB_1us'o'  TB_2us'o'  TB_5us'o'  \
+#  TB_10us'o'  TB_20us'o'  TB_50us'o'  TB_100us'o'  TB_200us'o'  TB_500us'o'  TB_1ms'o'  TB_2ms'o'  TB_5ms'o'  \
+#  TB_10ms'o'  TB_20ms'o'  TB_50ms'o'  A00'o'  A01'o'  A02'o'  A03'o'  A04'o'  A05'o'  A06'o'  A07'o'  A08'o'  A09'o'  A10'o'  A11'o' 
+#$ NODES 43 N_57'o'  N_56'o'  N_55'o'  N_47'o'  N_48'o'  N_49'o'  N_52'o'  N_53'o'  N_54'o'  N_42 VCC GND N_35'o'  N_36'o'  \
+#  N_37'o'  N_38'o'  N_40'o'  N_3 N_4 N_5 N_6 N_7 N_8 N_9 N_10 N_11 N_12 N_13 N_14 N_15 N_16 N_17 N_19 N_20 \
+#  N_21 N_22 N_23 N_24 N_25 N_26 N_27 N_28 N_29
+#$ INTERFACE addressbus  14 AB_CLEAR'i'  AB_CLK'i'  A00'o'  A01'o'  A02'o'  A03'o'  A04'o'  A05'o'  A06'o'  A07'o'  A08'o'  A09'o'  A10'o'  A11'o' 
+#$ INTERFACE timebase  17 TB_CLEAR'i'  TB_CLK'i'  TB_100us'o'  TB_10ms'o'  TB_10us'o'  TB_1ms'o'  TB_1us'o'  \
+#  TB_200us'o'  TB_20ms'o'  TB_20us'o'  TB_2ms'o'  TB_2us'o'  TB_500us'o'  TB_50ms'o'  TB_50us'o'  TB_5ms'o'  TB_5us'o' 
+#$ INSTANCE FB101 addressbus 14 N_36 N_56 N_10 N_13 N_17 N_20 N_24 N_28 N_4 N_29 N_25 N_21 \
+#  N_42 N_14
+#$ INSTANCE FB100 timebase 17 N_53 N_54 N_26 N_9 N_15 N_23 N_6 N_3 N_7 N_19 N_16 N_8 N_27 N_5 \
+#  N_22 N_12 N_11
+.model control
+.inputs N_48.BLIF N_52.BLIF CLK.BLIF CLR.BLIF R2.BLIF R3.BLIF S1.BLIF S2.BLIF \
+N_57.BLIF N_49.BLIF N_40.BLIF VCC.BLIF N_54.BLIF N_55.BLIF N_47.BLIF GND.BLIF \
+N_37.BLIF N_14.BLIF N_38.BLIF N_35.BLIF N_10.BLIF N_13.BLIF N_17.BLIF \
+N_20.BLIF N_24.BLIF N_28.BLIF N_4.BLIF N_29.BLIF N_25.BLIF N_21.BLIF N_42.BLIF \
+N_56.BLIF N_6.BLIF N_8.BLIF N_11.BLIF N_15.BLIF N_19.BLIF N_22.BLIF N_26.BLIF \
+N_3.BLIF N_27.BLIF N_23.BLIF N_16.BLIF N_12.BLIF N_9.BLIF N_7.BLIF N_5.BLIF
+.outputs VCC GND N_56 N_54 N_53 N_37 N_35 N_38 N_47 N_52 N_48 N_36 N_55.RE \
+N_55.J N_55.K N_55.C N_57.RE N_57.J N_57.K N_57.C N_49.RE N_49.J N_49.K N_49.C \
+N_40.RE N_40.J N_40.K N_40.C A00 A01 A02 A03 A04 A05 A06 A07 A08 A09 A10 A11 \
+C8 CE_RAM READ READY TB_1us TB_2us TB_5us TB_10us TB_20us TB_50us TB_100us \
+TB_200us TB_500us TB_1ms TB_2ms TB_5ms TB_10ms TB_20ms TB_50ms WRAD
+.names VCC
+ 1
+.names GND
+.names N_48.BLIF N_52.BLIF N_56
+11 1
+0- 0
+-0 0
+.names N_57.BLIF N_52
+0 1
+1 0
+.names N_49.BLIF N_48
+0 1
+1 0
+.names N_40.BLIF N_36
+0 1
+1 0
+.names CLK.BLIF N_54
+1 1
+0 0
+.names CLR.BLIF N_53
+1 1
+0 0
+.names R2.BLIF N_37
+1 1
+0 0
+.names R3.BLIF N_35
+1 1
+0 0
+.names S1.BLIF N_38
+1 1
+0 0
+.names S2.BLIF N_47
+1 1
+0 0
+.names VCC.BLIF N_55.RE
+1 1
+0 0
+.names N_52.BLIF N_55.J
+1 1
+0 0
+.names N_57.BLIF N_55.K
+1 1
+0 0
+.names N_54.BLIF N_55.C
+1 1
+0 0
+.names N_55.BLIF N_57.RE
+1 1
+0 0
+.names N_55.BLIF N_57.J
+1 1
+0 0
+.names GND.BLIF N_57.K
+1 1
+0 0
+.names N_47.BLIF N_57.C
+1 1
+0 0
+.names N_37.BLIF N_49.RE
+1 1
+0 0
+.names VCC.BLIF N_49.J
+1 1
+0 0
+.names GND.BLIF N_49.K
+1 1
+0 0
+.names N_14.BLIF N_49.C
+1 1
+0 0
+.names N_38.BLIF N_40.RE
+1 1
+0 0
+.names VCC.BLIF N_40.J
+1 1
+0 0
+.names GND.BLIF N_40.K
+1 1
+0 0
+.names N_35.BLIF N_40.C
+1 1
+0 0
+.names N_10.BLIF A00
+1 1
+0 0
+.names N_13.BLIF A01
+1 1
+0 0
+.names N_17.BLIF A02
+1 1
+0 0
+.names N_20.BLIF A03
+1 1
+0 0
+.names N_24.BLIF A04
+1 1
+0 0
+.names N_28.BLIF A05
+1 1
+0 0
+.names N_4.BLIF A06
+1 1
+0 0
+.names N_29.BLIF A07
+1 1
+0 0
+.names N_25.BLIF A08
+1 1
+0 0
+.names N_21.BLIF A09
+1 1
+0 0
+.names N_42.BLIF A10
+1 1
+0 0
+.names N_14.BLIF A11
+1 1
+0 0
+.names N_40.BLIF C8
+1 1
+0 0
+.names N_56.BLIF CE_RAM
+1 1
+0 0
+.names N_49.BLIF READ
+1 1
+0 0
+.names N_48.BLIF READY
+1 1
+0 0
+.names N_6.BLIF TB_1us
+1 1
+0 0
+.names N_8.BLIF TB_2us
+1 1
+0 0
+.names N_11.BLIF TB_5us
+1 1
+0 0
+.names N_15.BLIF TB_10us
+1 1
+0 0
+.names N_19.BLIF TB_20us
+1 1
+0 0
+.names N_22.BLIF TB_50us
+1 1
+0 0
+.names N_26.BLIF TB_100us
+1 1
+0 0
+.names N_3.BLIF TB_200us
+1 1
+0 0
+.names N_27.BLIF TB_500us
+1 1
+0 0
+.names N_23.BLIF TB_1ms
+1 1
+0 0
+.names N_16.BLIF TB_2ms
+1 1
+0 0
+.names N_12.BLIF TB_5ms
+1 1
+0 0
+.names N_9.BLIF TB_10ms
+1 1
+0 0
+.names N_7.BLIF TB_20ms
+1 1
+0 0
+.names N_5.BLIF TB_50ms
+1 1
+0 0
+.names N_55.BLIF WRAD
+1 1
+0 0
+.end

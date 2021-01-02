@@ -1,0 +1,268 @@
+#$ TOOL ispLEVER 2.01.28.41.02
+#$ DATE Sun Jul 09 16:08:04 2006
+#$ TITLE control.bls 
+#$ MODULE control
+#$ PINS 17 O_Q'o'  O_P'o'  O_N'o'  O_M'o'  O_L'o'  O_K'o'  O_J'o'  O_H'o'  O_G'o'  O_F'o'  O_E'o'  O_D'o'  O_C'o'  O_B'o'  O_A'o'  CLK CLR
+#$ NODES 20 N_1'o'  N_4'o'  N_5'o'  N_6'o'  N_7'o'  N_8'o'  N_9'o'  N_10'o'  N_11'o'  N_12'o'  N_13'o'  N_14'o'  N_15'o'  N_16'o'  \
+#  N_17'o'  I25/I25>OUTPUT_QC'o'  I25/I6>OUTPUT_QC'o'  I25/I7>OUTPUT_QC'o'  I25/I8>OUTPUT_QC'o'  \
+#  I25/I9>OUTPUT_QC'o' 
+.model CONTROL
+.inputs CLK.BLIF CLR.BLIF N_5.BLIF N_7.BLIF N_9.BLIF N_11.BLIF N_13.BLIF \
+N_14.BLIF N_16.BLIF N_1.BLIF N_17.BLIF N_15.BLIF N_12.BLIF N_10.BLIF N_8.BLIF \
+N_6.BLIF N_4.BLIF I25/I25>OUTPUT_QC.BLIF I25/I6>OUTPUT_QC.BLIF \
+I25/I7>OUTPUT_QC.BLIF I25/I8>OUTPUT_QC.BLIF I25/I9>OUTPUT_QC.BLIF
+.outputs O_A O_B O_C O_D O_E O_F O_G O_H O_J O_K O_L O_M O_N O_P O_Q N_16.RE \
+N_16.T N_16.C N_8.RE N_8.T N_8.C N_11.RE N_11.T N_11.C N_15.RE N_15.T N_15.C \
+N_5.RE N_5.T N_5.C N_1.RE N_1.T N_1.C N_6.RE N_6.T N_6.C N_13.RE N_13.T N_13.C \
+N_12.RE N_12.T N_12.C N_7.RE N_7.T N_7.C N_17.RE N_17.T N_17.C N_4.RE N_4.T \
+N_4.C N_14.RE N_14.T N_14.C N_10.RE N_10.T N_10.C N_9.RE N_9.T N_9.C \
+I25/I25>OUTPUT_QC.RE I25/I25>OUTPUT_QC.T I25/I25>OUTPUT_QC.C \
+I25/I6>OUTPUT_QC.RE I25/I6>OUTPUT_QC.T I25/I6>OUTPUT_QC.C I25/I7>OUTPUT_QC.RE \
+I25/I7>OUTPUT_QC.T I25/I7>OUTPUT_QC.C I25/I8>OUTPUT_QC.RE I25/I8>OUTPUT_QC.T \
+I25/I8>OUTPUT_QC.C I25/I9>OUTPUT_QC.RE I25/I9>OUTPUT_QC.T I25/I9>OUTPUT_QC.C
+.names N_5.BLIF O_A
+1 1
+0 0
+.names N_7.BLIF O_B
+1 1
+0 0
+.names N_9.BLIF O_C
+1 1
+0 0
+.names N_11.BLIF O_D
+1 1
+0 0
+.names N_13.BLIF O_E
+1 1
+0 0
+.names N_14.BLIF O_F
+1 1
+0 0
+.names N_16.BLIF O_G
+1 1
+0 0
+.names N_1.BLIF O_H
+1 1
+0 0
+.names N_17.BLIF O_J
+1 1
+0 0
+.names N_15.BLIF O_K
+1 1
+0 0
+.names N_12.BLIF O_L
+1 1
+0 0
+.names N_10.BLIF O_M
+1 1
+0 0
+.names N_8.BLIF O_N
+1 1
+0 0
+.names N_6.BLIF O_P
+1 1
+0 0
+.names N_4.BLIF O_Q
+1 1
+0 0
+.names CLR.BLIF N_16.RE
+1 1
+0 0
+.names N_14.BLIF N_16.T
+1 1
+0 0
+.names CLK.BLIF N_16.C
+0 1
+1 0
+.names CLR.BLIF N_8.RE
+1 1
+0 0
+.names N_10.BLIF N_8.T
+1 1
+0 0
+.names CLK.BLIF N_8.C
+0 1
+1 0
+.names CLR.BLIF N_11.RE
+1 1
+0 0
+.names N_9.BLIF N_11.T
+1 1
+0 0
+.names CLK.BLIF N_11.C
+0 1
+1 0
+.names CLR.BLIF N_15.RE
+1 1
+0 0
+.names N_17.BLIF N_15.T
+1 1
+0 0
+.names CLK.BLIF N_15.C
+0 1
+1 0
+.names CLR.BLIF N_5.RE
+1 1
+0 0
+.names CLK.BLIF N_5.T
+1 1
+0 0
+.names CLK.BLIF N_5.C
+0 1
+1 0
+.names CLR.BLIF N_1.RE
+1 1
+0 0
+.names N_16.BLIF N_17.BLIF N_1.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_1.C
+0 1
+1 0
+.names CLR.BLIF N_6.RE
+1 1
+0 0
+.names N_8.BLIF N_4.BLIF N_6.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_6.C
+0 1
+1 0
+.names CLR.BLIF N_13.RE
+1 1
+0 0
+.names N_11.BLIF N_14.BLIF N_13.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_13.C
+0 1
+1 0
+.names CLR.BLIF N_12.RE
+1 1
+0 0
+.names N_15.BLIF N_10.BLIF N_12.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_12.C
+0 1
+1 0
+.names CLR.BLIF N_7.RE
+1 1
+0 0
+.names N_5.BLIF N_9.BLIF N_7.T
+10 1
+0- 0
+-1 0
+.names CLK.BLIF N_7.C
+0 1
+1 0
+.names CLR.BLIF N_17.RE
+1 1
+0 0
+.names N_16.BLIF N_1.BLIF N_17.BLIF I25/I7>OUTPUT_QC.BLIF N_17.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_17.C
+0 1
+1 0
+.names CLR.BLIF N_4.RE
+1 1
+0 0
+.names N_8.BLIF N_6.BLIF N_4.BLIF I25/I25>OUTPUT_QC.BLIF N_4.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_4.C
+0 1
+1 0
+.names CLR.BLIF N_14.RE
+1 1
+0 0
+.names N_11.BLIF N_13.BLIF N_14.BLIF I25/I8>OUTPUT_QC.BLIF N_14.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_14.C
+0 1
+1 0
+.names CLR.BLIF N_10.RE
+1 1
+0 0
+.names N_15.BLIF N_12.BLIF N_10.BLIF I25/I6>OUTPUT_QC.BLIF N_10.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_10.C
+0 1
+1 0
+.names CLR.BLIF N_9.RE
+1 1
+0 0
+.names N_5.BLIF N_7.BLIF N_9.BLIF I25/I9>OUTPUT_QC.BLIF N_9.T
+1-1- 1
+11-1 1
+-00- 0
+--00 0
+0--- 0
+.names CLK.BLIF N_9.C
+0 1
+1 0
+.names CLR.BLIF I25/I25>OUTPUT_QC.RE
+1 1
+0 0
+.names N_6.BLIF I25/I25>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF I25/I25>OUTPUT_QC.C
+0 1
+1 0
+.names CLR.BLIF I25/I6>OUTPUT_QC.RE
+1 1
+0 0
+.names N_12.BLIF I25/I6>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF I25/I6>OUTPUT_QC.C
+0 1
+1 0
+.names CLR.BLIF I25/I7>OUTPUT_QC.RE
+1 1
+0 0
+.names N_1.BLIF I25/I7>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF I25/I7>OUTPUT_QC.C
+0 1
+1 0
+.names CLR.BLIF I25/I8>OUTPUT_QC.RE
+1 1
+0 0
+.names N_13.BLIF I25/I8>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF I25/I8>OUTPUT_QC.C
+0 1
+1 0
+.names CLR.BLIF I25/I9>OUTPUT_QC.RE
+1 1
+0 0
+.names N_7.BLIF I25/I9>OUTPUT_QC.T
+1 1
+0 0
+.names CLK.BLIF I25/I9>OUTPUT_QC.C
+0 1
+1 0
+.end

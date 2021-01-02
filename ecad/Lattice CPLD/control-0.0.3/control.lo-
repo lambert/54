@@ -1,0 +1,18 @@
+ispEXPERT Compiler Release 6.0.00.33.17.06.28, May 20 2002 13:06:40
+
+Copyright (C) 1994-2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+
+Design Process Management 
+
+Renaming existing log file to control.lo-
+Renaming existing parameter file to control.pa-
+Renaming existing rpt file to control.rp-
+
+Preprocessing design 'control'...
+
+
+
+
+Design process management completed with errors

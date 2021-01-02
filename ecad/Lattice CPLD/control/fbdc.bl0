@@ -1,0 +1,95 @@
+#$ TOOL ispLEVER 2.1
+#$ DATE Mon Aug 07 22:00:36 2006
+#$ TITLE fbdc.bls 
+#$ MODULE fbdc
+#$ PINS 8 OUTPUT_QA'o'  OUTPUT_QB'o'  OUTPUT_QC'o'  OUTPUT_QD'o'  CLEAR CLK INPUT_A INPUT_B
+#$ NODES 10 N_1'o'  N_2'o'  N_3'o'  N_4'o'  N_5'o'  N_6'o'  N_7'o'  N_8'o'  N_9'o'  N_10'o' 
+
+.model FBDC
+.inputs N_5.BLIF N_6.BLIF N_3.BLIF INPUT_B.BLIF N_8.BLIF N_10.BLIF N_9.BLIF \
+CLEAR.BLIF CLK.BLIF OUTPUT_QB.BLIF OUTPUT_QC.BLIF OUTPUT_QD.BLIF N_4.BLIF \
+N_7.BLIF INPUT_A.BLIF N_2.BLIF N_1.BLIF
+.outputs N_9 N_10 N_2 N_1 N_8 N_4 N_7 N_6 N_3 N_5 OUTPUT_QA.RE OUTPUT_QA.T \
+OUTPUT_QA.C OUTPUT_QB.RE OUTPUT_QB.T OUTPUT_QB.C OUTPUT_QC.RE OUTPUT_QC.T \
+OUTPUT_QC.C OUTPUT_QD.RE OUTPUT_QD.T OUTPUT_QD.C
+
+.subckt g_2and A.BLIF=N_5.BLIF B.BLIF=N_6.BLIF Y=N_9
+
+.subckt g_2and A.BLIF=N_5.BLIF B.BLIF=N_3.BLIF Y=N_10
+
+.subckt g_2and A.BLIF=N_5.BLIF B.BLIF=INPUT_B.BLIF Y=N_2
+
+.subckt g_2and A.BLIF=N_8.BLIF B.BLIF=INPUT_B.BLIF Y=N_1
+
+.subckt g_2nor A.BLIF=N_10.BLIF B.BLIF=N_9.BLIF YN=N_8
+
+.subckt g_buf A.BLIF=CLEAR.BLIF Y=N_4
+
+.subckt g_inv A.BLIF=CLK.BLIF YN=N_7
+
+.subckt g_inv A.BLIF=OUTPUT_QB.BLIF YN=N_6
+
+.subckt g_inv A.BLIF=OUTPUT_QC.BLIF YN=N_3
+
+.subckt g_inv A.BLIF=OUTPUT_QD.BLIF YN=N_5
+\
+
+.subckt g_tc C.BLIF=N_4.BLIF CLK.BLIF=N_7.BLIF T.BLIF=INPUT_A.BLIF Q.RE=OUTPUT_QA.RE Q.T=OUTPUT_QA.T Q.C=OUTPUT_QA.C
+\
+
+.subckt g_tc C.BLIF=N_4.BLIF CLK.BLIF=N_7.BLIF T.BLIF=N_2.BLIF Q.RE=OUTPUT_QB.RE Q.T=OUTPUT_QB.T Q.C=OUTPUT_QB.C
+\
+
+.subckt g_tc C.BLIF=N_4.BLIF CLK.BLIF=N_7.BLIF T.BLIF=OUTPUT_QB.BLIF Q.RE=OUTPUT_QC.RE Q.T=OUTPUT_QC.T Q.C=OUTPUT_QC.C
+\
+
+.subckt g_tc C.BLIF=N_4.BLIF CLK.BLIF=N_7.BLIF T.BLIF=N_1.BLIF Q.RE=OUTPUT_QD.RE Q.T=OUTPUT_QD.T Q.C=OUTPUT_QD.C
+.end
+
+.model G_2AND
+.inputs A.BLIF B.BLIF
+.outputs Y
+.names A.BLIF B.BLIF Y
+11 1
+0- 0
+-0 0
+.end
+
+.model G_2NOR
+.inputs A.BLIF B.BLIF
+.outputs YN
+.names A.BLIF B.BLIF YN
+00 1
+1- 0
+-1 0
+.end
+
+.model G_BUF
+.inputs A.BLIF
+.outputs Y
+.names A.BLIF Y
+1 1
+0 0
+.end
+
+.model G_INV
+.inputs A.BLIF
+.outputs YN
+.names A.BLIF YN
+0 1
+1 0
+.end
+
+.model G_TC
+.inputs T.BLIF CLK.BLIF C.BLIF
+.outputs Q.T Q.C Q.RE
+.names T.BLIF Q.T
+1 1
+0 0
+.names CLK.BLIF Q.C
+1 1
+0 0
+.names C.BLIF Q.RE
+1 1
+0 0
+.end

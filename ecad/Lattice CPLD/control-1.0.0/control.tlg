@@ -1,0 +1,34 @@
+
+// Batch Timer Log File (Release Version: 2.01.28.41.02)
+
+//  Project = control
+//  Family  = mach4a
+//  Device  = mach496a
+//  Speed   = -10
+//  Voltage = 5.0
+//  Operating Condition = COM
+//  Data sheet version  = RevD-8/2000
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  Pass Clock = OFF
+//  Maximum Paths = 20
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+//  Register-to-register critical path delay: 12.0 ns
+//    -     8.0  tCOAi                             N_49.C                   ==>  N_49.Q
+//    -     0.0                                    N_49.Q                   ==>  A00.D
+//    -     4.0  tSA                               A00.D                    ==>  A00.C

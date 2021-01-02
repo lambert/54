@@ -1,0 +1,142 @@
+Using OEM Licensing.
+
+Starting:  C:\ispLEVER-2.0\synpbase\bin\mbin\synplify.exe
+Version:   7.1        
+Date:      Mon Aug 07 20:53:13 2006
+Arguments: 
+License: synplify
+
+
+No hdl files to compile in project: "proj"
+No hdl files to compile in project: "proj"
+No hdl files to compile in project: "proj"
+No hdl files to compile in project: "proj"
+No hdl files to compile in project: "proj"
+No hdl files to compile in project: "proj"
+File not found: "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\proj.edf"
+No hdl files to compile in project: "proj"
+Project file not found: "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\proj.prj"
+Error: Project load failed.
+No hdl files to compile in project: "proj"
+No hdl files to compile in project: "proj"
+Running synthesis on proj:rev_2
+
+log file: "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+
+Running vhdl Syntax check...
+Job: "Vhdl Compiler" terminated with error status: 2.
+See log file "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+Vhdl Compiler exited with errors
+Vhdl Compiler: 3 errors, 0 warnings, 0 notes
+
+Running synthesis on proj:rev_2
+
+log file: "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+
+Running vhdl Syntax check...
+Job: "Vhdl Compiler" terminated with error status: 2.
+See log file "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+Vhdl Compiler exited with errors
+Vhdl Compiler: 3 errors, 0 warnings, 0 notes
+
+Running synthesis on proj:rev_2
+
+log file: "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+
+Running vhdl Syntax check...
+Job: "Vhdl Compiler" terminated with error status: 2.
+See log file "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+Vhdl Compiler exited with errors
+Vhdl Compiler: 3 errors, 0 warnings, 0 notes
+
+Running synthesis on proj:rev_2
+
+log file: "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+
+Running vhdl Syntax check...
+Job: "Vhdl Compiler" terminated with error status: 2.
+See log file "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+Vhdl Compiler exited with errors
+Vhdl Compiler: 3 errors, 0 warnings, 0 notes
+
+Running synthesis on proj:rev_2
+
+log file: "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+
+Running vhdl Syntax check...
+Job: "Vhdl Compiler" terminated with error status: 2.
+See log file "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+Vhdl Compiler exited with errors
+Vhdl Compiler: 3 errors, 0 warnings, 0 notes
+
+Running synthesis on proj:rev_2
+
+log file: "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+
+Running vhdl Syntax check...
+Job: "Vhdl Compiler" terminated with error status: 2.
+See log file "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+Vhdl Compiler exited with errors
+Vhdl Compiler: 3 errors, 0 warnings, 0 notes
+
+Running synthesis on proj:rev_2
+
+log file: "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+
+Running vhdl Syntax check...
+Job: "Vhdl Compiler" terminated with error status: 2.
+See log file "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\timebase.srr"
+Vhdl Compiler exited with errors
+Vhdl Compiler: 3 errors, 0 warnings, 0 notes
+
+Running syntax_check on proj:rev_2
+
+Running vhdl Syntax check...
+Job: "Vhdl Compiler" terminated with error status: 2.
+See log file "C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\rev_2\syntax.log"
+Vhdl Compiler exited with errors
+Vhdl Compiler: 3 errors, 0 warnings, 0 notes
+
+Total: 3 errors, 0 warnings, 0 notes
+usage:
+project -run
+        [<mode>] [-fg] -- compile and synthesis project
+		<mode> = compile|synthesis|synthesis_only|synthesis_check|syntax_check|fsm_explorer|estimator|partitioner|timing
+        -fg                 -- run in foreground
+        [-tcl tclFile]      -- source tcl file
+usage:
+project -run
+        [<mode>] [-fg] -- compile and synthesis project
+		<mode> = compile|synthesis|synthesis_only|synthesis_check|syntax_check|fsm_explorer|estimator|partitioner|timing
+        -fg                 -- run in foreground
+        [-tcl tclFile]      -- source tcl file
+usage:
+project -run
+        [<mode>] [-fg] -- compile and synthesis project
+		<mode> = compile|synthesis|synthesis_only|synthesis_check|syntax_check|fsm_explorer|estimator|partitioner|timing
+        -fg                 -- run in foreground
+        [-tcl tclFile]      -- source tcl file
+usage:
+project -run
+        [<mode>] [-fg] -- compile and synthesis project
+		<mode> = compile|synthesis|synthesis_only|synthesis_check|syntax_check|fsm_explorer|estimator|partitioner|timing
+        -fg                 -- run in foreground
+        [-tcl tclFile]      -- source tcl file
+usage:
+project -run
+        [<mode>] [-fg] -- compile and synthesis project
+		<mode> = compile|synthesis|synthesis_only|synthesis_check|syntax_check|fsm_explorer|estimator|partitioner|timing
+        -fg                 -- run in foreground
+        [-tcl tclFile]      -- source tcl file
+usage:
+project -run
+        [<mode>] [-fg] -- compile and synthesis project
+		<mode> = compile|synthesis|synthesis_only|synthesis_check|syntax_check|fsm_explorer|estimator|partitioner|timing
+        -fg                 -- run in foreground
+        [-tcl tclFile]      -- source tcl file
+usage:
+project -run
+        [<mode>] [-fg] -- compile and synthesis project
+		<mode> = compile|synthesis|synthesis_only|synthesis_check|syntax_check|fsm_explorer|estimator|partitioner|timing
+        -fg                 -- run in foreground
+        [-tcl tclFile]      -- source tcl file

@@ -1,0 +1,26 @@
+ispEXPERT Compiler Release 2.01.28.02.28, May 20 2002 13:06:40
+
+Copyright (C) 1994-2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+
+Design Process Management 
+
+Renaming existing log file to control.lo-
+Renaming existing parameter file to control.pa-
+Renaming existing rpt file to control.rp-
+
+Preprocessing design 'control'...
+
+
+
+Lattice EDIF Netlist Reader  Version 2.01.28.02 Sat Aug 05 13:43:52 2006
+
+Copyright (c) 1993 - 2000 by Lattice Semiconductor Corporation.
+All Rights Reserved.
+
+Writing laf netlist ...
+
+Edif netlist reader completed successfully.
+
+

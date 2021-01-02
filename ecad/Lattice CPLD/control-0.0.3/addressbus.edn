@@ -1,0 +1,166 @@
+(edif ECS
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2006 6 15 17 43 36)
+      (program "edifnets" (Version "2.1"))
+      (dataOrigin "ispLEVER"
+        (Version "6.0.02.06"))))
+  (library MAIN (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell FBBC (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port CLEAR
+            (direction INPUT))
+          (port CLK
+            (direction INPUT))
+          (port INPUT_A
+            (direction INPUT))
+          (port OUTPUT_QA
+            (direction OUTPUT))
+          (port OUTPUT_QB
+            (direction OUTPUT))
+          (port OUTPUT_QC
+            (direction OUTPUT))
+          (port OUTPUT_QD
+            (direction OUTPUT)))))
+    (cell ADDRESSBUS (cellType GENERIC)
+      (view V1 (viewType NETLIST)
+        (interface
+          (port GND (direction INPUT))
+          (port VCC (direction INPUT))
+          (port AB_CLEAR
+            (direction INPUT))
+          (port AB_CLK
+            (direction INPUT))
+          (port A00
+            (direction OUTPUT))
+          (port A01
+            (direction OUTPUT))
+          (port A02
+            (direction OUTPUT))
+          (port A03
+            (direction OUTPUT))
+          (port A04
+            (direction OUTPUT))
+          (port A05
+            (direction OUTPUT))
+          (port A06
+            (direction OUTPUT))
+          (port A07
+            (direction OUTPUT))
+          (port A08
+            (direction OUTPUT))
+          (port A09
+            (direction OUTPUT))
+          (port A10
+            (direction OUTPUT))
+          (port A11
+            (direction OUTPUT)))
+        (contents
+          (instance I24
+            (viewRef V1
+              (cellRef FBBC)))
+          (instance I25
+            (viewRef V1
+              (cellRef FBBC)))
+          (instance I26
+            (viewRef V1
+              (cellRef FBBC)))
+          (net GND
+            (joined
+              (globalPortRef GND)))
+          (net VCC
+            (joined
+              (globalPortRef VCC)))
+          (net A11
+            (joined
+              (portRef A11)
+              (portRef OUTPUT_QD
+                (instanceRef I24))))
+          (net A10
+            (joined
+              (portRef A10)
+              (portRef OUTPUT_QC
+                (instanceRef I24))))
+          (net A09
+            (joined
+              (portRef A09)
+              (portRef OUTPUT_QB
+                (instanceRef I24))))
+          (net A08
+            (joined
+              (portRef A08)
+              (portRef OUTPUT_QA
+                (instanceRef I24))))
+          (net A07
+            (joined
+              (portRef A07)
+              (portRef INPUT_A
+                (instanceRef I24))
+              (portRef OUTPUT_QD
+                (instanceRef I25))))
+          (net A06
+            (joined
+              (portRef A06)
+              (portRef OUTPUT_QC
+                (instanceRef I25))))
+          (net A05
+            (joined
+              (portRef A05)
+              (portRef OUTPUT_QB
+                (instanceRef I25))))
+          (net A04
+            (joined
+              (portRef A04)
+              (portRef OUTPUT_QA
+                (instanceRef I25))))
+          (net A03
+            (joined
+              (portRef A03)
+              (portRef INPUT_A
+                (instanceRef I25))
+              (portRef OUTPUT_QD
+                (instanceRef I26))))
+          (net A02
+            (joined
+              (portRef A02)
+              (portRef OUTPUT_QC
+                (instanceRef I26))))
+          (net A01
+            (joined
+              (portRef A01)
+              (portRef OUTPUT_QB
+                (instanceRef I26))))
+          (net A00
+            (joined
+              (portRef A00)
+              (portRef OUTPUT_QA
+                (instanceRef I26))))
+          (net AB_CLEAR
+            (joined
+              (portRef AB_CLEAR)
+              (portRef CLEAR
+                (instanceRef I24))
+              (portRef CLEAR
+                (instanceRef I26))
+              (portRef CLEAR
+                (instanceRef I25))))
+          (net AB_CLK
+            (joined
+              (portRef AB_CLK)
+              (portRef CLK
+                (instanceRef I24))
+              (portRef INPUT_A
+                (instanceRef I26))
+              (portRef CLK
+                (instanceRef I26))
+              (portRef CLK
+                (instanceRef I25))))))))
+  (design addressbus
+    (cellRef addressbus
+      (libraryRef MAIN))))

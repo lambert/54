@@ -1,0 +1,1 @@
+-src control.tt4 -type PLA -devfile "C:\Program Files\ispTOOLS\ispcpld/dat/mach4a/mach432ace.dev" -postfit -lci control.lco

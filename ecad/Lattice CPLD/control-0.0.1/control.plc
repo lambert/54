@@ -1,0 +1,52 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.01.28.41.02                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+; Source file control.tt4
+; FITTER-generated Placements.
+; DEVICE   mach432a
+; DATE     Sun Jul 09 16:17:25 2006
+
+
+Pin   11  CLK
+Pin   33  CLR
+Pin   15  O_Q Reg  ; S6=1  S9=1  Pair 54
+Pin   14  O_P Reg  ; S6=1  S9=1  Pair 53
+Pin   6  O_N Reg  ; S6=1  S9=1  Pair 50
+Pin   28  O_M Reg  ; S6=1  S9=1  Pair 74
+Pin   38  O_L Reg  ; S6=1  S9=1  Pair 65
+Pin   30  O_K Reg  ; S6=1  S9=1  Pair 70
+Pin   8  O_J Reg  ; S6=1  S9=1  Pair 46
+Pin   7  O_H Reg  ; S6=1  S9=1  Pair 49
+Pin   39  O_G Reg  ; S6=1  S9=1  Pair 66
+Pin   37  O_F Reg  ; S6=1  S9=1  Pair 62
+Pin   36  O_E Reg  ; S6=1  S9=1  Pair 61
+Pin   29  O_D Reg  ; S6=1  S9=1  Pair 73
+Pin   16  O_C Reg  ; S6=1  S9=1  Pair 57
+Pin   9  O_B Reg  ; S6=1  S9=1  Pair 45
+Pin   31  O_A Reg  ; S6=1  S9=1  Pair 69
+Node  54  RN_O_Q Reg  ; S6=1  S9=1 
+Node  53  RN_O_P Reg  ; S6=1  S9=1 
+Node  50  RN_O_N Reg  ; S6=1  S9=1 
+Node  74  RN_O_M Reg  ; S6=1  S9=1 
+Node  65  RN_O_L Reg  ; S6=1  S9=1 
+Node  70  RN_O_K Reg  ; S6=1  S9=1 
+Node  46  RN_O_J Reg  ; S6=1  S9=1 
+Node  49  RN_O_H Reg  ; S6=1  S9=1 
+Node  66  RN_O_G Reg  ; S6=1  S9=1 
+Node  62  RN_O_F Reg  ; S6=1  S9=1 
+Node  61  RN_O_E Reg  ; S6=1  S9=1 
+Node  73  RN_O_D Reg  ; S6=1  S9=1 
+Node  57  RN_O_C Reg  ; S6=1  S9=1 
+Node  45  RN_O_B Reg  ; S6=1  S9=1 
+Node  69  RN_O_A Reg  ; S6=1  S9=1 
+Node  51  K0_OUTPUT_QC Reg  ; S6=1  S9=1 
+Node  67  H0_OUTPUT_QC Reg  ; S6=1  S9=1 
+Node  47  G0_OUTPUT_QC Reg  ; S6=1  S9=1 
+Node  63  F0_OUTPUT_QC Reg  ; S6=1  S9=1 
+Node  58  E0_OUTPUT_QC Reg  ; S6=1  S9=1 
+; Unused Pins & Nodes
+; -> None Found.

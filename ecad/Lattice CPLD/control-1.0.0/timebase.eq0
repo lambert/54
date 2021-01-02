@@ -1,0 +1,20 @@
+ispLEVER 2.01.28.41.02 Linked Equations File
+Copyright(C), 1992-2002, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design timebase created Sun Jul 09 19:39:27 2006
+
+Title: timebase.bls 
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+=========
+   0                 P-Term Total: 0
+                       Total Pins: 17
+                      Total Nodes: 5
+
+Equations:
+
+
+Reverse-Polarity Equations:
+

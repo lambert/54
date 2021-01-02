@@ -1,0 +1,191 @@
+Frequency Analysis Report:
+-------------------------
+
+Design Name: CONTROL
+Part Name: ispLSI2064A-80LJ84
+
+This report contains the maximum frequency at which the design
+can be operated. It also lists the path that determines the
+maximum frequency and the number of GLB levels. 
+The remaining internal register paths and their frequencies
+are also listed, if the source and the registers are driven
+by the same reference clock.
+
+
+Maximum Operating Frequency:    77 MHz
+
+The clock period is 13.00.
+Clock period = path delay + clock-to-output delay + setup time
+  path delay:              11.20
+  clock-to-output delay:   0.40
+  setup time:              1.40
+
+
+The following path determines the frequency: 
+
+  Startpoint: GLB_FF001_U1_$1N77/Q0
+              (edge-triggered flip-flop)
+  Endpoint: GLB_FF001_U1_$1N77/D0
+              (edge-triggered flip-flop)
+  No. of GLB Levels: 1
+
+Internal Register  Paths and Frequencies:
+
+  Source              Source                  Destination       Destination             Clock     Frequency   # of GLB     
+  Reference           Register                Reference         Register                Period      [MHz]     Levels       
+  Clock               Name                    Clock             Name                     [ns]     
+==----------------------------------------------------------------------------------------------------------------
+  CLK                 GLB_...$1N5 *1/Q0       CLK               GLB_...$1N5 *2/D0        11.40     88        1    
+  CLK                 GLB_...$1N5 *3/Q0       CLK               GLB_...$1N5 *2/D0        11.40     88        1    
+  CLK                 GLB_...$1N5 *2/Q0       CLK               GLB_...$1N5 *2/D0        10.80     93        1    
+  CLK                 GLB_...$1N5 *4/Q0       CLK               GLB_...$1N5 *2/D0        10.80     93        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *6    GLB_...$1N5 *7/CLK       15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *6    GLB_...$1N5 *7/CLK       15.40     ----     1    
+  GLB_...1N77 *6      GLB_...$1N5 *7/Q0       GLB_...1N77 *6    GLB_...$1N5 *7/D0        11.40     88        1    
+  GLB_...1N77 *10     GLB_...$1N5 *11/Q0      GLB_...1N77 *6    GLB_...$1N5 *7/D0        10.80     93        1    
+  GLB_...1N77 *12     GLB_...$1N5 *13/Q0      GLB_...$1N5 *8    GLB_...1N77 *9/CLK       15.40     ----     1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *14   GLB_...$1N5 *15/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *14   GLB_...$1N5 *15/CLK      15.40     ----     1    
+  GLB_...1N77 *16     GLB_...$1N5 *17/Q0      GLB_...1N77 *14   GLB_...$1N5 *15/D0       11.40     88        1    
+  GLB_...1N77 *14     GLB_...$1N5 *15/Q0      GLB_...1N77 *14   GLB_...$1N5 *15/D0       10.80     93        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *18   GLB_...$1N5 *19/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *18   GLB_...$1N5 *19/CLK      15.40     ----     1    
+  GLB_...1N77 *18     GLB_...$1N5 *19/Q0      GLB_...1N77 *18   GLB_...$1N5 *19/D0       11.40     88        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *18   GLB_...$1N5 *19/D0       10.80     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *18   GLB_...$1N5 *19/D0       10.80     ----     1    
+  CLK                 GLB_...$1N5 *20/Q0      CLK               GLB_...$1N5 *20/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *21/Q0      CLK               GLB_...$1N5 *20/D0       11.40     88        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *22   GLB_...$1N5 *23/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *22   GLB_...$1N5 *23/CLK      15.40     ----     1    
+  GLB_...1N77 *22     GLB_...$1N5 *23/Q0      GLB_...1N77 *22   GLB_...$1N5 *23/D0       10.80     93        1    
+  GLB_...1N77 *14     GLB_...$1N5 *15/Q0      GLB_...1N77 *22   GLB_...$1N5 *23/D0       10.80     93        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *24   GLB_...$1N5 *25/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *24   GLB_...$1N5 *25/CLK      15.40     ----     1    
+  GLB_...1N77 *24     GLB_...$1N5 *25/Q0      GLB_...1N77 *24   GLB_...$1N5 *25/D0       11.40     88        1    
+  GLB_...1N77 *18     GLB_...$1N5 *19/Q0      GLB_...1N77 *24   GLB_...$1N5 *25/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *26/Q0      CLK               GLB_...$1N5 *27/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *27/Q0      CLK               GLB_...$1N5 *27/D0       10.80     93        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *28   GLB_...$1N5 *29/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *28   GLB_...$1N5 *29/CLK      15.40     ----     1    
+  GLB_...1N77 *28     GLB_...$1N5 *29/Q0      GLB_...1N77 *28   GLB_...$1N5 *29/D0       11.40     88        1    
+  GLB_...1N77 *22     GLB_...$1N5 *23/Q0      GLB_...1N77 *28   GLB_...$1N5 *29/D0       10.80     93        1    
+  S2                  GLB_...1N77 *5/Q0       S2                GLB_...1N77 *5/D0        13.00     77        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *30   GLB_...$1N5 *31/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *30   GLB_...$1N5 *31/CLK      15.40     ----     1    
+  GLB_...1N77 *24     GLB_...$1N5 *25/Q0      GLB_...1N77 *30   GLB_...$1N5 *31/D0       11.40     88        1    
+  GLB_...1N77 *30     GLB_...$1N5 *31/Q0      GLB_...1N77 *30   GLB_...$1N5 *31/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *32/Q0      CLK               GLB_...$1N5 *33/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *33/Q0      CLK               GLB_...$1N5 *33/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *21/Q0      CLK               GLB_...$1N5 *34/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *34/Q0      CLK               GLB_...$1N5 *34/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *27/Q0      CLK               GLB_...$1N5 *34/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *35/Q0      CLK               GLB_...$1N5 *35/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *2/Q0       CLK               GLB_...$1N5 *35/D0       10.80     93        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *36   GLB_...$1N5 *37/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *36   GLB_...$1N5 *37/CLK      15.40     ----     1    
+  GLB_...1N77 *36     GLB_...$1N5 *37/Q0      GLB_...1N77 *36   GLB_...$1N5 *37/D0       10.80     93        1    
+  GLB_...1N77 *30     GLB_...$1N5 *31/Q0      GLB_...1N77 *36   GLB_...$1N5 *37/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *32/Q0      CLK               GLB_...$1N5 *38/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *38/Q0      CLK               GLB_...$1N5 *38/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *33/Q0      CLK               GLB_...$1N5 *38/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *20/Q0      CLK               GLB_...$1N5 *38/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *39/Q0      CLK               GLB_...$1N5 *39/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *34/Q0      CLK               GLB_...$1N5 *39/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *40/Q0      CLK               GLB_...$1N5 *40/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *26/Q0      CLK               GLB_...$1N5 *40/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *35/Q0      CLK               GLB_...$1N5 *40/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *4/Q0       CLK               GLB_...$1N5 *4/D0        11.40     88        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *12   GLB_...$1N5 *13/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *12   GLB_...$1N5 *13/CLK      15.40     ----     1    
+  GLB_...1N77 *12     GLB_...$1N5 *13/Q0      GLB_...1N77 *12   GLB_...$1N5 *13/D0       10.80     93        1    
+  GLB_...1N77 *6      GLB_...$1N5 *7/Q0       GLB_...1N77 *12   GLB_...$1N5 *13/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *21/Q0      CLK               GLB_...$1N5 *21/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *39/Q0      CLK               GLB_...$1N5 *21/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *34/Q0      CLK               GLB_...$1N5 *21/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *27/Q0      CLK               GLB_...$1N5 *21/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *40/Q0      CLK               GLB_...$1N5 *41/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *41/Q0      CLK               GLB_...$1N5 *41/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *3/Q0       CLK               GLB_...$1N5 *3/D0        11.40     88        1    
+  CLK                 GLB_...$1N5 *4/Q0       CLK               GLB_...$1N5 *3/D0        10.80     93        1    
+  CLK                 GLB_...$1N5 *2/Q0       CLK               GLB_...$1N5 *3/D0        10.80     93        1    
+  CLK                 GLB_...$1N5 *32/Q0      CLK               GLB_...$1N5 *32/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *38/Q0      CLK               GLB_...$1N5 *32/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *20/Q0      CLK               GLB_...$1N5 *32/D0       10.80     93        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *42   GLB_...$1N5 *43/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *42   GLB_...$1N5 *43/CLK      15.40     ----     1    
+  GLB_...1N77 *42     GLB_...$1N5 *43/Q0      GLB_...1N77 *42   GLB_...$1N5 *43/D0       11.40     88        1    
+  GLB_...1N77 *28     GLB_...$1N5 *29/Q0      GLB_...1N77 *42   GLB_...$1N5 *43/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *26/Q0      CLK               GLB_...$1N5 *26/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *40/Q0      CLK               GLB_...$1N5 *26/D0       11.40     88        1    
+  CLK                 GLB_...$1N5 *41/Q0      CLK               GLB_...$1N5 *26/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *35/Q0      CLK               GLB_...$1N5 *26/D0       10.80     93        1    
+  CLK                 GLB_...$1N5 *1/Q0       CLK               GLB_...$1N5 *1/D0        11.40     88        1    
+  CLK                 GLB_...$1N5 *3/Q0       CLK               GLB_...$1N5 *1/D0        11.40     88        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *10   GLB_...$1N5 *11/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *10   GLB_...$1N5 *11/CLK      15.40     ----     1    
+  GLB_...1N77 *42     GLB_...$1N5 *43/Q0      GLB_...1N77 *10   GLB_...$1N5 *11/D0       11.40     88        1    
+  GLB_...1N77 *10     GLB_...$1N5 *11/Q0      GLB_...1N77 *10   GLB_...$1N5 *11/D0       10.80     93        1    
+  S2                  GLB_...1N77 *5/Q0       GLB_...1N77 *16   GLB_...$1N5 *17/CLK      15.40     ----     1    
+  GLB_...$1N5 *8      GLB_...1N77 *9/Q0       GLB_...1N77 *16   GLB_...$1N5 *17/CLK      15.40     ----     1    
+  GLB_...1N77 *16     GLB_...$1N5 *17/Q0      GLB_...1N77 *16   GLB_...$1N5 *17/D0       11.40     88        1    
+  GLB_...1N77 *36     GLB_...$1N5 *37/Q0      GLB_...1N77 *16   GLB_...$1N5 *17/D0       10.80     93        1    
+==-------------------------------------------------------------------------------------------
+
+Index Name Table
+==----------------------------------------
+    *1  GLB_FB100_FB101_FF102_U1_$1N5
+    *2  GLB_FB100_FB101_FF103_U1_$1N5
+    *3  GLB_FB100_FB101_FF101_U1_$1N5
+    *4  GLB_FB100_FB101_FF100_U1_$1N5
+    *5  GLB_FF001_U1_$1N77
+    *6  GLB_FF002_U1_$1N77
+    *7  GLB_FB200_FB203_FF202_U1_$1N5
+    *8  GLB_FB200_FB203_FF203_U1_$1N5
+    *9  GLB_FF002_U1_$1N77
+    *10  GLB_FF002_U1_$1N77
+    *11  GLB_FB200_FB203_FF201_U1_$1N5
+    *12  GLB_FF002_U1_$1N77
+    *13  GLB_FB200_FB203_FF203_U1_$1N5
+    *14  GLB_FF002_U1_$1N77
+    *15  GLB_FB200_FB202_FF201_U1_$1N5
+    *16  GLB_FF002_U1_$1N77
+    *17  GLB_FB200_FB202_FF200_U1_$1N5
+    *18  GLB_FF002_U1_$1N77
+    *19  GLB_FB200_FB201_FF200_U1_$1N5
+    *20  GLB_FB100_FB104_FF100_U1_$1N5
+    *21  GLB_FB100_FB103_FF103_U1_$1N5
+    *22  GLB_FF002_U1_$1N77
+    *23  GLB_FB200_FB202_FF202_U1_$1N5
+    *24  GLB_FF002_U1_$1N77
+    *25  GLB_FB200_FB201_FF201_U1_$1N5
+    *26  GLB_FB100_FB102_FF103_U1_$1N5
+    *27  GLB_FB100_FB103_FF100_U1_$1N5
+    *28  GLB_FF002_U1_$1N77
+    *29  GLB_FB200_FB202_FF203_U1_$1N5
+    *30  GLB_FF002_U1_$1N77
+    *31  GLB_FB200_FB201_FF202_U1_$1N5
+    *32  GLB_FB100_FB104_FF101_U1_$1N5
+    *33  GLB_FB100_FB104_FF102_U1_$1N5
+    *34  GLB_FB100_FB103_FF101_U1_$1N5
+    *35  GLB_FB100_FB102_FF100_U1_$1N5
+    *36  GLB_FF002_U1_$1N77
+    *37  GLB_FB200_FB201_FF203_U1_$1N5
+    *38  GLB_FB100_FB104_FF103_U1_$1N5
+    *39  GLB_FB100_FB103_FF102_U1_$1N5
+    *40  GLB_FB100_FB102_FF101_U1_$1N5
+    *41  GLB_FB100_FB102_FF102_U1_$1N5
+    *42  GLB_FF002_U1_$1N77
+    *43  GLB_FB200_FB203_FF200_U1_$1N5
+==----------------------------------------
+
+Information for flip-flop:
+
+  Global reset-to-output delay:   1.60
+  Clock-to-output delay:          0.40
+  User reset-to-output delay:     1.60
+  Data-to-output delay:           0.00
+  Setup time:                     1.40
+  Hold time:                      6.00
+  Pulse-width time:               6.00
+
+

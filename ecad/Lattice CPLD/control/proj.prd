@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version 7.1        
+#-- Project file C:\Documents and Settings\bert\Mijn documenten\Mijn Projecten\Rabulab\54_Control_Unit\electrical\Lattice\control\proj.prd
+#-- Written on Mon Aug 07 21:08:31 2006
+
+#
+### Watch Implementation type ###
+#
+watch_impl -active
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear
